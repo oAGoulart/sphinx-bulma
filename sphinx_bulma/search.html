@@ -1,50 +1,32 @@
-{#
-    basic/search.html
-    ~~~~~~~~~~~~~~~~~
+{% extends "layout.html" %}
 
-    Template for the search page.
-
-    :copyright: Copyright 2007-2013 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
-#}
-{%- extends "layout.html" %}
+{# METADATA #}
 {% set title = _('Search') %}
-{% set script_files = script_files + ['_static/searchtools.js'] %}
-{% block footer %}
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
-  </script>
-  {# this is used when loading the search index using $.ajax fails,
-     such as on Chrome for documents on localhost #}
-  <script type="text/javascript" id="searchindexloader"></script>
+{% block extrahead %}
   {{ super() }}
+  <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('_static/language_data.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto('searchindex.js', 1) }}" defer></script>
 {% endblock %}
-{% block body %}
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      {% trans %}Please activate JavaScript to enable the search
-      functionality.{% endtrans %}
-    </p>
-  </div>
-  </noscript>
 
-  {% if search_performed %}
-    <h2>{{ _('Search Results') }}</h2>
-    {% if not search_results %}
-      <p>{{ _('Your search did not match any documents. Please make sure that all words are spelled correctly and that you\'ve selected enough categories.') }}</p>
+{# BODY #}
+{% block body %}
+  <h1 id="search-documentation">{{ _('Search') }}</h1>
+
+  {% block searchtext %}
+    <div class="notification is-info">
+      {% trans %}Searching for multiple words only shows matches that contain all words.{% endtrans %}
+    </div>
+  {% endblock %}
+  
+  {% block searchresults %}
+    {% if search_performed %}
+      <h2>{{ _('Search Results') }}</h2>
+      {% if not search_results %}
+        <p>{{ _('Your search did not match any documents. Please make sure that all words are spelled correctly and that you have selected enough categories.') }}</p>
+      {% endif %}
     {% endif %}
-  {% endif %}
-  <div id="search-results">
-  {% if search_results %}
-    <ul>
-    {% for href, caption, context in search_results %}
-      <li>
-        <a href="{{ pathto(item.href) }}">{{ caption }}</a>
-        <p class="context">{{ context|e }}</p>
-      </li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-  </div>
+
+    <div id="search-results"></div>
+  {% endblock %}
 {% endblock %}

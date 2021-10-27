@@ -31,7 +31,7 @@ html_theme_options = {
   'git_repo': 'sphinx-bulma',
   'git_version': 'master/docs/',
   'git_icon': 'github-circled',
-  'git_desc': 'Edit on GitHub',
+  'git_desc': 'Edit on GitHub'
 }
 
 html_theme_path = [".."]
