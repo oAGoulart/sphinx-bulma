@@ -2,5 +2,8 @@
 node_modules
 docs/_build
 __pycache__/
+*.lock
+*-lock.*
 dist
-/karma_sphinx_theme.egg-info/
+/*.egg-info/
+.fontello-session
