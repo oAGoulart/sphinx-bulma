@@ -66,9 +66,14 @@ strong {
 }
 
 /*-----------------------------navbar-----------------------------*/
-a.navbar-item.logo img {
-  max-height: 5rem;
-  height: 5rem;
+a.navbar-item.logo {
+  min-height: 6rem;
+  padding: .5rem .75rem;
+
+  img {
+    max-height: 5rem;
+    height: 5rem;
+  }
 }
 
 nav.navbar div.navbar-menu div.navbar-brand a.navbar-item.logo {
@@ -495,16 +500,17 @@ span.icon > i {
     }
   }
 
-  #search-results {
-    @extend .content;
-  }
-
   blockquote {
     @include palette() {
       background-color: palette-get('bis-color');
       border-left: 5px solid palette-get('tab-color');
     }
   }
+}
+
+#search-results,
+.content {
+  @extend .document;
 }
 
 footer.footer {
@@ -524,10 +530,38 @@ footer.footer {
   }
 }
 
-$breakpoint: 1280px;
+$breakpoint: 1024px;
 .container:not(.navbar-menu) {
   @include until($breakpoint) {
     margin: 3rem;
     background-color: inherit;
+  }
+}
+
+.navbar,
+.navbar-end,
+.navbar-menu,
+.navbar-start {
+  @include until($breakpoint) {
+    align-items: stretch;
+    display: flex;
+  }
+}
+
+.navbar-menu.container {
+  @include until($breakpoint) {
+    padding: 1.5rem;
+    background-color: inherit;
+    display: flex;
+
+    .navbar-start {
+      justify-content: flex-start;
+      margin-right: auto;
+    }
+
+    .navbar-end {
+      justify-content: flex-end;
+      margin-left: auto;
+    }
   }
 }

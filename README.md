@@ -20,16 +20,18 @@ file, and can be defined in your project's `conf.py` via
 
 ```py
 html_theme_options = {
-  'navigation_depth': 2,          # maximum depth of tree
-  'includehidden': True,          # if true sidebar may include toctrees marked with hidden option
-  'titles_only': False,           # if true removes headers within a page from the sidebar
-  'display_git': False,           # if true options below must be set
-  'git_host': 'github.com',       # git host url
-  'git_user': 'gh-user',          # your git host username
-  'git_repo': 'doc-repo',         # doc repository
-  'git_blob': 'blob',             # default for github
-  'git_version': 'master/docs/'   # docs folder
-  'git_icon': 'github'            # icon to show on docs
-  'git_desc': 'Check the sources' # link description
+  'navigation_depth': 2,           # maximum depth of tree
+  'includehidden': True,           # if true sidebar may include toctrees marked with hidden option
+  'titles_only': False,            # if true removes headers within a page from the sidebar
+  'display_git': False,            # if true options below must be set
+  'git_host': 'github.com',        # git host url
+  'git_user': 'gh-user',           # your git host username
+  'git_repo': 'doc-repo',          # doc repository
+  'git_blob': 'blob',              # default for github
+  'git_version': 'master/docs/',   # docs folder
+  'git_icon': 'github',            # icon to show on docs
+  'git_desc': 'Check the sources', # link description
+  'default_palette': 'dark',       # default color palette (dark or light)
+  'sidebar': 'True'                # if true sidebar will be rendered
 }
 ```
