@@ -1,4 +1,7 @@
-# Bulma Sphinx Theme
+![Sphinx Bulma Theme](banner.png)
+
+[![CodeQL](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml)
+[![GitHub Pages deploy](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml)
 
 A simple responsive theme for sphinx. This theme is in it's early stage of development so only 
 contains limited options.
