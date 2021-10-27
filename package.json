@@ -31,7 +31,7 @@
   "devDependencies": {
     "autoprefixer": "^10.3.7",
     "bulma": "^0.9.3",
-    "clean-css-cli": "^4.1.10",
+    "clean-css-cli": "^5.4.2",
     "copyfiles": "^2.4.1",
     "fontello-cli": "^0.6.2",
     "nodemon": "^2.0.14",
