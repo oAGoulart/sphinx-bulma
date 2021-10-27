@@ -1,28 +1,19 @@
+/*
+ * Main theme styles
+ */
+@charset "utf-8";
+
 @import "variables";
 @import "font";
 
 /* core */
-@import "node_modules/karma-css/scss/variables";
-@import "node_modules/karma-css/scss/import";
+@import "../node_modules/bulma/bulma";
 
-/* add your custom modules here */
-
-/* components */
-@import "component-variables";
-@import "node_modules/karma-css-components/scss/components/alert";
-@import "node_modules/karma-css-components/scss/components/icon-input";
+/* custom modules */
+@import "palette";
+@import "mixin";
+@import "elements";
+@import "code";
 
 /* fontello */
 @import "fontello/css/fontello";
-
-/* modules */
-@import "module/admonition";
-@import "module/breadcrumb";
-@import "module/footer";
-@import "module/header";
-@import "module/layout";
-@import "module/nav";
-@import "module/rst-content";
-
-/* utilities */
-@import "node_modules/karma-css/scss/utilities";

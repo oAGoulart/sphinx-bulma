@@ -1,0 +1,79 @@
+/*
+ * Default color palettes
+ */
+ @charset "utf-8";
+
+$link-hover: $link-dark;
+$link-focus: $link-dark;
+$link-active: $link-dark;
+
+$palettes: (
+  dark-palette: (
+    'code-color': $dark-text,
+    'text-color': $dark-text,
+    'bg-color': $dark-bg,
+    'tab-color': $dark-tab,
+    'body-color': $dark-body,
+    'link-color': $blueish,
+    'link-hover': darken($blueish, 20%),
+    'title-color': $dark-title,
+    'hll-color': hsl(351, 87%, 12%),
+    'bis-color': hsl(212, 30%, 18%),
+    'purple': $purple,
+    'green': $green,
+    'cyan': $cyan,
+    'red': hsl(344, 78%, 50%),
+    'redish': $redish,
+    'blue': hsl(221, 70%, 48%),
+    'blueish': $blueish,
+    'yellow': $yellow,
+    'pink': hsl(303, 58%, 60%),
+    'orange': $orange,
+    'gold': hsl(41, 90%, 45%),
+    'greenish': $greenish,
+    'label-bg': transparent,
+    'label-color': $primary,
+    'label-border': 1px solid $primary,
+    'footnote-bg': transparent,
+    'footnote-color': $info,
+    'footnote-border': 1px solid $info,
+    'glossary-bg': transparent,
+    'glossary-color': $link,
+    'glossary-border': 1px solid $link,
+    'switch-icon': '\e900'
+  ),
+  light-palette: (
+    'code-color': $grey-light,
+    'text-color': $text,
+    'bg-color': $background,
+    'tab-color': $border-light,
+    'body-color': $white,
+    'link-color': $link,
+    'link-hover': $link-dark,
+    'title-color': $black,
+    'hll-color': hsl(60, 100%, 90%),
+    'bis-color': $white-bis,
+    'purple': $purple,
+    'green': $green,
+    'cyan': $cyan,
+    'red': $red,
+    'redish': $redish,
+    'blue': $blue,
+    'blueish': $blueish,
+    'yellow': $yellow,
+    'pink': $pink,
+    'orange': $orange,
+    'gold': $gold,
+    'greenish': $greenish,
+    'label-bg': $primary,
+    'label-color': $white,
+    'label-border': none,
+    'footnote-bg': $info-light,
+    'footnote-color': $info,
+    'footnote-border': none,
+    'glossary-bg': $link,
+    'glossary-color': $white,
+    'glossary-border': none,
+    'switch-icon': '\e902'
+  )
+);

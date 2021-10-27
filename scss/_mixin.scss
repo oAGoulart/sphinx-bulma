@@ -1,0 +1,34 @@
+/*
+ * Mixins
+ */
+@charset "utf-8";
+
+$palette-map: null;
+
+@mixin palette() {
+  @each $palette, $map in $palettes {
+    $palette-map: $map !global;
+
+    .#{$palette} & {
+      @content;
+    }
+  }
+
+  $palette-map: null !global;
+}
+
+@function palette-get($key) {
+  @return map-get($palette-map, $key);
+}
+
+@mixin transform($value) { 
+  -moz-transform: $value;
+  -webkit-transform: $value;
+  -o-transform: $value;
+  -ms-transform: $value;
+  transform: $value;
+}
+
+@mixin flipHor() {
+  @include transform(scale(-1, 1));
+}
