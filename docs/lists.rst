@@ -6,13 +6,13 @@ Enumerated Lists
 
 1. Arabic numerals.
 
-   a) lower alpha)
+   a) (lower alpha)
 
       (i) (lower roman)
 
           A. upper alpha.
 
-             I) upper roman)
+             I) (upper roman)
 
 2. Lists that don't start at 1:
 
@@ -74,11 +74,11 @@ Field list
 
 .. bibliographic fields (which also require a transform):
 
-:Author: Stuart George
+:Author: Augusto Goulart
 :Address: 123 Example Street
-          Example, UK
+          Example, BR
           A1B 2C3
-:Contact: stuart@accentdesign.co.uk
+:Contact: example@mail.gg
 :Authors: Me; Myself; I
 :organization: humankind
 :date: $Date: 2012-01-03 19:23:53 +0000 (Tue, 03 Jan 2012) $

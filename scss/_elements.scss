@@ -50,6 +50,15 @@ strong {
   }
 }
 
+button.button.is-outlined:not(.dummy):focus:not(:hover) {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+}
+
+dl {
+  overflow: auto;
+}
 
 #light-switch {
   margin-top: 1.75rem;
@@ -464,36 +473,30 @@ span.icon > i {
 
   .viewcode-link span.pre {
     visibility: hidden;
-    position: absolute;
+    font-size: 0;
+    margin-left: 0.5rem;
 
     &::after {
       @extend .fontello-icon;
       content: "\f1c9";
-      display: block;
       visibility: visible;
-      position: absolute;
-      left: 1.5rem;
-      bottom: 0.6em;
+      position: relative;
       font-weight: 100;
       font-size: medium;
     }
   }
 
   div.viewcode-block {
-    margin-left: 2.5rem;
-
     a.viewcode-back {
       visibility: hidden;
-      position: absolute;
+      font-size: 0;
+      margin-right: 0.5rem;
   
       &::before {
         @extend .fontello-icon;
         content: "\f0f6  \f177";
-        display: block;
         visibility: visible;
         position: relative;
-        right: 2.5rem;
-        bottom: 0.2em;
         font-weight: 100;
         font-size: medium;
       }

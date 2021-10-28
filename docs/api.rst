@@ -4,9 +4,9 @@
 *********************
 
 .. automodule:: test_py_module.test
-    :members:
-    :private-members:
-    :special-members:
+   :members:
+   :private-members:
+   :special-members:
 
 
 Optional parameter args
@@ -41,6 +41,6 @@ Data
           Data_item_2
           Data_item_3
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.
 
 Some data link :data:`Data_item_1`.
