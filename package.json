@@ -1,6 +1,6 @@
 {
-  "name": "sphinx_bulma",
-  "version": "0.1.0",
+  "name": "sphinx-bulma",
+  "version": "0.0.10",
   "description": "A Sphinx theme using Bulma",
   "author": {
     "name": "Augusto Goulart",
@@ -22,8 +22,8 @@
   "scripts": {
     "docs-build": "sphinx-build docs docs/_build",
     "css": "npm-run-all css-compile* --sequential css-minify*",
-    "css-compile": "sass scss/theme.scss sphinx_bulma/static/css/theme.css",
-    "css-minify": "cleancss -o sphinx_bulma/static/css/theme.min.css sphinx_bulma/static/css/theme.css",
+    "css-compile": "sass scss/theme.scss src/sphinx-bulma/static/css/theme.css",
+    "css-minify": "cleancss -o src/sphinx-bulma/static/css/theme.min.css --input-source-map src/sphinx-bulma/static/css/theme.css.map src/sphinx-bulma/static/css/theme.css",
     "fontello-install": "fontello-cli install --config scss/fontello/config.json --css scss/fontello/css --font scss/fontello/font",
     "fontello-web": "fontello-cli open --config scss/fontello/config.json",
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""

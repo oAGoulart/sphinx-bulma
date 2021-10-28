@@ -6,5 +6,5 @@ __pycache__/
 *.lock
 *-lock.*
 dist
-/*.egg-info/
+/src/*.egg-info/
 .fontello-session

@@ -23,7 +23,7 @@ exclude_patterns = ['_build']
 
 html_logo = 'static/logo.png'
 html_favicon = 'static/favicon.ico'
-html_theme = 'sphinx_bulma'
+html_theme = 'sphinx-bulma'
 html_theme_options = {
   'display_git': True,
   'git_host': 'github.com',
@@ -34,4 +34,4 @@ html_theme_options = {
   'git_desc': 'Edit on GitHub'
 }
 
-html_theme_path = [".."]
+html_theme_path = ["../src"]
