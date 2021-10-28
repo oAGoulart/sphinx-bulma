@@ -1,9 +1,0 @@
-sphinx
-sphinx-autobuild
-invoke
-invocations
-semantic_version
-wheel
-twine
-releases
-flake8

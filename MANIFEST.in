@@ -1,5 +1,3 @@
-include .txt
 include LICENSE
-include README.md
-recursive-include sphinx_bulma *.*
-recursive-exclude sphinx_bulma .*.swp
+include CHANGELOG.md
+recursive-include src/sphinx-bulma *.*
