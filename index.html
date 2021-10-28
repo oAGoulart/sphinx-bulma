@@ -5,7 +5,7 @@
   <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome &mdash; Sphinx Bulma Theme  documentation</title>
+  <title>Sphinx Bulma Theme &mdash; Sphinx Bulma Theme  documentation</title>
   <link rel="shortcut icon" href="_static/favicon.ico"/>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css"/>
       <link rel="stylesheet" href="_static/css/theme.min.css" type="text/css"/>
@@ -57,7 +57,7 @@
       </a>
     </li>
     <li class="is-active">
-      <a href="#" aria-current="page">Welcome</a>
+      <a href="#" aria-current="page">Sphinx Bulma Theme</a>
     </li>
   </ul>
 </nav><main>
@@ -66,51 +66,65 @@
       <div class="column is-three-quarters">
         <div class="document content">
           
-  <section id="welcome">
-<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
-<p>A simple responsive theme for sphinx. This theme is in it’s early stage of development so only
-contains limited options.</p>
+  <section id="sphinx-bulma-theme">
+<h1>Sphinx Bulma Theme<a class="headerlink" href="#sphinx-bulma-theme" title="Permalink to this headline">¶</a></h1>
+<section id="a-simple-responsive-theme-for-sphinx-using-bulma-featuring">
+<h2>A simple responsive theme for sphinx using <strong>Bulma</strong> featuring:<a class="headerlink" href="#a-simple-responsive-theme-for-sphinx-using-bulma-featuring" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Has built-in dark/light color themes using native CSS and JavaScript</p></li>
+<li><p>Sphinx built-in text search engine</p></li>
+<li><p>Extended Sass rulesets from bulma</p></li>
+<li><p>Support for user-defined favicon and logo from sphinx config</p></li>
+<li><p>Custom icon font made with [Fontello]</p></li>
+<li><p>Theme user-defined documentation repository reference</p></li>
+</ol>
 <section id="installing">
-<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install karma_sphinx_theme
+<h3>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h3>
+<p>Using pip to install from this repository:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install git+https://github.com/oAGoulart/sphinx-bulma.git@v0.0.10
 </pre></div>
 </div>
 </section>
 <section id="configuration">
-<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>The theme’s project-wide options are defined in the <code class="docutils literal notranslate"><span class="pre">karma_sphinx_theme/theme.conf</span></code>
-file, and can be defined in your project’s <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> via
-<code class="docutils literal notranslate"><span class="pre">html_theme_options</span></code>. For example:</p>
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The theme’s project-wide options are defined in the <cite>sphinx_bulma/theme.conf</cite></div>
+<div class="line">file, and can be defined in your project’s <cite>conf.py</cite> via</div>
+<div class="line"><cite>html_theme_options</cite>. For example:</div>
+</div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;navigation_depth&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="s1">&#39;includehidden&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-    <span class="s1">&#39;titles_only&#39;</span><span class="p">:</span> <span class="kc">False</span>
+  <span class="s1">&#39;navigation_depth&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>           <span class="c1"># maximum depth of tree</span>
+  <span class="s1">&#39;includehidden&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>           <span class="c1"># if true sidebar may include toctrees marked with hidden option</span>
+  <span class="s1">&#39;titles_only&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>            <span class="c1"># if true removes headers within a page from the sidebar</span>
+  <span class="s1">&#39;display_git&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>            <span class="c1"># if true options below must be set</span>
+  <span class="s1">&#39;git_host&#39;</span><span class="p">:</span> <span class="s1">&#39;github.com&#39;</span><span class="p">,</span>        <span class="c1"># git host url</span>
+  <span class="s1">&#39;git_user&#39;</span><span class="p">:</span> <span class="s1">&#39;gh-user&#39;</span><span class="p">,</span>           <span class="c1"># your git host username</span>
+  <span class="s1">&#39;git_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;doc-repo&#39;</span><span class="p">,</span>          <span class="c1"># doc repository</span>
+  <span class="s1">&#39;git_blob&#39;</span><span class="p">:</span> <span class="s1">&#39;blob&#39;</span><span class="p">,</span>              <span class="c1"># default for github</span>
+  <span class="s1">&#39;git_version&#39;</span><span class="p">:</span> <span class="s1">&#39;master/docs/&#39;</span><span class="p">,</span>   <span class="c1"># docs folder</span>
+  <span class="s1">&#39;git_icon&#39;</span><span class="p">:</span> <span class="s1">&#39;github&#39;</span><span class="p">,</span>            <span class="c1"># icon to show on docs</span>
+  <span class="s1">&#39;git_desc&#39;</span><span class="p">:</span> <span class="s1">&#39;Check the sources&#39;</span><span class="p">,</span> <span class="c1"># link description</span>
+  <span class="s1">&#39;default_palette&#39;</span><span class="p">:</span> <span class="s1">&#39;dark&#39;</span><span class="p">,</span>       <span class="c1"># default color palette (dark or light)</span>
+  <span class="s1">&#39;sidebar&#39;</span><span class="p">:</span> <span class="kc">True</span>                  <span class="c1"># if true sidebar will be rendered</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<section id="options">
-<h3>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">navigation_depth</span></code> Int. Indicate the max depth of the tree, by default, 2 levels are included.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">includehidden</span></code> Bool. Specifies if the sidebar includes toctrees marked with the <code class="docutils literal notranslate"><span class="pre">:hidden:</span></code> option</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">titles_only</span></code> Bool. If True, removes headers within a page from the sidebar.</p></li>
-</ul>
-</section>
 </section>
 <section id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<h3>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="admonitions.html">Admonitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="demo.html">Paragraph Level Markup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lists.html">Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="structure.html">Structural Elements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html#structural-elements-2">Structural Elements 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html#structural-elements-two">Structural Elements Two</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tables.html">Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">test_py_module</span></code></a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 </div>
+</section>
 </section>
 </section>
 
@@ -158,7 +172,7 @@ file, and can be defined in your project’s <code class="docutils literal notra
 <li class="toctree-l2"><a class="reference internal" href="structure.html#document-section">Document Section</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html#structural-elements-2">Structural Elements 2</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="structure.html#structural-elements-two">Structural Elements Two</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="structure.html#id1">Document Section</a></li>
 </ul>
 </li>
@@ -173,7 +187,8 @@ file, and can be defined in your project’s <code class="docutils literal notra
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#id1">0.0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#unreleased">Unreleased</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#tbd">0.1.0 - TBD</a></li>
 </ul>
 </li>
 </ul>
@@ -192,7 +207,7 @@ file, and can be defined in your project’s <code class="docutils literal notra
         <p>
             &#169; Copyright 2021 Augusto Goulart
         </p>
-        <div class="field is-grouped is-grouped-multiline is-pulled-right">
+        <div class="field is-grouped is-pulled-right">
           <span class="control">
             <a class="tags has-addons" href="http://sphinx-doc.org/">
               <span class="tag is-dark is-normal">

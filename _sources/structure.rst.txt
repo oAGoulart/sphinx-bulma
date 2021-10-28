@@ -57,9 +57,9 @@ Suspendisse potenti. Curabitur tristique sit amet lectus non viverra. Phasellus 
 Mauris maximus viverra ante. Donec eu egestas mauris. Morbi vulputate tincidunt euismod. Integer vel porttitor neque.
 Donec at lacus suscipit, lacinia lectus vel, sagittis lectus.
 
-*********************
-Structural Elements 2
-*********************
+***********************
+Structural Elements Two
+***********************
 
 Etiam turpis ante, luctus sed velit tristique, finibus volutpat dui. Nam sagittis vel ante nec malesuada.
 Praesent dignissim mi nec ornare elementum. Nunc eu augue vel sem dignissim cursus sed et nulla.
@@ -80,8 +80,8 @@ Document Subsection
 -------------------
 
 .. figure:: static/800x600-black.png
-    :align: right
-    :figwidth: 200px
+   :align: right
+   :figwidth: 200px
 
     This is a caption for a figure.
 
