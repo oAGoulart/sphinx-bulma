@@ -51,7 +51,7 @@ Giant Tables
 List Tables
 -----------
 
-.. list-table:: List tables can have captions like this one.
+.. list-table:: List tables can have captions like this one
     :widths: 10 5 10 50
     :header-rows: 1
     :stub-columns: 1

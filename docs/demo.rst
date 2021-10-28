@@ -143,27 +143,27 @@ Code Blocks
 
 
 .. code-block:: json
-    :caption: Code Blocks can have captions.
+   :caption: Code Blocks can have captions.
 
     {
-    "windows": [
+      "windows": [
         {
-        "panes": [
+          "panes": [
             {
-            "shell_command": [
+              "shell_command": [
                 "echo 'did you know'",
                 "echo 'you can inline'"
-            ]
+              ]
             },
             {
-            "shell_command": "echo 'single commands'"
+              "shell_command": "echo 'single commands'"
             },
             "echo 'for panes'"
-        ],
-        "window_name": "long form"
+          ],
+          "window_name": "long form"
         }
-    ],
-    "session_name": "shorthands"
+      ],
+      "session_name": "shorthands"
     }
 
 Emphasized lines with line numbers
@@ -174,21 +174,21 @@ Emphasized lines with line numbers
    :emphasize-lines: 3,5
 
    def some_function():
-       interesting = False
-       print 'This line is highlighted.'
-       print 'This one is not...'
-       print '...but this one is.'
+     interesting = False
+     print 'This line is highlighted.'
+     print 'This one is not...'
+     print '...but this one is.'
 
 Sidebar
 =======
 
 .. sidebar:: Ch'ien / The Creative
 
-    .. image:: static/yi_jing_01_chien.jpg
+   .. image:: static/yi_jing_01_chien.jpg
 
-    *Above* CH'IEN THE CREATIVE, HEAVEN
+   *Above* CH'IEN THE CREATIVE, HEAVEN
 
-    *Below* CH'IEN THE CREATIVE, HEAVEN
+   *Below* CH'IEN THE CREATIVE, HEAVEN
 
 The first hexagram is made up of six unbroken lines. These unbroken lines stand for the primal power,
 which is light-giving, active, strong, and of the spirit. The hexagram is consistently strong in character,
@@ -207,13 +207,13 @@ Code with Sidebar
 
 .. sidebar:: A code example
 
-    With a sidebar on the right.
+   With a sidebar on the right.
 
 .. literalinclude:: test_py_module/test.py
-    :language: python
-    :caption: Literal includes can also have captions.
-    :linenos:
-    :lines: 1-40
+   :language: python
+   :caption: Literal includes can also have captions.
+   :linenos:
+   :lines: 1-40
 
 References
 ==========

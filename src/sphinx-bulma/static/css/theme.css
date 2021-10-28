@@ -24031,6 +24031,16 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   color: #4078f2;
 }
 
+button.button.is-outlined:not(.dummy):focus:not(:hover) {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+}
+
+dl {
+  overflow: auto;
+}
+
 #light-switch {
   margin-top: 1.75rem;
 }
@@ -24862,30 +24872,16 @@ main {
 .content aside.sidebar .viewcode-link span.pre,
 .content .topic .viewcode-link span.pre {
   visibility: hidden;
-  position: absolute;
+  font-size: 0;
+  margin-left: 0.5rem;
 }
 .document .viewcode-link span.pre::after, #search-results .viewcode-link span.pre::after,
 .content .viewcode-link span.pre::after {
   content: "\f1c9";
-  display: block;
   visibility: visible;
-  position: absolute;
-  left: 1.5rem;
-  bottom: 0.6em;
+  position: relative;
   font-weight: 100;
   font-size: medium;
-}
-.document div.viewcode-block, #search-results div.viewcode-block,
-.content div.viewcode-block,
-.document aside.sidebar div.viewcode-block,
-.document .topic div.viewcode-block,
-.content aside.sidebar div.viewcode-block,
-.document aside.sidebar aside.sidebar div.viewcode-block,
-.document .topic aside.sidebar div.viewcode-block,
-.content .topic div.viewcode-block,
-.document aside.sidebar .topic div.viewcode-block,
-.document .topic .topic div.viewcode-block {
-  margin-left: 2.5rem;
 }
 .document div.viewcode-block a.viewcode-back, #search-results div.viewcode-block a.viewcode-back,
 .content div.viewcode-block a.viewcode-back,
@@ -24894,16 +24890,14 @@ main {
 .content aside.sidebar div.viewcode-block a.viewcode-back,
 .content .topic div.viewcode-block a.viewcode-back {
   visibility: hidden;
-  position: absolute;
+  font-size: 0;
+  margin-right: 0.5rem;
 }
 .document div.viewcode-block a.viewcode-back::before, #search-results div.viewcode-block a.viewcode-back::before,
 .content div.viewcode-block a.viewcode-back::before {
   content: "\f0f6  \f177";
-  display: block;
   visibility: visible;
   position: relative;
-  right: 2.5rem;
-  bottom: 0.2em;
   font-weight: 100;
   font-size: medium;
 }

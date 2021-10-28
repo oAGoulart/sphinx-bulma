@@ -3,16 +3,16 @@ Admonitions
 
 All types of admonitions have been styled.
 
-.. admonition:: I'm a basic admonition
+.. admonition:: the boring one
 
-   With some text
+   go past this one
 
-.. note:: I'm an admonition.
-.. important:: I'm an admonition.
-.. hint:: I'm an admonition.
-.. tip:: I'm an admonition.
-.. attention:: I'm an admonition.
-.. caution:: I'm an admonition.
-.. warning:: I'm an admonition.
-.. danger:: I'm an admonition.
-.. error:: I'm an admonition.
+.. note:: the note one
+.. important:: the important one
+.. hint:: the hint one
+.. tip:: the tip one
+.. attention:: the attention one
+.. caution:: the caution one
+.. warning:: the warning one
+.. danger:: the danger one
+.. error:: the error one
