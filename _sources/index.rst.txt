@@ -19,7 +19,7 @@ Using pip to install from this repository:
 
 .. code-block:: shell
 
-   pip install git+https://github.com/oAGoulart/sphinx-bulma.git@v0.0.10
+   pip install sphinx-bulma
 
 Configuration
 -------------
