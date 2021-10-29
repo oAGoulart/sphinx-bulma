@@ -89,11 +89,11 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
 
 .tabs:not(:last-child), .pagination:not(:last-child), .message:not(:last-child), #search-results .admonition:not(:last-child),
 .content .admonition:not(:last-child),
-.document .admonition:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child), .block:not(:last-child), .title:not(:last-child), #search-results h1:not(:last-child),
-.content h1:not(:last-child),
-.document h1:not(:last-child), #search-results .topic-title:not(:last-child),
-.content .topic-title:not(:last-child),
-.document .topic-title:not(:last-child),
+.document .admonition:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child), .block:not(:last-child), .title:not(:last-child), .dark-palette #search-results .topic-title:not(:last-child),
+.dark-palette .content .topic-title:not(:last-child),
+.dark-palette .document .topic-title:not(:last-child), .light-palette #search-results .topic-title:not(:last-child),
+.light-palette .content .topic-title:not(:last-child),
+.light-palette .document .topic-title:not(:last-child),
 .subtitle:not(:last-child), .table-container:not(:last-child), .table:not(:last-child), .progress:not(:last-child), .notification:not(:last-child), .content:not(:last-child), .box:not(:last-child) {
   margin-bottom: 1.5rem;
 }
@@ -953,16 +953,16 @@ a.box:active {
 .button.is-primary {
   background-color: #885bfb;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .button.is-primary:hover, .button.is-primary.is-hovered {
   background-color: #7f4efa;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .button.is-primary:focus, .button.is-primary.is-focused {
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
   box-shadow: 0 0 0 0.125em rgba(136, 91, 251, 0.25);
@@ -970,7 +970,7 @@ a.box:active {
 .button.is-primary:active, .button.is-primary.is-active {
   background-color: #7642fa;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .button.is-primary[disabled], fieldset[disabled] .button.is-primary {
   background-color: #885bfb;
@@ -978,20 +978,20 @@ a.box:active {
   box-shadow: none;
 }
 .button.is-primary.is-inverted {
-  background-color: #fff;
+  background-color: white;
   color: #885bfb;
 }
 .button.is-primary.is-inverted:hover, .button.is-primary.is-inverted.is-hovered {
   background-color: #f2f2f2;
 }
 .button.is-primary.is-inverted[disabled], fieldset[disabled] .button.is-primary.is-inverted {
-  background-color: #fff;
+  background-color: white;
   border-color: transparent;
   box-shadow: none;
   color: #885bfb;
 }
 .button.is-primary.is-loading::after {
-  border-color: transparent transparent #fff #fff !important;
+  border-color: transparent transparent white white !important;
 }
 .button.is-primary.is-outlined {
   background-color: transparent;
@@ -1001,13 +1001,13 @@ a.box:active {
 .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
   background-color: #885bfb;
   border-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .button.is-primary.is-outlined.is-loading::after {
   border-color: transparent transparent #885bfb #885bfb !important;
 }
 .button.is-primary.is-outlined.is-loading:hover::after, .button.is-primary.is-outlined.is-loading.is-hovered::after, .button.is-primary.is-outlined.is-loading:focus::after, .button.is-primary.is-outlined.is-loading.is-focused::after {
-  border-color: transparent transparent #fff #fff !important;
+  border-color: transparent transparent white white !important;
 }
 .button.is-primary.is-outlined[disabled], fieldset[disabled] .button.is-primary.is-outlined {
   background-color: transparent;
@@ -1017,11 +1017,11 @@ a.box:active {
 }
 .button.is-primary.is-inverted.is-outlined {
   background-color: transparent;
-  border-color: #fff;
-  color: #fff;
+  border-color: white;
+  color: white;
 }
 .button.is-primary.is-inverted.is-outlined:hover, .button.is-primary.is-inverted.is-outlined.is-hovered, .button.is-primary.is-inverted.is-outlined:focus, .button.is-primary.is-inverted.is-outlined.is-focused {
-  background-color: #fff;
+  background-color: white;
   color: #885bfb;
 }
 .button.is-primary.is-inverted.is-outlined.is-loading:hover::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-hovered::after, .button.is-primary.is-inverted.is-outlined.is-loading:focus::after, .button.is-primary.is-inverted.is-outlined.is-loading.is-focused::after {
@@ -1029,9 +1029,9 @@ a.box:active {
 }
 .button.is-primary.is-inverted.is-outlined[disabled], fieldset[disabled] .button.is-primary.is-inverted.is-outlined {
   background-color: transparent;
-  border-color: #fff;
+  border-color: white;
   box-shadow: none;
-  color: #fff;
+  color: white;
 }
 .button.is-primary.is-light {
   background-color: #f1ebfe;
@@ -2120,9 +2120,7 @@ a.box:active {
 .button.is-small:not(.is-rounded) {
   border-radius: 2px;
 }
-.button.is-normal, #search-results span.button.guilabel,
-.content span.button.guilabel,
-.document span.button.guilabel {
+.button.is-normal {
   font-size: 1rem;
 }
 .button.is-medium {
@@ -2431,9 +2429,7 @@ a.box:active {
 .content.is-small {
   font-size: 0.75rem;
 }
-.content.is-normal, #search-results span.content.guilabel,
-.content span.content.guilabel,
-.document span.content.guilabel {
+.content.is-normal {
   font-size: 1rem;
 }
 .content.is-medium {
@@ -2754,15 +2750,15 @@ div.icon-text {
   position: absolute;
   top: 0.5rem;
 }
-.notification .title, .notification #search-results h1, #search-results .notification h1,
-.notification .content h1,
-.content .notification h1,
-.notification .document h1,
-.document .notification h1, .notification #search-results .topic-title, #search-results .notification .topic-title,
-.notification .content .topic-title,
-.content .notification .topic-title,
-.notification .document .topic-title,
-.document .notification .topic-title,
+.notification .title, .notification .dark-palette #search-results .topic-title, .dark-palette #search-results .notification .topic-title,
+.notification .dark-palette .content .topic-title,
+.dark-palette .content .notification .topic-title,
+.notification .dark-palette .document .topic-title,
+.dark-palette .document .notification .topic-title, .notification .light-palette #search-results .topic-title, .light-palette #search-results .notification .topic-title,
+.notification .light-palette .content .topic-title,
+.light-palette .content .notification .topic-title,
+.notification .light-palette .document .topic-title,
+.light-palette .document .notification .topic-title,
 .notification .subtitle,
 .notification .content {
   color: currentColor;
@@ -2785,7 +2781,7 @@ div.icon-text {
 }
 .notification.is-primary {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .notification.is-primary.is-light {
   background-color: #f1ebfe;
@@ -3173,7 +3169,7 @@ div.icon-text {
 .table th.is-primary {
   background-color: #885bfb;
   border-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .table td.is-link,
 .table th.is-link {
@@ -3249,7 +3245,7 @@ div.icon-text {
 .table td.is-selected,
 .table th.is-selected {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .table td.is-selected a,
 .table td.is-selected strong,
@@ -3269,7 +3265,7 @@ div.icon-text {
 }
 .table tr.is-selected {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .table tr.is-selected a,
 .table tr.is-selected strong {
@@ -3277,7 +3273,7 @@ div.icon-text {
 }
 .table tr.is-selected td,
 .table tr.is-selected th {
-  border-color: #fff;
+  border-color: white;
   color: currentColor;
 }
 .table thead {
@@ -3344,42 +3340,10 @@ div.icon-text {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-.tags .tag, .tags #search-results span.guilabel, #search-results .tags span.guilabel,
-.tags .content span.guilabel,
-.content .tags span.guilabel,
-.tags .document span.guilabel,
-.document .tags span.guilabel, .tags #search-results .label, #search-results .tags .label,
-.tags .content .label,
-.content .tags .label,
-.tags .document .label,
-.document .tags .label,
-.tags .content .glossary dt,
-.content .glossary .tags dt,
-.tags .document .glossary dt,
-.document .glossary .tags dt, .tags #search-results dt, #search-results .tags dt,
-.tags .content dt,
-.content .tags dt,
-.tags .document dt,
-.document .tags dt {
+.tags .tag {
   margin-bottom: 0.5rem;
 }
-.tags .tag:not(:last-child), .tags #search-results span.guilabel:not(:last-child), #search-results .tags span.guilabel:not(:last-child),
-.tags .content span.guilabel:not(:last-child),
-.content .tags span.guilabel:not(:last-child),
-.tags .document span.guilabel:not(:last-child),
-.document .tags span.guilabel:not(:last-child), .tags #search-results .label:not(:last-child), #search-results .tags .label:not(:last-child),
-.tags .content .label:not(:last-child),
-.content .tags .label:not(:last-child),
-.tags .document .label:not(:last-child),
-.document .tags .label:not(:last-child),
-.tags .content .glossary dt:not(:last-child),
-.content .glossary .tags dt:not(:last-child),
-.tags .document .glossary dt:not(:last-child),
-.document .glossary .tags dt:not(:last-child), .tags #search-results dt:not(:last-child), #search-results .tags dt:not(:last-child),
-.tags .content dt:not(:last-child),
-.content .tags dt:not(:last-child),
-.tags .document dt:not(:last-child),
-.document .tags dt:not(:last-child) {
+.tags .tag:not(:last-child) {
   margin-right: 0.5rem;
 }
 .tags:last-child {
@@ -3388,178 +3352,42 @@ div.icon-text {
 .tags:not(:last-child) {
   margin-bottom: 1rem;
 }
-.tags.are-medium .tag:not(.is-normal):not(.is-large), .tags.are-medium #search-results span.guilabel:not(.is-normal):not(.is-large), #search-results .tags.are-medium span.guilabel:not(.is-normal):not(.is-large),
-.tags.are-medium .content span.guilabel:not(.is-normal):not(.is-large),
-.content .tags.are-medium span.guilabel:not(.is-normal):not(.is-large),
-.tags.are-medium .document span.guilabel:not(.is-normal):not(.is-large),
-.document .tags.are-medium span.guilabel:not(.is-normal):not(.is-large), .tags.are-medium #search-results .label:not(.is-normal):not(.is-large), #search-results .tags.are-medium .label:not(.is-normal):not(.is-large),
-.tags.are-medium .content .label:not(.is-normal):not(.is-large),
-.content .tags.are-medium .label:not(.is-normal):not(.is-large),
-.tags.are-medium .document .label:not(.is-normal):not(.is-large),
-.document .tags.are-medium .label:not(.is-normal):not(.is-large),
-.tags.are-medium .content .glossary dt:not(.is-normal):not(.is-large),
-.content .glossary .tags.are-medium dt:not(.is-normal):not(.is-large),
-.tags.are-medium .document .glossary dt:not(.is-normal):not(.is-large),
-.document .glossary .tags.are-medium dt:not(.is-normal):not(.is-large), .tags.are-medium #search-results dt:not(.is-normal):not(.is-large), #search-results .tags.are-medium dt:not(.is-normal):not(.is-large),
-.tags.are-medium .content dt:not(.is-normal):not(.is-large),
-.content .tags.are-medium dt:not(.is-normal):not(.is-large),
-.tags.are-medium .document dt:not(.is-normal):not(.is-large),
-.document .tags.are-medium dt:not(.is-normal):not(.is-large) {
+.tags.are-medium .tag:not(.is-normal):not(.is-large) {
   font-size: 1rem;
 }
-.tags.are-large .tag:not(.is-normal):not(.is-medium), .tags.are-large #search-results span.guilabel:not(.is-normal):not(.is-medium), #search-results .tags.are-large span.guilabel:not(.is-normal):not(.is-medium),
-.tags.are-large .content span.guilabel:not(.is-normal):not(.is-medium),
-.content .tags.are-large span.guilabel:not(.is-normal):not(.is-medium),
-.tags.are-large .document span.guilabel:not(.is-normal):not(.is-medium),
-.document .tags.are-large span.guilabel:not(.is-normal):not(.is-medium), .tags.are-large #search-results .label:not(.is-normal):not(.is-medium), #search-results .tags.are-large .label:not(.is-normal):not(.is-medium),
-.tags.are-large .content .label:not(.is-normal):not(.is-medium),
-.content .tags.are-large .label:not(.is-normal):not(.is-medium),
-.tags.are-large .document .label:not(.is-normal):not(.is-medium),
-.document .tags.are-large .label:not(.is-normal):not(.is-medium),
-.tags.are-large .content .glossary dt:not(.is-normal):not(.is-medium),
-.content .glossary .tags.are-large dt:not(.is-normal):not(.is-medium),
-.tags.are-large .document .glossary dt:not(.is-normal):not(.is-medium),
-.document .glossary .tags.are-large dt:not(.is-normal):not(.is-medium), .tags.are-large #search-results dt:not(.is-normal):not(.is-medium), #search-results .tags.are-large dt:not(.is-normal):not(.is-medium),
-.tags.are-large .content dt:not(.is-normal):not(.is-medium),
-.content .tags.are-large dt:not(.is-normal):not(.is-medium),
-.tags.are-large .document dt:not(.is-normal):not(.is-medium),
-.document .tags.are-large dt:not(.is-normal):not(.is-medium) {
+.tags.are-large .tag:not(.is-normal):not(.is-medium) {
   font-size: 1.25rem;
 }
 .tags.is-centered {
   justify-content: center;
 }
-.tags.is-centered .tag, .tags.is-centered #search-results span.guilabel, #search-results .tags.is-centered span.guilabel,
-.tags.is-centered .content span.guilabel,
-.content .tags.is-centered span.guilabel,
-.tags.is-centered .document span.guilabel,
-.document .tags.is-centered span.guilabel, .tags.is-centered #search-results .label, #search-results .tags.is-centered .label,
-.tags.is-centered .content .label,
-.content .tags.is-centered .label,
-.tags.is-centered .document .label,
-.document .tags.is-centered .label,
-.tags.is-centered .content .glossary dt,
-.content .glossary .tags.is-centered dt,
-.tags.is-centered .document .glossary dt,
-.document .glossary .tags.is-centered dt, .tags.is-centered #search-results dt, #search-results .tags.is-centered dt,
-.tags.is-centered .content dt,
-.content .tags.is-centered dt,
-.tags.is-centered .document dt,
-.document .tags.is-centered dt {
+.tags.is-centered .tag {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
 }
 .tags.is-right {
   justify-content: flex-end;
 }
-.tags.is-right .tag:not(:first-child), .tags.is-right #search-results span.guilabel:not(:first-child), #search-results .tags.is-right span.guilabel:not(:first-child),
-.tags.is-right .content span.guilabel:not(:first-child),
-.content .tags.is-right span.guilabel:not(:first-child),
-.tags.is-right .document span.guilabel:not(:first-child),
-.document .tags.is-right span.guilabel:not(:first-child), .tags.is-right #search-results .label:not(:first-child), #search-results .tags.is-right .label:not(:first-child),
-.tags.is-right .content .label:not(:first-child),
-.content .tags.is-right .label:not(:first-child),
-.tags.is-right .document .label:not(:first-child),
-.document .tags.is-right .label:not(:first-child),
-.tags.is-right .content .glossary dt:not(:first-child),
-.content .glossary .tags.is-right dt:not(:first-child),
-.tags.is-right .document .glossary dt:not(:first-child),
-.document .glossary .tags.is-right dt:not(:first-child), .tags.is-right #search-results dt:not(:first-child), #search-results .tags.is-right dt:not(:first-child),
-.tags.is-right .content dt:not(:first-child),
-.content .tags.is-right dt:not(:first-child),
-.tags.is-right .document dt:not(:first-child),
-.document .tags.is-right dt:not(:first-child) {
+.tags.is-right .tag:not(:first-child) {
   margin-left: 0.5rem;
 }
-.tags.is-right .tag:not(:last-child), .tags.is-right #search-results span.guilabel:not(:last-child), #search-results .tags.is-right span.guilabel:not(:last-child),
-.tags.is-right .content span.guilabel:not(:last-child),
-.content .tags.is-right span.guilabel:not(:last-child),
-.tags.is-right .document span.guilabel:not(:last-child),
-.document .tags.is-right span.guilabel:not(:last-child), .tags.is-right #search-results .label:not(:last-child), #search-results .tags.is-right .label:not(:last-child),
-.tags.is-right .content .label:not(:last-child),
-.content .tags.is-right .label:not(:last-child),
-.tags.is-right .document .label:not(:last-child),
-.document .tags.is-right .label:not(:last-child),
-.tags.is-right .content .glossary dt:not(:last-child),
-.content .glossary .tags.is-right dt:not(:last-child),
-.tags.is-right .document .glossary dt:not(:last-child),
-.document .glossary .tags.is-right dt:not(:last-child), .tags.is-right #search-results dt:not(:last-child), #search-results .tags.is-right dt:not(:last-child),
-.tags.is-right .content dt:not(:last-child),
-.content .tags.is-right dt:not(:last-child),
-.tags.is-right .document dt:not(:last-child),
-.document .tags.is-right dt:not(:last-child) {
+.tags.is-right .tag:not(:last-child) {
   margin-right: 0;
 }
-.tags.has-addons .tag, .tags.has-addons #search-results span.guilabel, #search-results .tags.has-addons span.guilabel,
-.tags.has-addons .content span.guilabel,
-.content .tags.has-addons span.guilabel,
-.tags.has-addons .document span.guilabel,
-.document .tags.has-addons span.guilabel, .tags.has-addons #search-results .label, #search-results .tags.has-addons .label,
-.tags.has-addons .content .label,
-.content .tags.has-addons .label,
-.tags.has-addons .document .label,
-.document .tags.has-addons .label,
-.tags.has-addons .content .glossary dt,
-.content .glossary .tags.has-addons dt,
-.tags.has-addons .document .glossary dt,
-.document .glossary .tags.has-addons dt, .tags.has-addons #search-results dt, #search-results .tags.has-addons dt,
-.tags.has-addons .content dt,
-.content .tags.has-addons dt,
-.tags.has-addons .document dt,
-.document .tags.has-addons dt {
+.tags.has-addons .tag {
   margin-right: 0;
 }
-.tags.has-addons .tag:not(:first-child), .tags.has-addons #search-results span.guilabel:not(:first-child), #search-results .tags.has-addons span.guilabel:not(:first-child),
-.tags.has-addons .content span.guilabel:not(:first-child),
-.content .tags.has-addons span.guilabel:not(:first-child),
-.tags.has-addons .document span.guilabel:not(:first-child),
-.document .tags.has-addons span.guilabel:not(:first-child), .tags.has-addons #search-results .label:not(:first-child), #search-results .tags.has-addons .label:not(:first-child),
-.tags.has-addons .content .label:not(:first-child),
-.content .tags.has-addons .label:not(:first-child),
-.tags.has-addons .document .label:not(:first-child),
-.document .tags.has-addons .label:not(:first-child),
-.tags.has-addons .content .glossary dt:not(:first-child),
-.content .glossary .tags.has-addons dt:not(:first-child),
-.tags.has-addons .document .glossary dt:not(:first-child),
-.document .glossary .tags.has-addons dt:not(:first-child), .tags.has-addons #search-results dt:not(:first-child), #search-results .tags.has-addons dt:not(:first-child),
-.tags.has-addons .content dt:not(:first-child),
-.content .tags.has-addons dt:not(:first-child),
-.tags.has-addons .document dt:not(:first-child),
-.document .tags.has-addons dt:not(:first-child) {
+.tags.has-addons .tag:not(:first-child) {
   margin-left: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.tags.has-addons .tag:not(:last-child), .tags.has-addons #search-results span.guilabel:not(:last-child), #search-results .tags.has-addons span.guilabel:not(:last-child),
-.tags.has-addons .content span.guilabel:not(:last-child),
-.content .tags.has-addons span.guilabel:not(:last-child),
-.tags.has-addons .document span.guilabel:not(:last-child),
-.document .tags.has-addons span.guilabel:not(:last-child), .tags.has-addons #search-results .label:not(:last-child), #search-results .tags.has-addons .label:not(:last-child),
-.tags.has-addons .content .label:not(:last-child),
-.content .tags.has-addons .label:not(:last-child),
-.tags.has-addons .document .label:not(:last-child),
-.document .tags.has-addons .label:not(:last-child),
-.tags.has-addons .content .glossary dt:not(:last-child),
-.content .glossary .tags.has-addons dt:not(:last-child),
-.tags.has-addons .document .glossary dt:not(:last-child),
-.document .glossary .tags.has-addons dt:not(:last-child), .tags.has-addons #search-results dt:not(:last-child), #search-results .tags.has-addons dt:not(:last-child),
-.tags.has-addons .content dt:not(:last-child),
-.content .tags.has-addons dt:not(:last-child),
-.tags.has-addons .document dt:not(:last-child),
-.document .tags.has-addons dt:not(:last-child) {
+.tags.has-addons .tag:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.tag:not(body), #search-results span.guilabel:not(body),
-.content span.guilabel:not(body),
-.document span.guilabel:not(body), #search-results .label:not(body),
-.content .label:not(body),
-.document .label:not(body), #search-results .glossary dt:not(body),
-.content .glossary dt:not(body),
-.document .glossary dt:not(body), #search-results dt:not(body),
-.content dt:not(body),
-.document dt:not(body) {
+.tag:not(body) {
   align-items: center;
   background-color: #faf0f0;
   border-radius: 4px;
@@ -3573,468 +3401,150 @@ div.icon-text {
   padding-right: 0.75em;
   white-space: nowrap;
 }
-.tag:not(body) .delete, #search-results span.guilabel:not(body) .delete,
-.content span.guilabel:not(body) .delete,
-.document span.guilabel:not(body) .delete, #search-results .label:not(body) .delete,
-.content .label:not(body) .delete,
-.document .label:not(body) .delete,
-.content .glossary dt:not(body) .delete,
-.document .glossary dt:not(body) .delete, #search-results dt:not(body) .delete,
-.content dt:not(body) .delete,
-.document dt:not(body) .delete {
+.tag:not(body) .delete {
   margin-left: 0.25rem;
   margin-right: -0.375rem;
 }
-.tag:not(body).is-white, #search-results span.guilabel:not(body).is-white,
-.content span.guilabel:not(body).is-white,
-.document span.guilabel:not(body).is-white, #search-results .label:not(body).is-white,
-.content .label:not(body).is-white,
-.document .label:not(body).is-white,
-.content .glossary dt:not(body).is-white,
-.document .glossary dt:not(body).is-white, #search-results dt:not(body).is-white,
-.content dt:not(body).is-white,
-.document dt:not(body).is-white {
+.tag:not(body).is-white {
   background-color: #fafafa;
   color: #0d1117;
 }
-.tag:not(body).is-black, #search-results span.guilabel:not(body).is-black,
-.content span.guilabel:not(body).is-black,
-.document span.guilabel:not(body).is-black, #search-results .label:not(body).is-black,
-.content .label:not(body).is-black,
-.document .label:not(body).is-black,
-.content .glossary dt:not(body).is-black,
-.document .glossary dt:not(body).is-black, #search-results dt:not(body).is-black,
-.content dt:not(body).is-black,
-.document dt:not(body).is-black {
+.tag:not(body).is-black {
   background-color: #0d1117;
   color: #fafafa;
 }
-.tag:not(body).is-light, #search-results span.guilabel:not(body).is-light,
-.content span.guilabel:not(body).is-light,
-.document span.guilabel:not(body).is-light, #search-results .label:not(body).is-light,
-.content .label:not(body).is-light,
-.document .label:not(body).is-light,
-.content .glossary dt:not(body).is-light,
-.document .glossary dt:not(body).is-light, #search-results dt:not(body).is-light,
-.content dt:not(body).is-light,
-.document dt:not(body).is-light {
+.tag:not(body).is-light {
   background-color: #faf0f0;
   color: rgba(0, 0, 0, 0.7);
 }
-.tag:not(body).is-dark, #search-results span.guilabel:not(body).is-dark,
-.content span.guilabel:not(body).is-dark,
-.document span.guilabel:not(body).is-dark, #search-results .label:not(body).is-dark,
-.content .label:not(body).is-dark,
-.document .label:not(body).is-dark,
-.content .glossary dt:not(body).is-dark,
-.document .glossary dt:not(body).is-dark, #search-results dt:not(body).is-dark,
-.content dt:not(body).is-dark,
-.document dt:not(body).is-dark {
+.tag:not(body).is-dark {
   background-color: #2f3546;
   color: #fff;
 }
-.tag:not(body).is-primary, #search-results span.guilabel:not(body).is-primary,
-.content span.guilabel:not(body).is-primary,
-.document span.guilabel:not(body).is-primary, #search-results .label:not(body).is-primary,
-.content .label:not(body).is-primary,
-.document .label:not(body).is-primary,
-.content .glossary dt:not(body).is-primary,
-.document .glossary dt:not(body).is-primary, #search-results dt:not(body).is-primary,
-.content dt:not(body).is-primary,
-.document dt:not(body).is-primary {
+.tag:not(body).is-primary {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
-.tag:not(body).is-primary.is-light, #search-results span.guilabel:not(body).is-primary.is-light,
-.content span.guilabel:not(body).is-primary.is-light,
-.document span.guilabel:not(body).is-primary.is-light, #search-results .label:not(body).is-primary.is-light,
-.content .label:not(body).is-primary.is-light,
-.document .label:not(body).is-primary.is-light,
-.content .glossary dt:not(body).is-primary.is-light,
-.document .glossary dt:not(body).is-primary.is-light, #search-results dt:not(body).is-primary.is-light,
-.content dt:not(body).is-primary.is-light,
-.document dt:not(body).is-primary.is-light {
+.tag:not(body).is-primary.is-light {
   background-color: #f1ebfe;
   color: #4206db;
 }
-.tag:not(body).is-link, #search-results span.guilabel:not(body).is-link,
-.content span.guilabel:not(body).is-link,
-.document span.guilabel:not(body).is-link, #search-results .label:not(body).is-link,
-.content .label:not(body).is-link,
-.document .label:not(body).is-link,
-.content .glossary dt:not(body).is-link,
-.document .glossary dt:not(body).is-link, #search-results dt:not(body).is-link,
-.content dt:not(body).is-link,
-.document dt:not(body).is-link {
+.tag:not(body).is-link {
   background-color: #4078f2;
   color: #736a59;
 }
-.tag:not(body).is-link.is-light, #search-results span.guilabel:not(body).is-link.is-light,
-.content span.guilabel:not(body).is-link.is-light,
-.document span.guilabel:not(body).is-link.is-light, #search-results .label:not(body).is-link.is-light,
-.content .label:not(body).is-link.is-light,
-.document .label:not(body).is-link.is-light,
-.content .glossary dt:not(body).is-link.is-light,
-.document .glossary dt:not(body).is-link.is-light, #search-results dt:not(body).is-link.is-light,
-.content dt:not(body).is-link.is-light,
-.document dt:not(body).is-link.is-light {
+.tag:not(body).is-link.is-light {
   background-color: #88abf7;
   color: #30529c;
 }
-.tag:not(body).is-info, #search-results span.guilabel:not(body).is-info,
-.content span.guilabel:not(body).is-info,
-.document span.guilabel:not(body).is-info, #search-results .label:not(body).is-info,
-.content .label:not(body).is-info,
-.document .label:not(body).is-info,
-.content .glossary dt:not(body).is-info,
-.document .glossary dt:not(body).is-info, #search-results dt:not(body).is-info,
-.content dt:not(body).is-info,
-.document dt:not(body).is-info {
+.tag:not(body).is-info {
   background-color: #449cc5;
   color: #fff;
 }
-.tag:not(body).is-info.is-light, #search-results span.guilabel:not(body).is-info.is-light,
-.content span.guilabel:not(body).is-info.is-light,
-.document span.guilabel:not(body).is-info.is-light, #search-results .label:not(body).is-info.is-light,
-.content .label:not(body).is-info.is-light,
-.document .label:not(body).is-info.is-light,
-.content .glossary dt:not(body).is-info.is-light,
-.document .glossary dt:not(body).is-info.is-light, #search-results dt:not(body).is-info.is-light,
-.content dt:not(body).is-info.is-light,
-.document dt:not(body).is-info.is-light {
+.tag:not(body).is-info.is-light {
   background-color: #eff7fa;
   color: #2f7798;
 }
-.tag:not(body).is-success, #search-results span.guilabel:not(body).is-success,
-.content span.guilabel:not(body).is-success,
-.document span.guilabel:not(body).is-success, #search-results .label:not(body).is-success,
-.content .label:not(body).is-success,
-.document .label:not(body).is-success,
-.content .glossary dt:not(body).is-success,
-.document .glossary dt:not(body).is-success, #search-results dt:not(body).is-success,
-.content dt:not(body).is-success,
-.document dt:not(body).is-success {
+.tag:not(body).is-success {
   background-color: #00ad6b;
   color: #fff;
 }
-.tag:not(body).is-success.is-light, #search-results span.guilabel:not(body).is-success.is-light,
-.content span.guilabel:not(body).is-success.is-light,
-.document span.guilabel:not(body).is-success.is-light, #search-results .label:not(body).is-success.is-light,
-.content .label:not(body).is-success.is-light,
-.document .label:not(body).is-success.is-light,
-.content .glossary dt:not(body).is-success.is-light,
-.document .glossary dt:not(body).is-success.is-light, #search-results dt:not(body).is-success.is-light,
-.content dt:not(body).is-success.is-light,
-.document dt:not(body).is-success.is-light {
+.tag:not(body).is-success.is-light {
   background-color: #ebfff7;
   color: #00c278;
 }
-.tag:not(body).is-warning, #search-results span.guilabel:not(body).is-warning,
-.content span.guilabel:not(body).is-warning,
-.document span.guilabel:not(body).is-warning, #search-results .label:not(body).is-warning,
-.content .label:not(body).is-warning,
-.document .label:not(body).is-warning,
-.content .glossary dt:not(body).is-warning,
-.document .glossary dt:not(body).is-warning, #search-results dt:not(body).is-warning,
-.content dt:not(body).is-warning,
-.document dt:not(body).is-warning {
+.tag:not(body).is-warning {
   background-color: #ffc400;
   color: rgba(0, 0, 0, 0.7);
 }
-.tag:not(body).is-warning.is-light, #search-results span.guilabel:not(body).is-warning.is-light,
-.content span.guilabel:not(body).is-warning.is-light,
-.document span.guilabel:not(body).is-warning.is-light, #search-results .label:not(body).is-warning.is-light,
-.content .label:not(body).is-warning.is-light,
-.document .label:not(body).is-warning.is-light,
-.content .glossary dt:not(body).is-warning.is-light,
-.document .glossary dt:not(body).is-warning.is-light, #search-results dt:not(body).is-warning.is-light,
-.content dt:not(body).is-warning.is-light,
-.document dt:not(body).is-warning.is-light {
+.tag:not(body).is-warning.is-light {
   background-color: #fffaeb;
   color: #947100;
 }
-.tag:not(body).is-danger, #search-results span.guilabel:not(body).is-danger,
-.content span.guilabel:not(body).is-danger,
-.document span.guilabel:not(body).is-danger, #search-results .label:not(body).is-danger,
-.content .label:not(body).is-danger,
-.document .label:not(body).is-danger,
-.content .glossary dt:not(body).is-danger,
-.document .glossary dt:not(body).is-danger, #search-results dt:not(body).is-danger,
-.content dt:not(body).is-danger,
-.document dt:not(body).is-danger {
+.tag:not(body).is-danger {
   background-color: #e45649;
   color: #fff;
 }
-.tag:not(body).is-danger.is-light, #search-results span.guilabel:not(body).is-danger.is-light,
-.content span.guilabel:not(body).is-danger.is-light,
-.document span.guilabel:not(body).is-danger.is-light, #search-results .label:not(body).is-danger.is-light,
-.content .label:not(body).is-danger.is-light,
-.document .label:not(body).is-danger.is-light,
-.content .glossary dt:not(body).is-danger.is-light,
-.document .glossary dt:not(body).is-danger.is-light, #search-results dt:not(body).is-danger.is-light,
-.content dt:not(body).is-danger.is-light,
-.document dt:not(body).is-danger.is-light {
+.tag:not(body).is-danger.is-light {
   background-color: #fcefed;
   color: #ba291c;
 }
-.tag:not(body).is-redish, #search-results span.guilabel:not(body).is-redish,
-.content span.guilabel:not(body).is-redish,
-.document span.guilabel:not(body).is-redish, #search-results .label:not(body).is-redish,
-.content .label:not(body).is-redish,
-.document .label:not(body).is-redish,
-.content .glossary dt:not(body).is-redish,
-.document .glossary dt:not(body).is-redish, #search-results dt:not(body).is-redish,
-.content dt:not(body).is-redish,
-.document dt:not(body).is-redish {
+.tag:not(body).is-redish {
   background-color: #ca1243;
   color: #fff;
 }
-.tag:not(body).is-redish.is-light, #search-results span.guilabel:not(body).is-redish.is-light,
-.content span.guilabel:not(body).is-redish.is-light,
-.document span.guilabel:not(body).is-redish.is-light, #search-results .label:not(body).is-redish.is-light,
-.content .label:not(body).is-redish.is-light,
-.document .label:not(body).is-redish.is-light,
-.content .glossary dt:not(body).is-redish.is-light,
-.document .glossary dt:not(body).is-redish.is-light, #search-results dt:not(body).is-redish.is-light,
-.content dt:not(body).is-redish.is-light,
-.document dt:not(body).is-redish.is-light {
+.tag:not(body).is-redish.is-light {
   background-color: #fdecf1;
   color: #e6144c;
 }
-.tag:not(body).is-blueish, #search-results span.guilabel:not(body).is-blueish,
-.content span.guilabel:not(body).is-blueish,
-.document span.guilabel:not(body).is-blueish, #search-results .label:not(body).is-blueish,
-.content .label:not(body).is-blueish,
-.document .label:not(body).is-blueish,
-.content .glossary dt:not(body).is-blueish,
-.document .glossary dt:not(body).is-blueish, #search-results dt:not(body).is-blueish,
-.content dt:not(body).is-blueish,
-.document dt:not(body).is-blueish {
+.tag:not(body).is-blueish {
   background-color: #a3c0ff;
   color: rgba(0, 0, 0, 0.7);
 }
-.tag:not(body).is-blueish.is-light, #search-results span.guilabel:not(body).is-blueish.is-light,
-.content span.guilabel:not(body).is-blueish.is-light,
-.document span.guilabel:not(body).is-blueish.is-light, #search-results .label:not(body).is-blueish.is-light,
-.content .label:not(body).is-blueish.is-light,
-.document .label:not(body).is-blueish.is-light,
-.content .glossary dt:not(body).is-blueish.is-light,
-.document .glossary dt:not(body).is-blueish.is-light, #search-results dt:not(body).is-blueish.is-light,
-.content dt:not(body).is-blueish.is-light,
-.document dt:not(body).is-blueish.is-light {
+.tag:not(body).is-blueish.is-light {
   background-color: #ebf1ff;
   color: #002f94;
 }
-.tag:not(body).is-pink, #search-results span.guilabel:not(body).is-pink,
-.content span.guilabel:not(body).is-pink,
-.document span.guilabel:not(body).is-pink, #search-results .label:not(body).is-pink,
-.content .label:not(body).is-pink,
-.document .label:not(body).is-pink,
-.content .glossary dt:not(body).is-pink,
-.document .glossary dt:not(body).is-pink, #search-results dt:not(body).is-pink,
-.content dt:not(body).is-pink,
-.document dt:not(body).is-pink {
+.tag:not(body).is-pink {
   background-color: #f57fef;
   color: #fff;
 }
-.tag:not(body).is-pink.is-light, #search-results span.guilabel:not(body).is-pink.is-light,
-.content span.guilabel:not(body).is-pink.is-light,
-.document span.guilabel:not(body).is-pink.is-light, #search-results .label:not(body).is-pink.is-light,
-.content .label:not(body).is-pink.is-light,
-.document .label:not(body).is-pink.is-light,
-.content .glossary dt:not(body).is-pink.is-light,
-.document .glossary dt:not(body).is-pink.is-light, #search-results dt:not(body).is-pink.is-light,
-.content dt:not(body).is-pink.is-light,
-.document dt:not(body).is-pink.is-light {
+.tag:not(body).is-pink.is-light {
   background-color: #feecfd;
   color: #9d0c95;
 }
-.tag:not(body).is-gold, #search-results span.guilabel:not(body).is-gold,
-.content span.guilabel:not(body).is-gold,
-.document span.guilabel:not(body).is-gold, #search-results .label:not(body).is-gold,
-.content .label:not(body).is-gold,
-.document .label:not(body).is-gold,
-.content .glossary dt:not(body).is-gold,
-.document .glossary dt:not(body).is-gold, #search-results dt:not(body).is-gold,
-.content dt:not(body).is-gold,
-.document dt:not(body).is-gold {
+.tag:not(body).is-gold {
   background-color: #c18401;
   color: #fff;
 }
-.tag:not(body).is-gold.is-light, #search-results span.guilabel:not(body).is-gold.is-light,
-.content span.guilabel:not(body).is-gold.is-light,
-.document span.guilabel:not(body).is-gold.is-light, #search-results .label:not(body).is-gold.is-light,
-.content .label:not(body).is-gold.is-light,
-.document .label:not(body).is-gold.is-light,
-.content .glossary dt:not(body).is-gold.is-light,
-.document .glossary dt:not(body).is-gold.is-light, #search-results dt:not(body).is-gold.is-light,
-.content dt:not(body).is-gold.is-light,
-.document dt:not(body).is-gold.is-light {
+.tag:not(body).is-gold.is-light {
   background-color: #fff9eb;
   color: #c68801;
 }
-.tag:not(body).is-greenish, #search-results span.guilabel:not(body).is-greenish,
-.content span.guilabel:not(body).is-greenish,
-.document span.guilabel:not(body).is-greenish, #search-results .label:not(body).is-greenish,
-.content .label:not(body).is-greenish,
-.document .label:not(body).is-greenish,
-.content .glossary dt:not(body).is-greenish,
-.document .glossary dt:not(body).is-greenish, #search-results dt:not(body).is-greenish,
-.content dt:not(body).is-greenish,
-.document dt:not(body).is-greenish {
+.tag:not(body).is-greenish {
   background-color: #5ea14f;
   color: #fff;
 }
-.tag:not(body).is-greenish.is-light, #search-results span.guilabel:not(body).is-greenish.is-light,
-.content span.guilabel:not(body).is-greenish.is-light,
-.document span.guilabel:not(body).is-greenish.is-light, #search-results .label:not(body).is-greenish.is-light,
-.content .label:not(body).is-greenish.is-light,
-.document .label:not(body).is-greenish.is-light,
-.content .glossary dt:not(body).is-greenish.is-light,
-.document .glossary dt:not(body).is-greenish.is-light, #search-results dt:not(body).is-greenish.is-light,
-.content dt:not(body).is-greenish.is-light,
-.document dt:not(body).is-greenish.is-light {
+.tag:not(body).is-greenish.is-light {
   background-color: #f3f8f1;
   color: #4e8542;
 }
-.tag:not(body).is-blood, #search-results span.guilabel:not(body).is-blood,
-.content span.guilabel:not(body).is-blood,
-.document span.guilabel:not(body).is-blood, #search-results .label:not(body).is-blood,
-.content .label:not(body).is-blood,
-.document .label:not(body).is-blood,
-.content .glossary dt:not(body).is-blood,
-.document .glossary dt:not(body).is-blood, #search-results dt:not(body).is-blood,
-.content dt:not(body).is-blood,
-.document dt:not(body).is-blood {
+.tag:not(body).is-blood {
   background-color: #39040c;
   color: #fff;
 }
-.tag:not(body).is-blood.is-light, #search-results span.guilabel:not(body).is-blood.is-light,
-.content span.guilabel:not(body).is-blood.is-light,
-.document span.guilabel:not(body).is-blood.is-light, #search-results .label:not(body).is-blood.is-light,
-.content .label:not(body).is-blood.is-light,
-.document .label:not(body).is-blood.is-light,
-.content .glossary dt:not(body).is-blood.is-light,
-.document .glossary dt:not(body).is-blood.is-light, #search-results dt:not(body).is-blood.is-light,
-.content dt:not(body).is-blood.is-light,
-.document dt:not(body).is-blood.is-light {
+.tag:not(body).is-blood.is-light {
   background-color: #feecef;
   color: #f02d4a;
 }
-.tag:not(body).is-normal,
-.content span.guilabel:not(body).is-normal,
-.document span.guilabel:not(body).is-normal, #search-results .label:not(body).is-normal,
-.content .label:not(body).is-normal,
-.document .label:not(body).is-normal,
-.content .glossary dt:not(body).is-normal,
-.document .glossary dt:not(body).is-normal, #search-results dt:not(body).is-normal,
-.content dt:not(body).is-normal,
-.document dt:not(body).is-normal, #search-results span.guilabel:not(body),
-.content span.tag.guilabel:not(body),
-.content span.guilabel:not(body),
-.document .content span.guilabel:not(body),
-.content .document span.guilabel:not(body),
-.content span.label.guilabel:not(body),
-.document .content span.label.guilabel:not(body),
-.content .document span.label.guilabel:not(body),
-.document span.tag.guilabel:not(body),
-.content .document span.guilabel:not(body),
-.document .content span.guilabel:not(body),
-.document span.guilabel:not(body),
-.content .document span.label.guilabel:not(body),
-.document .content span.label.guilabel:not(body),
-.document span.label.guilabel:not(body) {
+.tag:not(body).is-normal {
   font-size: 0.75rem;
 }
-.tag:not(body).is-medium, #search-results span.guilabel:not(body).is-medium,
-.content span.guilabel:not(body).is-medium,
-.document span.guilabel:not(body).is-medium, #search-results .label:not(body).is-medium,
-.content .label:not(body).is-medium,
-.document .label:not(body).is-medium,
-.content .glossary dt:not(body).is-medium,
-.document .glossary dt:not(body).is-medium, #search-results dt:not(body).is-medium,
-.content dt:not(body).is-medium,
-.document dt:not(body).is-medium {
+.tag:not(body).is-medium {
   font-size: 1rem;
 }
-.tag:not(body).is-large, #search-results span.guilabel:not(body).is-large,
-.content span.guilabel:not(body).is-large,
-.document span.guilabel:not(body).is-large, #search-results .label:not(body).is-large,
-.content .label:not(body).is-large,
-.document .label:not(body).is-large,
-.content .glossary dt:not(body).is-large,
-.document .glossary dt:not(body).is-large, #search-results dt:not(body).is-large,
-.content dt:not(body).is-large,
-.document dt:not(body).is-large {
+.tag:not(body).is-large {
   font-size: 1.25rem;
 }
-.tag:not(body) .icon:first-child:not(:last-child), #search-results span.guilabel:not(body) .icon:first-child:not(:last-child),
-.content span.guilabel:not(body) .icon:first-child:not(:last-child),
-.document span.guilabel:not(body) .icon:first-child:not(:last-child), #search-results .label:not(body) .icon:first-child:not(:last-child),
-.content .label:not(body) .icon:first-child:not(:last-child),
-.document .label:not(body) .icon:first-child:not(:last-child),
-.content .glossary dt:not(body) .icon:first-child:not(:last-child),
-.document .glossary dt:not(body) .icon:first-child:not(:last-child), #search-results dt:not(body) .icon:first-child:not(:last-child),
-.content dt:not(body) .icon:first-child:not(:last-child),
-.document dt:not(body) .icon:first-child:not(:last-child) {
+.tag:not(body) .icon:first-child:not(:last-child) {
   margin-left: -0.375em;
   margin-right: 0.1875em;
 }
-.tag:not(body) .icon:last-child:not(:first-child), #search-results span.guilabel:not(body) .icon:last-child:not(:first-child),
-.content span.guilabel:not(body) .icon:last-child:not(:first-child),
-.document span.guilabel:not(body) .icon:last-child:not(:first-child), #search-results .label:not(body) .icon:last-child:not(:first-child),
-.content .label:not(body) .icon:last-child:not(:first-child),
-.document .label:not(body) .icon:last-child:not(:first-child),
-.content .glossary dt:not(body) .icon:last-child:not(:first-child),
-.document .glossary dt:not(body) .icon:last-child:not(:first-child), #search-results dt:not(body) .icon:last-child:not(:first-child),
-.content dt:not(body) .icon:last-child:not(:first-child),
-.document dt:not(body) .icon:last-child:not(:first-child) {
+.tag:not(body) .icon:last-child:not(:first-child) {
   margin-left: 0.1875em;
   margin-right: -0.375em;
 }
-.tag:not(body) .icon:first-child:last-child, #search-results span.guilabel:not(body) .icon:first-child:last-child,
-.content span.guilabel:not(body) .icon:first-child:last-child,
-.document span.guilabel:not(body) .icon:first-child:last-child, #search-results .label:not(body) .icon:first-child:last-child,
-.content .label:not(body) .icon:first-child:last-child,
-.document .label:not(body) .icon:first-child:last-child,
-.content .glossary dt:not(body) .icon:first-child:last-child,
-.document .glossary dt:not(body) .icon:first-child:last-child, #search-results dt:not(body) .icon:first-child:last-child,
-.content dt:not(body) .icon:first-child:last-child,
-.document dt:not(body) .icon:first-child:last-child {
+.tag:not(body) .icon:first-child:last-child {
   margin-left: -0.375em;
   margin-right: -0.375em;
 }
-.tag:not(body).is-delete, #search-results span.guilabel:not(body).is-delete,
-.content span.guilabel:not(body).is-delete,
-.document span.guilabel:not(body).is-delete, #search-results .label:not(body).is-delete,
-.content .label:not(body).is-delete,
-.document .label:not(body).is-delete,
-.content .glossary dt:not(body).is-delete,
-.document .glossary dt:not(body).is-delete, #search-results dt:not(body).is-delete,
-.content dt:not(body).is-delete,
-.document dt:not(body).is-delete {
+.tag:not(body).is-delete {
   margin-left: 1px;
   padding: 0;
   position: relative;
   width: 2em;
 }
-.tag:not(body).is-delete::before, #search-results span.guilabel:not(body).is-delete::before,
-.content span.guilabel:not(body).is-delete::before,
-.document span.guilabel:not(body).is-delete::before, #search-results .label:not(body).is-delete::before,
-.content .label:not(body).is-delete::before,
-.document .label:not(body).is-delete::before,
-.content .glossary dt:not(body).is-delete::before,
-.document .glossary dt:not(body).is-delete::before, #search-results dt:not(body).is-delete::before,
-.content dt:not(body).is-delete::before,
-.document dt:not(body).is-delete::before, .tag:not(body).is-delete::after, #search-results span.guilabel:not(body).is-delete::after,
-.content span.guilabel:not(body).is-delete::after,
-.document span.guilabel:not(body).is-delete::after, #search-results .label:not(body).is-delete::after,
-.content .label:not(body).is-delete::after,
-.document .label:not(body).is-delete::after,
-.content .glossary dt:not(body).is-delete::after,
-.document .glossary dt:not(body).is-delete::after, #search-results dt:not(body).is-delete::after,
-.content dt:not(body).is-delete::after,
-.document dt:not(body).is-delete::after {
+.tag:not(body).is-delete::before, .tag:not(body).is-delete::after {
   background-color: currentColor;
   content: "";
   display: block;
@@ -4044,355 +3554,149 @@ div.icon-text {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform-origin: center center;
 }
-.tag:not(body).is-delete::before, #search-results span.guilabel:not(body).is-delete::before,
-.content span.guilabel:not(body).is-delete::before,
-.document span.guilabel:not(body).is-delete::before, #search-results .label:not(body).is-delete::before,
-.content .label:not(body).is-delete::before,
-.document .label:not(body).is-delete::before,
-.content .glossary dt:not(body).is-delete::before,
-.document .glossary dt:not(body).is-delete::before, #search-results dt:not(body).is-delete::before,
-.content dt:not(body).is-delete::before,
-.document dt:not(body).is-delete::before {
+.tag:not(body).is-delete::before {
   height: 1px;
   width: 50%;
 }
-.tag:not(body).is-delete::after, #search-results span.guilabel:not(body).is-delete::after,
-.content span.guilabel:not(body).is-delete::after,
-.document span.guilabel:not(body).is-delete::after, #search-results .label:not(body).is-delete::after,
-.content .label:not(body).is-delete::after,
-.document .label:not(body).is-delete::after,
-.content .glossary dt:not(body).is-delete::after,
-.document .glossary dt:not(body).is-delete::after, #search-results dt:not(body).is-delete::after,
-.content dt:not(body).is-delete::after,
-.document dt:not(body).is-delete::after {
+.tag:not(body).is-delete::after {
   height: 50%;
   width: 1px;
 }
-.tag:not(body).is-delete:hover, #search-results span.guilabel:not(body).is-delete:hover,
-.content span.guilabel:not(body).is-delete:hover,
-.document span.guilabel:not(body).is-delete:hover, #search-results .label:not(body).is-delete:hover,
-.content .label:not(body).is-delete:hover,
-.document .label:not(body).is-delete:hover,
-.content .glossary dt:not(body).is-delete:hover,
-.document .glossary dt:not(body).is-delete:hover, #search-results dt:not(body).is-delete:hover,
-.content dt:not(body).is-delete:hover,
-.document dt:not(body).is-delete:hover, .tag:not(body).is-delete:focus, #search-results span.guilabel:not(body).is-delete:focus,
-.content span.guilabel:not(body).is-delete:focus,
-.document span.guilabel:not(body).is-delete:focus, #search-results .label:not(body).is-delete:focus,
-.content .label:not(body).is-delete:focus,
-.document .label:not(body).is-delete:focus,
-.content .glossary dt:not(body).is-delete:focus,
-.document .glossary dt:not(body).is-delete:focus, #search-results dt:not(body).is-delete:focus,
-.content dt:not(body).is-delete:focus,
-.document dt:not(body).is-delete:focus {
+.tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
   background-color: #f4dddd;
 }
-.tag:not(body).is-delete:active, #search-results span.guilabel:not(body).is-delete:active,
-.content span.guilabel:not(body).is-delete:active,
-.document span.guilabel:not(body).is-delete:active, #search-results .label:not(body).is-delete:active,
-.content .label:not(body).is-delete:active,
-.document .label:not(body).is-delete:active,
-.content .glossary dt:not(body).is-delete:active,
-.document .glossary dt:not(body).is-delete:active, #search-results dt:not(body).is-delete:active,
-.content dt:not(body).is-delete:active,
-.document dt:not(body).is-delete:active {
+.tag:not(body).is-delete:active {
   background-color: #edc9c9;
 }
-.tag:not(body).is-rounded, #search-results span.guilabel:not(body).is-rounded,
-.content span.guilabel:not(body).is-rounded,
-.document span.guilabel:not(body).is-rounded, #search-results .label:not(body).is-rounded,
-.content .label:not(body).is-rounded,
-.document .label:not(body).is-rounded,
-.content .glossary dt:not(body).is-rounded,
-.document .glossary dt:not(body).is-rounded, #search-results dt:not(body).is-rounded,
-.content dt:not(body).is-rounded,
-.document dt:not(body).is-rounded {
+.tag:not(body).is-rounded {
   border-radius: 9999px;
 }
 
-a.tag:hover, #search-results a.label:hover,
-.content a.label:hover,
-.document a.label:hover {
+a.tag:hover {
   text-decoration: underline;
 }
 
-.title, #search-results h1,
-.content h1,
-.document h1, #search-results .topic-title,
-.content .topic-title,
-.document .topic-title,
+.title, .dark-palette #search-results .topic-title,
+.dark-palette .content .topic-title,
+.dark-palette .document .topic-title, .light-palette #search-results .topic-title,
+.light-palette .content .topic-title,
+.light-palette .document .topic-title,
 .subtitle {
   word-break: break-word;
 }
-.title em, #search-results h1 em,
-.content h1 em,
-.document h1 em, #search-results .topic-title em,
-.content .topic-title em,
-.document .topic-title em,
+.title em, .dark-palette #search-results .topic-title em,
+.dark-palette .content .topic-title em,
+.dark-palette .document .topic-title em, .light-palette #search-results .topic-title em,
+.light-palette .content .topic-title em,
+.light-palette .document .topic-title em,
 .title span,
-#search-results h1 span,
-.content h1 span,
-.document h1 span,
-#search-results .topic-title span,
-.content .topic-title span,
-.document .topic-title span,
+.dark-palette #search-results .topic-title span,
+.dark-palette .content .topic-title span,
+.dark-palette .document .topic-title span,
+.light-palette #search-results .topic-title span,
+.light-palette .content .topic-title span,
+.light-palette .document .topic-title span,
 .subtitle em,
 .subtitle span {
   font-weight: inherit;
 }
-.title sub, #search-results h1 sub,
-.content h1 sub,
-.document h1 sub, #search-results .topic-title sub,
-.content .topic-title sub,
-.document .topic-title sub,
+.title sub, .dark-palette #search-results .topic-title sub,
+.dark-palette .content .topic-title sub,
+.dark-palette .document .topic-title sub, .light-palette #search-results .topic-title sub,
+.light-palette .content .topic-title sub,
+.light-palette .document .topic-title sub,
 .subtitle sub {
   font-size: 0.75em;
 }
-.title sup, #search-results h1 sup,
-.content h1 sup,
-.document h1 sup, #search-results .topic-title sup,
-.content .topic-title sup,
-.document .topic-title sup,
+.title sup, .dark-palette #search-results .topic-title sup,
+.dark-palette .content .topic-title sup,
+.dark-palette .document .topic-title sup, .light-palette #search-results .topic-title sup,
+.light-palette .content .topic-title sup,
+.light-palette .document .topic-title sup,
 .subtitle sup {
   font-size: 0.75em;
 }
-.title .tag, #search-results h1 .tag,
-.content h1 .tag,
-.document h1 .tag, #search-results .topic-title .tag,
-.content .topic-title .tag,
-.document .topic-title .tag, .title #search-results span.guilabel, #search-results .title span.guilabel, #search-results h1 span.guilabel,
-.content h1 #search-results span.guilabel,
-#search-results .content h1 span.guilabel,
-.document h1 #search-results span.guilabel,
-#search-results .document h1 span.guilabel, #search-results .topic-title span.guilabel,
-.content .topic-title #search-results span.guilabel,
-#search-results .content .topic-title span.guilabel,
-.document .topic-title #search-results span.guilabel,
-#search-results .document .topic-title span.guilabel,
-.title .content span.guilabel,
-.content .title span.guilabel,
-#search-results h1 .content span.guilabel,
-.content #search-results h1 span.guilabel,
-.content h1 span.guilabel,
-.document h1 .content span.guilabel,
-.content .document h1 span.guilabel,
-#search-results .topic-title .content span.guilabel,
-.content #search-results .topic-title span.guilabel,
-.content .topic-title span.guilabel,
-.document .topic-title .content span.guilabel,
-.content .document .topic-title span.guilabel,
-.title .document span.guilabel,
-.document .title span.guilabel,
-#search-results h1 .document span.guilabel,
-.document #search-results h1 span.guilabel,
-.content h1 .document span.guilabel,
-.document .content h1 span.guilabel,
-.document h1 span.guilabel,
-#search-results .topic-title .document span.guilabel,
-.document #search-results .topic-title span.guilabel,
-.content .topic-title .document span.guilabel,
-.document .content .topic-title span.guilabel,
-.document .topic-title span.guilabel, .title #search-results .label, #search-results .title .label, #search-results h1 .label,
-.content h1 #search-results .label,
-#search-results .content h1 .label,
-.document h1 #search-results .label,
-#search-results .document h1 .label, #search-results .topic-title .label,
-.content .topic-title #search-results .label,
-#search-results .content .topic-title .label,
-.document .topic-title #search-results .label,
-#search-results .document .topic-title .label,
-.title .content .label,
-.content .title .label,
-#search-results h1 .content .label,
-.content #search-results h1 .label,
-.content h1 .label,
-.document h1 .content .label,
-.content .document h1 .label,
-#search-results .topic-title .content .label,
-.content #search-results .topic-title .label,
-.content .topic-title .label,
-.document .topic-title .content .label,
-.content .document .topic-title .label,
-.title .document .label,
-.document .title .label,
-#search-results h1 .document .label,
-.document #search-results h1 .label,
-.content h1 .document .label,
-.document .content h1 .label,
-.document h1 .label,
-#search-results .topic-title .document .label,
-.document #search-results .topic-title .label,
-.content .topic-title .document .label,
-.document .content .topic-title .label,
-.document .topic-title .label, .title #search-results .glossary dt, #search-results .glossary .title dt, #search-results h1 .glossary dt, #search-results .glossary h1 dt,
-.content h1 #search-results .glossary dt,
-#search-results .glossary .content h1 dt,
-.document h1 #search-results .glossary dt,
-#search-results .glossary .document h1 dt, #search-results .topic-title .glossary dt, #search-results .glossary .topic-title dt,
-.content .topic-title #search-results .glossary dt,
-#search-results .glossary .content .topic-title dt,
-.document .topic-title #search-results .glossary dt,
-#search-results .glossary .document .topic-title dt,
-.title .content .glossary dt,
-.content .glossary .title dt,
-#search-results h1 .content .glossary dt,
-.content .glossary #search-results h1 dt,
-.content h1 .glossary dt,
-.content .glossary h1 dt,
-.document h1 .content .glossary dt,
-.content .glossary .document h1 dt,
-#search-results .topic-title .content .glossary dt,
-.content .glossary #search-results .topic-title dt,
-.content .topic-title .glossary dt,
-.content .glossary .topic-title dt,
-.document .topic-title .content .glossary dt,
-.content .glossary .document .topic-title dt,
-.title .document .glossary dt,
-.document .glossary .title dt,
-#search-results h1 .document .glossary dt,
-.document .glossary #search-results h1 dt,
-.content h1 .document .glossary dt,
-.document .glossary .content h1 dt,
-.document h1 .glossary dt,
-.document .glossary h1 dt,
-#search-results .topic-title .document .glossary dt,
-.document .glossary #search-results .topic-title dt,
-.content .topic-title .document .glossary dt,
-.document .glossary .content .topic-title dt,
-.document .topic-title .glossary dt,
-.document .glossary .topic-title dt, .title #search-results dt, #search-results .title dt, #search-results h1 dt,
-.content h1 #search-results dt,
-#search-results .content h1 dt,
-.document h1 #search-results dt,
-#search-results .document h1 dt, #search-results .topic-title dt,
-.content .topic-title #search-results dt,
-#search-results .content .topic-title dt,
-.document .topic-title #search-results dt,
-#search-results .document .topic-title dt,
-.title .content dt,
-.content .title dt,
-#search-results h1 .content dt,
-.content #search-results h1 dt,
-.content h1 dt,
-.document h1 .content dt,
-.content .document h1 dt,
-#search-results .topic-title .content dt,
-.content #search-results .topic-title dt,
-.content .topic-title dt,
-.document .topic-title .content dt,
-.content .document .topic-title dt,
-.title .document dt,
-.document .title dt,
-#search-results h1 .document dt,
-.document #search-results h1 dt,
-.content h1 .document dt,
-.document .content h1 dt,
-.document h1 dt,
-#search-results .topic-title .document dt,
-.document #search-results .topic-title dt,
-.content .topic-title .document dt,
-.document .content .topic-title dt,
-.document .topic-title dt,
-.subtitle .tag,
-.subtitle #search-results span.guilabel,
-#search-results .subtitle span.guilabel,
-.subtitle .content span.guilabel,
-.content .subtitle span.guilabel,
-.subtitle .document span.guilabel,
-.document .subtitle span.guilabel,
-.subtitle #search-results .label,
-#search-results .subtitle .label,
-.subtitle .content .label,
-.content .subtitle .label,
-.subtitle .document .label,
-.document .subtitle .label,
-.subtitle #search-results .glossary dt,
-#search-results .glossary .subtitle dt,
-.subtitle .content .glossary dt,
-.content .glossary .subtitle dt,
-.subtitle .document .glossary dt,
-.document .glossary .subtitle dt,
-.subtitle #search-results dt,
-#search-results .subtitle dt,
-.subtitle .content dt,
-.content .subtitle dt,
-.subtitle .document dt,
-.document .subtitle dt {
+.title .tag, .dark-palette #search-results .topic-title .tag,
+.dark-palette .content .topic-title .tag,
+.dark-palette .document .topic-title .tag, .light-palette #search-results .topic-title .tag,
+.light-palette .content .topic-title .tag,
+.light-palette .document .topic-title .tag,
+.subtitle .tag {
   vertical-align: middle;
 }
 
-.title, #search-results h1,
-.content h1,
-.document h1, #search-results .topic-title,
-.content .topic-title,
-.document .topic-title {
+.title, .dark-palette #search-results .topic-title,
+.dark-palette .content .topic-title,
+.dark-palette .document .topic-title, .light-palette #search-results .topic-title,
+.light-palette .content .topic-title,
+.light-palette .document .topic-title {
   color: #2f3546;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125;
 }
-.title strong, #search-results h1 strong,
-.content h1 strong,
-.document h1 strong, #search-results .topic-title strong,
-.content .topic-title strong,
-.document .topic-title strong {
+.title strong, .dark-palette #search-results .topic-title strong,
+.dark-palette .content .topic-title strong,
+.dark-palette .document .topic-title strong, .light-palette #search-results .topic-title strong,
+.light-palette .content .topic-title strong,
+.light-palette .document .topic-title strong {
   color: inherit;
   font-weight: inherit;
 }
-.title:not(.is-spaced) + .subtitle, #search-results h1:not(.is-spaced) + .subtitle,
-.content h1:not(.is-spaced) + .subtitle,
-.document h1:not(.is-spaced) + .subtitle, #search-results .topic-title:not(.is-spaced) + .subtitle,
-.content .topic-title:not(.is-spaced) + .subtitle,
-.document .topic-title:not(.is-spaced) + .subtitle {
+.title:not(.is-spaced) + .subtitle, .dark-palette #search-results .topic-title:not(.is-spaced) + .subtitle,
+.dark-palette .content .topic-title:not(.is-spaced) + .subtitle,
+.dark-palette .document .topic-title:not(.is-spaced) + .subtitle, .light-palette #search-results .topic-title:not(.is-spaced) + .subtitle,
+.light-palette .content .topic-title:not(.is-spaced) + .subtitle,
+.light-palette .document .topic-title:not(.is-spaced) + .subtitle {
   margin-top: -1.25rem;
 }
-.title.is-1, #search-results h1.is-1,
-.content h1.is-1,
-.document h1.is-1, #search-results .is-1.topic-title,
-.content .is-1.topic-title,
-.document .is-1.topic-title {
+.title.is-1, .dark-palette #search-results .is-1.topic-title,
+.dark-palette .content .is-1.topic-title,
+.dark-palette .document .is-1.topic-title, .light-palette #search-results .is-1.topic-title,
+.light-palette .content .is-1.topic-title,
+.light-palette .document .is-1.topic-title {
   font-size: 3rem;
 }
-.title.is-2, #search-results h1.is-2,
-.content h1.is-2,
-.document h1.is-2, #search-results .is-2.topic-title,
-.content .is-2.topic-title,
-.document .is-2.topic-title {
+.title.is-2, .dark-palette #search-results .is-2.topic-title,
+.dark-palette .content .is-2.topic-title,
+.dark-palette .document .is-2.topic-title, .light-palette #search-results .is-2.topic-title,
+.light-palette .content .is-2.topic-title,
+.light-palette .document .is-2.topic-title {
   font-size: 2.5rem;
 }
-.title.is-3, #search-results h1.is-3,
-.content h1.is-3,
-.document h1.is-3, #search-results .is-3.topic-title,
-.content .is-3.topic-title,
-.document .is-3.topic-title {
+.title.is-3, .dark-palette #search-results .is-3.topic-title,
+.dark-palette .content .is-3.topic-title,
+.dark-palette .document .is-3.topic-title, .light-palette #search-results .is-3.topic-title,
+.light-palette .content .is-3.topic-title,
+.light-palette .document .is-3.topic-title {
   font-size: 2rem;
 }
-.title.is-4, #search-results h1.is-4,
-.content h1.is-4,
-.document h1.is-4, #search-results .is-4.topic-title,
-.content .is-4.topic-title,
-.document .is-4.topic-title {
+.title.is-4, .dark-palette #search-results .is-4.topic-title,
+.dark-palette .content .is-4.topic-title,
+.dark-palette .document .is-4.topic-title, .light-palette #search-results .is-4.topic-title,
+.light-palette .content .is-4.topic-title,
+.light-palette .document .is-4.topic-title {
   font-size: 1.5rem;
 }
-.title.is-5, #search-results h1.is-5,
-.content h1.is-5,
-.document h1.is-5, #search-results .is-5.topic-title,
-.content .is-5.topic-title,
-.document .is-5.topic-title {
+.title.is-5, .dark-palette #search-results .is-5.topic-title,
+.dark-palette .content .is-5.topic-title,
+.dark-palette .document .is-5.topic-title, .light-palette #search-results .is-5.topic-title,
+.light-palette .content .is-5.topic-title,
+.light-palette .document .is-5.topic-title {
   font-size: 1.25rem;
 }
-.title.is-6, #search-results h1.is-6,
-.content h1.is-6,
-.document h1.is-6, #search-results .is-6.topic-title,
-.content .is-6.topic-title,
-.document .is-6.topic-title {
+.title.is-6, .dark-palette #search-results .is-6.topic-title,
+.dark-palette .content .is-6.topic-title,
+.dark-palette .document .is-6.topic-title, .light-palette #search-results .is-6.topic-title,
+.light-palette .content .is-6.topic-title,
+.light-palette .document .is-6.topic-title {
   font-size: 1rem;
 }
-.title.is-7, #search-results h1.is-7,
-.content h1.is-7,
-.document h1.is-7, #search-results .is-7.topic-title,
-.content .is-7.topic-title,
-.document .is-7.topic-title {
+.title.is-7, .dark-palette #search-results .is-7.topic-title,
+.dark-palette .content .is-7.topic-title,
+.dark-palette .document .is-7.topic-title, .light-palette #search-results .is-7.topic-title,
+.light-palette .content .is-7.topic-title,
+.light-palette .document .is-7.topic-title {
   font-size: 0.75rem;
 }
 
@@ -4406,11 +3710,11 @@ a.tag:hover, #search-results a.label:hover,
   color: #2f3546;
   font-weight: 600;
 }
-.subtitle:not(.is-spaced) + .title, #search-results .subtitle:not(.is-spaced) + h1,
-.content .subtitle:not(.is-spaced) + h1,
-.document .subtitle:not(.is-spaced) + h1, #search-results .subtitle:not(.is-spaced) + .topic-title,
-.content .subtitle:not(.is-spaced) + .topic-title,
-.document .subtitle:not(.is-spaced) + .topic-title {
+.subtitle:not(.is-spaced) + .title, .dark-palette #search-results .subtitle:not(.is-spaced) + .topic-title,
+.dark-palette .content .subtitle:not(.is-spaced) + .topic-title,
+.dark-palette .document .subtitle:not(.is-spaced) + .topic-title, .light-palette #search-results .subtitle:not(.is-spaced) + .topic-title,
+.light-palette .content .subtitle:not(.is-spaced) + .topic-title,
+.light-palette .document .subtitle:not(.is-spaced) + .topic-title {
   margin-top: -1.25rem;
 }
 .subtitle.is-1 {
@@ -5041,22 +4345,22 @@ a.tag:hover, #search-results a.label:hover,
 .file.is-primary .file-cta {
   background-color: #885bfb;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
   background-color: #7f4efa;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .file.is-primary:focus .file-cta, .file.is-primary.is-focused .file-cta {
   border-color: transparent;
   box-shadow: 0 0 0.5em rgba(136, 91, 251, 0.25);
-  color: #fff;
+  color: white;
 }
 .file.is-primary:active .file-cta, .file.is-primary.is-active .file-cta {
   background-color: #7642fa;
   border-color: transparent;
-  color: #fff;
+  color: white;
 }
 .file.is-link .file-cta {
   background-color: #4078f2;
@@ -5281,9 +4585,7 @@ a.tag:hover, #search-results a.label:hover,
 .file.is-small {
   font-size: 0.75rem;
 }
-.file.is-normal, #search-results span.file.guilabel,
-.content span.file.guilabel,
-.document span.file.guilabel {
+.file.is-normal {
   font-size: 1rem;
 }
 .file.is-medium {
@@ -5641,9 +4943,7 @@ a.tag:hover, #search-results a.label:hover,
     font-size: 0.75rem;
     padding-top: 0.375em;
   }
-  .field-label.is-normal, #search-results span.field-label.guilabel,
-.content span.field-label.guilabel,
-.document span.field-label.guilabel {
+  .field-label.is-normal {
     padding-top: 0.375em;
   }
   .field-label.is-medium {
@@ -6038,15 +5338,15 @@ button.dropdown-item.is-active {
   flex-shrink: 0;
   justify-content: center;
 }
-.level-item .title, .level-item #search-results h1, #search-results .level-item h1,
-.level-item .content h1,
-.content .level-item h1,
-.level-item .document h1,
-.document .level-item h1, .level-item #search-results .topic-title, #search-results .level-item .topic-title,
-.level-item .content .topic-title,
-.content .level-item .topic-title,
-.level-item .document .topic-title,
-.document .level-item .topic-title,
+.level-item .title, .level-item .dark-palette #search-results .topic-title, .dark-palette #search-results .level-item .topic-title,
+.level-item .dark-palette .content .topic-title,
+.dark-palette .content .level-item .topic-title,
+.level-item .dark-palette .document .topic-title,
+.dark-palette .document .level-item .topic-title, .level-item .light-palette #search-results .topic-title, .light-palette #search-results .level-item .topic-title,
+.level-item .light-palette .content .topic-title,
+.light-palette .content .level-item .topic-title,
+.level-item .light-palette .document .topic-title,
+.light-palette .document .level-item .topic-title,
 .level-item .subtitle {
   margin-bottom: 0;
 }
@@ -6529,7 +5829,7 @@ button.dropdown-item.is-active {
 .light-palette .document .content .is-primary.admonition p.admonition-title,
 .light-palette .document .is-primary.admonition p.admonition-title {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .message.is-primary .message-body, #search-results .is-primary.admonition .message-body,
 .content .is-primary.admonition .message-body,
@@ -7704,31 +7004,31 @@ button.dropdown-item.is-active {
 }
 .navbar.is-primary {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .navbar.is-primary .navbar-brand > .navbar-item,
 .navbar.is-primary .navbar-brand .navbar-link {
-  color: #fff;
+  color: white;
 }
 .navbar.is-primary .navbar-brand > a.navbar-item:focus, .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active,
 .navbar.is-primary .navbar-brand .navbar-link:focus,
 .navbar.is-primary .navbar-brand .navbar-link:hover,
 .navbar.is-primary .navbar-brand .navbar-link.is-active {
   background-color: #7642fa;
-  color: #fff;
+  color: white;
 }
 .navbar.is-primary .navbar-brand .navbar-link::after {
-  border-color: #fff;
+  border-color: white;
 }
 .navbar.is-primary .navbar-burger {
-  color: #fff;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
   .navbar.is-primary .navbar-start > .navbar-item,
 .navbar.is-primary .navbar-start .navbar-link,
 .navbar.is-primary .navbar-end > .navbar-item,
 .navbar.is-primary .navbar-end .navbar-link {
-    color: #fff;
+    color: white;
   }
   .navbar.is-primary .navbar-start > a.navbar-item:focus, .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active,
 .navbar.is-primary .navbar-start .navbar-link:focus,
@@ -7741,21 +7041,21 @@ button.dropdown-item.is-active {
 .navbar.is-primary .navbar-end .navbar-link:hover,
 .navbar.is-primary .navbar-end .navbar-link.is-active {
     background-color: #7642fa;
-    color: #fff;
+    color: white;
   }
   .navbar.is-primary .navbar-start .navbar-link::after,
 .navbar.is-primary .navbar-end .navbar-link::after {
-    border-color: #fff;
+    border-color: white;
   }
   .navbar.is-primary .navbar-item.has-dropdown:focus .navbar-link,
 .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
 .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
     background-color: #7642fa;
-    color: #fff;
+    color: white;
   }
   .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
     background-color: #885bfb;
-    color: #fff;
+    color: white;
   }
 }
 .navbar.is-link {
@@ -9034,7 +8334,7 @@ body.has-spaced-navbar-fixed-bottom {
 }
 .panel.is-primary .panel-heading {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .panel.is-primary .panel-tabs a.is-active {
   border-bottom-color: #885bfb;
@@ -13245,15 +12545,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-white strong {
   color: inherit;
 }
-.hero.is-white .title, .hero.is-white #search-results h1, #search-results .hero.is-white h1,
-.hero.is-white .content h1,
-.content .hero.is-white h1,
-.hero.is-white .document h1,
-.document .hero.is-white h1, .hero.is-white #search-results .topic-title, #search-results .hero.is-white .topic-title,
-.hero.is-white .content .topic-title,
-.content .hero.is-white .topic-title,
-.hero.is-white .document .topic-title,
-.document .hero.is-white .topic-title {
+.hero.is-white .title, .hero.is-white .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-white .topic-title,
+.hero.is-white .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-white .topic-title,
+.hero.is-white .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-white .topic-title, .hero.is-white .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-white .topic-title,
+.hero.is-white .light-palette .content .topic-title,
+.light-palette .content .hero.is-white .topic-title,
+.hero.is-white .light-palette .document .topic-title,
+.light-palette .document .hero.is-white .topic-title {
   color: #0d1117;
 }
 .hero.is-white .subtitle {
@@ -13316,15 +12616,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-black strong {
   color: inherit;
 }
-.hero.is-black .title, .hero.is-black #search-results h1, #search-results .hero.is-black h1,
-.hero.is-black .content h1,
-.content .hero.is-black h1,
-.hero.is-black .document h1,
-.document .hero.is-black h1, .hero.is-black #search-results .topic-title, #search-results .hero.is-black .topic-title,
-.hero.is-black .content .topic-title,
-.content .hero.is-black .topic-title,
-.hero.is-black .document .topic-title,
-.document .hero.is-black .topic-title {
+.hero.is-black .title, .hero.is-black .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-black .topic-title,
+.hero.is-black .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-black .topic-title,
+.hero.is-black .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-black .topic-title, .hero.is-black .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-black .topic-title,
+.hero.is-black .light-palette .content .topic-title,
+.light-palette .content .hero.is-black .topic-title,
+.hero.is-black .light-palette .document .topic-title,
+.light-palette .document .hero.is-black .topic-title {
   color: #fafafa;
 }
 .hero.is-black .subtitle {
@@ -13387,15 +12687,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-light strong {
   color: inherit;
 }
-.hero.is-light .title, .hero.is-light #search-results h1, #search-results .hero.is-light h1,
-.hero.is-light .content h1,
-.content .hero.is-light h1,
-.hero.is-light .document h1,
-.document .hero.is-light h1, .hero.is-light #search-results .topic-title, #search-results .hero.is-light .topic-title,
-.hero.is-light .content .topic-title,
-.content .hero.is-light .topic-title,
-.hero.is-light .document .topic-title,
-.document .hero.is-light .topic-title {
+.hero.is-light .title, .hero.is-light .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-light .topic-title,
+.hero.is-light .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-light .topic-title,
+.hero.is-light .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-light .topic-title, .hero.is-light .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-light .topic-title,
+.hero.is-light .light-palette .content .topic-title,
+.light-palette .content .hero.is-light .topic-title,
+.hero.is-light .light-palette .document .topic-title,
+.light-palette .document .hero.is-light .topic-title {
   color: rgba(0, 0, 0, 0.7);
 }
 .hero.is-light .subtitle {
@@ -13458,15 +12758,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-dark strong {
   color: inherit;
 }
-.hero.is-dark .title, .hero.is-dark #search-results h1, #search-results .hero.is-dark h1,
-.hero.is-dark .content h1,
-.content .hero.is-dark h1,
-.hero.is-dark .document h1,
-.document .hero.is-dark h1, .hero.is-dark #search-results .topic-title, #search-results .hero.is-dark .topic-title,
-.hero.is-dark .content .topic-title,
-.content .hero.is-dark .topic-title,
-.hero.is-dark .document .topic-title,
-.document .hero.is-dark .topic-title {
+.hero.is-dark .title, .hero.is-dark .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-dark .topic-title,
+.hero.is-dark .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-dark .topic-title,
+.hero.is-dark .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-dark .topic-title, .hero.is-dark .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-dark .topic-title,
+.hero.is-dark .light-palette .content .topic-title,
+.light-palette .content .hero.is-dark .topic-title,
+.hero.is-dark .light-palette .document .topic-title,
+.light-palette .document .hero.is-dark .topic-title {
   color: #fff;
 }
 .hero.is-dark .subtitle {
@@ -13523,29 +12823,29 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 }
 .hero.is-primary {
   background-color: #885bfb;
-  color: #fff;
+  color: white;
 }
 .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
 .hero.is-primary strong {
   color: inherit;
 }
-.hero.is-primary .title, .hero.is-primary #search-results h1, #search-results .hero.is-primary h1,
-.hero.is-primary .content h1,
-.content .hero.is-primary h1,
-.hero.is-primary .document h1,
-.document .hero.is-primary h1, .hero.is-primary #search-results .topic-title, #search-results .hero.is-primary .topic-title,
-.hero.is-primary .content .topic-title,
-.content .hero.is-primary .topic-title,
-.hero.is-primary .document .topic-title,
-.document .hero.is-primary .topic-title {
-  color: #fff;
+.hero.is-primary .title, .hero.is-primary .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-primary .topic-title,
+.hero.is-primary .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-primary .topic-title,
+.hero.is-primary .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-primary .topic-title, .hero.is-primary .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-primary .topic-title,
+.hero.is-primary .light-palette .content .topic-title,
+.light-palette .content .hero.is-primary .topic-title,
+.hero.is-primary .light-palette .document .topic-title,
+.light-palette .document .hero.is-primary .topic-title {
+  color: white;
 }
 .hero.is-primary .subtitle {
   color: rgba(255, 255, 255, 0.9);
 }
 .hero.is-primary .subtitle a:not(.button),
 .hero.is-primary .subtitle strong {
-  color: #fff;
+  color: white;
 }
 @media screen and (max-width: 1023px) {
   .hero.is-primary .navbar-menu {
@@ -13560,10 +12860,10 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-primary .navbar-link:hover,
 .hero.is-primary .navbar-link.is-active {
   background-color: #7642fa;
-  color: #fff;
+  color: white;
 }
 .hero.is-primary .tabs a {
-  color: #fff;
+  color: white;
   opacity: 0.9;
 }
 .hero.is-primary .tabs a:hover {
@@ -13574,14 +12874,14 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
   opacity: 1;
 }
 .hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
-  color: #fff;
+  color: white;
 }
 .hero.is-primary .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover {
   background-color: rgba(13, 17, 23, 0.1);
 }
 .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: white;
+  border-color: white;
   color: #885bfb;
 }
 .hero.is-primary.is-bold {
@@ -13600,15 +12900,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-link strong {
   color: inherit;
 }
-.hero.is-link .title, .hero.is-link #search-results h1, #search-results .hero.is-link h1,
-.hero.is-link .content h1,
-.content .hero.is-link h1,
-.hero.is-link .document h1,
-.document .hero.is-link h1, .hero.is-link #search-results .topic-title, #search-results .hero.is-link .topic-title,
-.hero.is-link .content .topic-title,
-.content .hero.is-link .topic-title,
-.hero.is-link .document .topic-title,
-.document .hero.is-link .topic-title {
+.hero.is-link .title, .hero.is-link .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-link .topic-title,
+.hero.is-link .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-link .topic-title,
+.hero.is-link .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-link .topic-title, .hero.is-link .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-link .topic-title,
+.hero.is-link .light-palette .content .topic-title,
+.light-palette .content .hero.is-link .topic-title,
+.hero.is-link .light-palette .document .topic-title,
+.light-palette .document .hero.is-link .topic-title {
   color: #736a59;
 }
 .hero.is-link .subtitle {
@@ -13671,15 +12971,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-info strong {
   color: inherit;
 }
-.hero.is-info .title, .hero.is-info #search-results h1, #search-results .hero.is-info h1,
-.hero.is-info .content h1,
-.content .hero.is-info h1,
-.hero.is-info .document h1,
-.document .hero.is-info h1, .hero.is-info #search-results .topic-title, #search-results .hero.is-info .topic-title,
-.hero.is-info .content .topic-title,
-.content .hero.is-info .topic-title,
-.hero.is-info .document .topic-title,
-.document .hero.is-info .topic-title {
+.hero.is-info .title, .hero.is-info .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-info .topic-title,
+.hero.is-info .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-info .topic-title,
+.hero.is-info .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-info .topic-title, .hero.is-info .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-info .topic-title,
+.hero.is-info .light-palette .content .topic-title,
+.light-palette .content .hero.is-info .topic-title,
+.hero.is-info .light-palette .document .topic-title,
+.light-palette .document .hero.is-info .topic-title {
   color: #fff;
 }
 .hero.is-info .subtitle {
@@ -13742,15 +13042,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-success strong {
   color: inherit;
 }
-.hero.is-success .title, .hero.is-success #search-results h1, #search-results .hero.is-success h1,
-.hero.is-success .content h1,
-.content .hero.is-success h1,
-.hero.is-success .document h1,
-.document .hero.is-success h1, .hero.is-success #search-results .topic-title, #search-results .hero.is-success .topic-title,
-.hero.is-success .content .topic-title,
-.content .hero.is-success .topic-title,
-.hero.is-success .document .topic-title,
-.document .hero.is-success .topic-title {
+.hero.is-success .title, .hero.is-success .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-success .topic-title,
+.hero.is-success .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-success .topic-title,
+.hero.is-success .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-success .topic-title, .hero.is-success .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-success .topic-title,
+.hero.is-success .light-palette .content .topic-title,
+.light-palette .content .hero.is-success .topic-title,
+.hero.is-success .light-palette .document .topic-title,
+.light-palette .document .hero.is-success .topic-title {
   color: #fff;
 }
 .hero.is-success .subtitle {
@@ -13813,15 +13113,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-warning strong {
   color: inherit;
 }
-.hero.is-warning .title, .hero.is-warning #search-results h1, #search-results .hero.is-warning h1,
-.hero.is-warning .content h1,
-.content .hero.is-warning h1,
-.hero.is-warning .document h1,
-.document .hero.is-warning h1, .hero.is-warning #search-results .topic-title, #search-results .hero.is-warning .topic-title,
-.hero.is-warning .content .topic-title,
-.content .hero.is-warning .topic-title,
-.hero.is-warning .document .topic-title,
-.document .hero.is-warning .topic-title {
+.hero.is-warning .title, .hero.is-warning .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-warning .topic-title,
+.hero.is-warning .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-warning .topic-title,
+.hero.is-warning .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-warning .topic-title, .hero.is-warning .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-warning .topic-title,
+.hero.is-warning .light-palette .content .topic-title,
+.light-palette .content .hero.is-warning .topic-title,
+.hero.is-warning .light-palette .document .topic-title,
+.light-palette .document .hero.is-warning .topic-title {
   color: rgba(0, 0, 0, 0.7);
 }
 .hero.is-warning .subtitle {
@@ -13884,15 +13184,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-danger strong {
   color: inherit;
 }
-.hero.is-danger .title, .hero.is-danger #search-results h1, #search-results .hero.is-danger h1,
-.hero.is-danger .content h1,
-.content .hero.is-danger h1,
-.hero.is-danger .document h1,
-.document .hero.is-danger h1, .hero.is-danger #search-results .topic-title, #search-results .hero.is-danger .topic-title,
-.hero.is-danger .content .topic-title,
-.content .hero.is-danger .topic-title,
-.hero.is-danger .document .topic-title,
-.document .hero.is-danger .topic-title {
+.hero.is-danger .title, .hero.is-danger .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-danger .topic-title,
+.hero.is-danger .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-danger .topic-title,
+.hero.is-danger .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-danger .topic-title, .hero.is-danger .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-danger .topic-title,
+.hero.is-danger .light-palette .content .topic-title,
+.light-palette .content .hero.is-danger .topic-title,
+.hero.is-danger .light-palette .document .topic-title,
+.light-palette .document .hero.is-danger .topic-title {
   color: #fff;
 }
 .hero.is-danger .subtitle {
@@ -13955,15 +13255,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-redish strong {
   color: inherit;
 }
-.hero.is-redish .title, .hero.is-redish #search-results h1, #search-results .hero.is-redish h1,
-.hero.is-redish .content h1,
-.content .hero.is-redish h1,
-.hero.is-redish .document h1,
-.document .hero.is-redish h1, .hero.is-redish #search-results .topic-title, #search-results .hero.is-redish .topic-title,
-.hero.is-redish .content .topic-title,
-.content .hero.is-redish .topic-title,
-.hero.is-redish .document .topic-title,
-.document .hero.is-redish .topic-title {
+.hero.is-redish .title, .hero.is-redish .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-redish .topic-title,
+.hero.is-redish .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-redish .topic-title,
+.hero.is-redish .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-redish .topic-title, .hero.is-redish .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-redish .topic-title,
+.hero.is-redish .light-palette .content .topic-title,
+.light-palette .content .hero.is-redish .topic-title,
+.hero.is-redish .light-palette .document .topic-title,
+.light-palette .document .hero.is-redish .topic-title {
   color: #fff;
 }
 .hero.is-redish .subtitle {
@@ -14026,15 +13326,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-blueish strong {
   color: inherit;
 }
-.hero.is-blueish .title, .hero.is-blueish #search-results h1, #search-results .hero.is-blueish h1,
-.hero.is-blueish .content h1,
-.content .hero.is-blueish h1,
-.hero.is-blueish .document h1,
-.document .hero.is-blueish h1, .hero.is-blueish #search-results .topic-title, #search-results .hero.is-blueish .topic-title,
-.hero.is-blueish .content .topic-title,
-.content .hero.is-blueish .topic-title,
-.hero.is-blueish .document .topic-title,
-.document .hero.is-blueish .topic-title {
+.hero.is-blueish .title, .hero.is-blueish .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-blueish .topic-title,
+.hero.is-blueish .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-blueish .topic-title,
+.hero.is-blueish .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-blueish .topic-title, .hero.is-blueish .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-blueish .topic-title,
+.hero.is-blueish .light-palette .content .topic-title,
+.light-palette .content .hero.is-blueish .topic-title,
+.hero.is-blueish .light-palette .document .topic-title,
+.light-palette .document .hero.is-blueish .topic-title {
   color: rgba(0, 0, 0, 0.7);
 }
 .hero.is-blueish .subtitle {
@@ -14097,15 +13397,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-pink strong {
   color: inherit;
 }
-.hero.is-pink .title, .hero.is-pink #search-results h1, #search-results .hero.is-pink h1,
-.hero.is-pink .content h1,
-.content .hero.is-pink h1,
-.hero.is-pink .document h1,
-.document .hero.is-pink h1, .hero.is-pink #search-results .topic-title, #search-results .hero.is-pink .topic-title,
-.hero.is-pink .content .topic-title,
-.content .hero.is-pink .topic-title,
-.hero.is-pink .document .topic-title,
-.document .hero.is-pink .topic-title {
+.hero.is-pink .title, .hero.is-pink .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-pink .topic-title,
+.hero.is-pink .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-pink .topic-title,
+.hero.is-pink .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-pink .topic-title, .hero.is-pink .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-pink .topic-title,
+.hero.is-pink .light-palette .content .topic-title,
+.light-palette .content .hero.is-pink .topic-title,
+.hero.is-pink .light-palette .document .topic-title,
+.light-palette .document .hero.is-pink .topic-title {
   color: #fff;
 }
 .hero.is-pink .subtitle {
@@ -14168,15 +13468,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-gold strong {
   color: inherit;
 }
-.hero.is-gold .title, .hero.is-gold #search-results h1, #search-results .hero.is-gold h1,
-.hero.is-gold .content h1,
-.content .hero.is-gold h1,
-.hero.is-gold .document h1,
-.document .hero.is-gold h1, .hero.is-gold #search-results .topic-title, #search-results .hero.is-gold .topic-title,
-.hero.is-gold .content .topic-title,
-.content .hero.is-gold .topic-title,
-.hero.is-gold .document .topic-title,
-.document .hero.is-gold .topic-title {
+.hero.is-gold .title, .hero.is-gold .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-gold .topic-title,
+.hero.is-gold .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-gold .topic-title,
+.hero.is-gold .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-gold .topic-title, .hero.is-gold .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-gold .topic-title,
+.hero.is-gold .light-palette .content .topic-title,
+.light-palette .content .hero.is-gold .topic-title,
+.hero.is-gold .light-palette .document .topic-title,
+.light-palette .document .hero.is-gold .topic-title {
   color: #fff;
 }
 .hero.is-gold .subtitle {
@@ -14239,15 +13539,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-greenish strong {
   color: inherit;
 }
-.hero.is-greenish .title, .hero.is-greenish #search-results h1, #search-results .hero.is-greenish h1,
-.hero.is-greenish .content h1,
-.content .hero.is-greenish h1,
-.hero.is-greenish .document h1,
-.document .hero.is-greenish h1, .hero.is-greenish #search-results .topic-title, #search-results .hero.is-greenish .topic-title,
-.hero.is-greenish .content .topic-title,
-.content .hero.is-greenish .topic-title,
-.hero.is-greenish .document .topic-title,
-.document .hero.is-greenish .topic-title {
+.hero.is-greenish .title, .hero.is-greenish .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-greenish .topic-title,
+.hero.is-greenish .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-greenish .topic-title,
+.hero.is-greenish .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-greenish .topic-title, .hero.is-greenish .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-greenish .topic-title,
+.hero.is-greenish .light-palette .content .topic-title,
+.light-palette .content .hero.is-greenish .topic-title,
+.hero.is-greenish .light-palette .document .topic-title,
+.light-palette .document .hero.is-greenish .topic-title {
   color: #fff;
 }
 .hero.is-greenish .subtitle {
@@ -14310,15 +13610,15 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
 .hero.is-blood strong {
   color: inherit;
 }
-.hero.is-blood .title, .hero.is-blood #search-results h1, #search-results .hero.is-blood h1,
-.hero.is-blood .content h1,
-.content .hero.is-blood h1,
-.hero.is-blood .document h1,
-.document .hero.is-blood h1, .hero.is-blood #search-results .topic-title, #search-results .hero.is-blood .topic-title,
-.hero.is-blood .content .topic-title,
-.content .hero.is-blood .topic-title,
-.hero.is-blood .document .topic-title,
-.document .hero.is-blood .topic-title {
+.hero.is-blood .title, .hero.is-blood .dark-palette #search-results .topic-title, .dark-palette #search-results .hero.is-blood .topic-title,
+.hero.is-blood .dark-palette .content .topic-title,
+.dark-palette .content .hero.is-blood .topic-title,
+.hero.is-blood .dark-palette .document .topic-title,
+.dark-palette .document .hero.is-blood .topic-title, .hero.is-blood .light-palette #search-results .topic-title, .light-palette #search-results .hero.is-blood .topic-title,
+.hero.is-blood .light-palette .content .topic-title,
+.light-palette .content .hero.is-blood .topic-title,
+.hero.is-blood .light-palette .document .topic-title,
+.light-palette .document .hero.is-blood .topic-title {
   color: #fff;
 }
 .hero.is-blood .subtitle {
@@ -18467,6 +17767,7 @@ a.has-text-blood-dark:hover, a.has-text-blood-dark:focus {
   background-color: #0d1117;
   color: #c9d1d9;
 }
+
 .light-palette body {
   background-color: #fafafa;
   color: #3e4551;
@@ -18482,6 +17783,7 @@ main {
 .dark-palette main {
   background-color: #0d1117;
 }
+
 .light-palette main {
   background-color: #fafafa;
 }
@@ -18489,12 +17791,15 @@ main {
 .dark-palette a {
   color: #a3c0ff;
 }
+
 .light-palette a {
   color: #4078f2;
 }
+
 .dark-palette a:hover {
   color: #a3c0ff;
 }
+
 .light-palette a:hover {
   color: #30529c;
 }
@@ -18502,6 +17807,7 @@ main {
 .dark-palette p {
   color: #c9d1d9;
 }
+
 .light-palette p {
   color: #3e4551;
 }
@@ -18515,6 +17821,7 @@ span.icon > i {
 .dark-palette strong {
   color: #c9d1d9;
 }
+
 .light-palette strong {
   color: #3e4551;
 }
@@ -18526,6 +17833,7 @@ span.icon > i {
   color: #c9d1d9;
   border-color: #3e4551;
 }
+
 .light-palette input.input,
 .light-palette .select select,
 .light-palette .textarea {
@@ -18533,6 +17841,7 @@ span.icon > i {
   color: #3e4551;
   border-color: #e5dcdc;
 }
+
 input.input::placeholder,
 .select select::placeholder,
 .textarea::placeholder {
@@ -18565,6 +17874,67 @@ dl {
   overflow: auto;
 }
 
+section.is-primary,
+div.is-primary,
+main.is-primary,
+.title.is-primary,
+.icon-text.is-primary,
+.icon.is-primary,
+.progress.is-primary,
+.table.is-primary,
+.card.is-primary,
+.dropdown.is-primary,
+.navbar.is-primary,
+.panel.is-primary,
+.button.is-primary,
+.tag.is-primary,
+.tag:not(body).is-primary,
+.notification.is-primary,
+.message.is-primary,
+.document.is-primary,
+.content.is-primary {
+  background-color: var(--primary);
+}
+section.is-primary, section.has-text-primary,
+div.is-primary,
+div.has-text-primary,
+main.is-primary,
+main.has-text-primary,
+.title.is-primary,
+.title.has-text-primary,
+.icon-text.is-primary,
+.icon-text.has-text-primary,
+.icon.is-primary,
+.icon.has-text-primary,
+.progress.is-primary,
+.progress.has-text-primary,
+.table.is-primary,
+.table.has-text-primary,
+.card.is-primary,
+.card.has-text-primary,
+.dropdown.is-primary,
+.dropdown.has-text-primary,
+.navbar.is-primary,
+.navbar.has-text-primary,
+.panel.is-primary,
+.panel.has-text-primary,
+.button.is-primary,
+.button.has-text-primary,
+.tag.is-primary,
+.tag.has-text-primary,
+.tag:not(body).is-primary,
+.tag:not(body).has-text-primary,
+.notification.is-primary,
+.notification.has-text-primary,
+.message.is-primary,
+.message.has-text-primary,
+.document.is-primary,
+.document.has-text-primary,
+.content.is-primary,
+.content.has-text-primary {
+  color: var(--primary-invert);
+}
+
 /*
  * Navbar styles
  */
@@ -18587,12 +17957,15 @@ nav.container.breadcrumb {
 .dark-palette nav.container.breadcrumb {
   background-color: #0d1117;
 }
+
 .light-palette nav.container.breadcrumb {
   background-color: #fafafa;
 }
+
 .dark-palette nav.container.breadcrumb li.is-active a {
   color: #c9d1d9;
 }
+
 .light-palette nav.container.breadcrumb li.is-active a {
   color: #3e4551;
 }
@@ -18617,6 +17990,7 @@ nav.container.breadcrumb {
   font-weight: 100;
   content: "\e900";
 }
+
 .light-palette #light-switch span.icon::after {
   font-family: "fontello";
   font-weight: 100;
@@ -18686,9 +18060,11 @@ aside.menu ul li a::after {
 .dark-palette aside.menu ul li a::after {
   color: #a3c0ff;
 }
+
 .light-palette aside.menu ul li a::after {
   color: #4078f2;
 }
+
 aside.menu ul .toctree-l1 a::after {
   font-family: "fontello";
   font-weight: 100;
@@ -18754,6 +18130,7 @@ aside.menu li {
   border-bottom: #3e4551 solid 1px;
   color: #faf0f0;
 }
+
 .light-palette #search-results h1,
 .light-palette #search-results h2,
 .light-palette #search-results h3,
@@ -18775,6 +18152,7 @@ aside.menu li {
   border-bottom: #e5dcdc solid 1px;
   color: #0d1117;
 }
+
 #search-results h1:hover a.headerlink::after,
 #search-results h2:hover a.headerlink::after,
 #search-results h3:hover a.headerlink::after,
@@ -18954,6 +18332,7 @@ aside.menu li {
   font-weight: 100;
   content: "\f188";
 }
+
 .light-palette #search-results .admonition,
 .light-palette .content .admonition,
 .light-palette .document .admonition {
@@ -19078,6 +18457,7 @@ aside.menu li {
   font-weight: 100;
   content: "\f188";
 }
+
 #search-results .citation-reference,
 #search-results .footnote-reference,
 .content .citation-reference,
@@ -19087,22 +18467,6 @@ aside.menu li {
   font-size: 10px;
   position: relative;
   top: -0.5rem;
-}
-.dark-palette #search-results span.guilabel,
-.dark-palette .content span.guilabel,
-.dark-palette .document span.guilabel {
-  background-color: transparent;
-  color: #885bfb;
-  border: 1px solid #885bfb;
-  height: 1.5rem;
-}
-.light-palette #search-results span.guilabel,
-.light-palette .content span.guilabel,
-.light-palette .document span.guilabel {
-  background-color: #885bfb;
-  color: #fafafa;
-  border: none;
-  height: 1.5rem;
 }
 #search-results .line-block,
 .content .line-block,
@@ -19123,64 +18487,18 @@ aside.menu li {
 .dark-palette .document aside.sidebar {
   background-color: #121921;
 }
+
 .light-palette #search-results aside.sidebar,
 .light-palette .content aside.sidebar,
 .light-palette .document aside.sidebar {
   background-color: #faf0f0;
 }
-.dark-palette #search-results .label,
-.dark-palette .content .label,
-.dark-palette .document .label {
-  background-color: transparent;
-  color: #449cc5;
-  border: 1px solid #449cc5;
-}
-.light-palette #search-results .label,
-.light-palette .content .label,
-.light-palette .document .label {
-  background-color: #eff7fa;
-  color: #449cc5;
-  border: none;
-}
-.dark-palette #search-results .glossary dt,
-.dark-palette .content .glossary dt,
-.dark-palette .document .glossary dt {
-  background-color: transparent;
-  color: #4078f2;
-  border: 1px solid #4078f2;
-}
-.light-palette #search-results .glossary dt,
-.light-palette .content .glossary dt,
-.light-palette .document .glossary dt {
-  background-color: #4078f2;
-  color: #fafafa;
-  border: none;
-}
+
 #search-results .rubric,
 .content .rubric,
 .document .rubric {
   margin-bottom: 1.25rem;
   font-weight: 700;
-}
-.dark-palette #search-results .topic,
-.dark-palette .content .topic,
-.dark-palette .document .topic {
-  color: #c9d1d9;
-}
-.light-palette #search-results .topic,
-.light-palette .content .topic,
-.light-palette .document .topic {
-  color: #3e4551;
-}
-.dark-palette #search-results .topic-title,
-.dark-palette .content .topic-title,
-.dark-palette .document .topic-title {
-  color: #faf0f0;
-}
-.light-palette #search-results .topic-title,
-.light-palette .content .topic-title,
-.light-palette .document .topic-title {
-  color: #0d1117;
 }
 #search-results code.download,
 #search-results tt.download,
@@ -19238,20 +18556,6 @@ aside.menu li {
 .document ul.simple {
   list-style: circle outside;
 }
-.dark-palette #search-results dt,
-.dark-palette .content dt,
-.dark-palette .document dt {
-  background-color: transparent;
-  color: #449cc5;
-  border: 1px solid #449cc5;
-}
-.light-palette #search-results dt,
-.light-palette .content dt,
-.light-palette .document dt {
-  background-color: #eff7fa;
-  color: #449cc5;
-  border: none;
-}
 #search-results table,
 .content table,
 .document table {
@@ -19270,11 +18574,13 @@ aside.menu li {
 .dark-palette .document table tr.row-odd {
   background-color: #121921;
 }
+
 .light-palette #search-results table tr.row-odd,
 .light-palette .content table tr.row-odd,
 .light-palette .document table tr.row-odd {
   background-color: #faf0f0;
 }
+
 #search-results dd,
 #search-results .topic dd,
 #search-results aside.sidebar dd,
@@ -19324,17 +18630,282 @@ aside.menu li {
   font-weight: 100;
   font-size: medium;
 }
+#search-results .tagmod, .light-palette #search-results .glossary dt, .light-palette #search-results dt,
+.light-palette #search-results .label,
+#search-results .light-palette .content dt,
+.light-palette .content #search-results dt,
+#search-results .light-palette .content .label,
+#search-results .light-palette .document dt,
+.light-palette .document #search-results dt,
+#search-results .light-palette .document .label, .light-palette #search-results span.guilabel,
+#search-results .light-palette .content span.guilabel,
+#search-results .light-palette .document span.guilabel, .dark-palette #search-results .glossary dt, .dark-palette #search-results dt,
+.dark-palette #search-results .label,
+#search-results .dark-palette .content dt,
+.dark-palette .content #search-results dt,
+#search-results .dark-palette .content .label,
+#search-results .dark-palette .document dt,
+.dark-palette .document #search-results dt,
+#search-results .dark-palette .document .label, .dark-palette #search-results span.guilabel,
+#search-results .dark-palette .content span.guilabel,
+#search-results .dark-palette .document span.guilabel,
+.content .tagmod,
+.light-palette .content .glossary dt,
+.content .light-palette .document .glossary dt,
+.light-palette .document .glossary .content dt,
+.content .light-palette #search-results dt,
+.light-palette #search-results .content dt,
+.light-palette .content dt,
+.light-palette .content .label,
+.content .light-palette .document dt,
+.light-palette .document .content dt,
+.content .light-palette .document .label,
+.light-palette .document .content .label,
+.light-palette .content span.guilabel,
+.content .light-palette .document span.guilabel,
+.light-palette .document .content span.guilabel,
+.dark-palette .content .glossary dt,
+.content .dark-palette .document .glossary dt,
+.dark-palette .document .glossary .content dt,
+.content .dark-palette #search-results dt,
+.dark-palette #search-results .content dt,
+.dark-palette .content dt,
+.dark-palette .content .label,
+.content .dark-palette .document dt,
+.dark-palette .document .content dt,
+.content .dark-palette .document .label,
+.dark-palette .document .content .label,
+.dark-palette .content span.guilabel,
+.content .dark-palette .document span.guilabel,
+.dark-palette .document .content span.guilabel,
+.document .tagmod,
+.document .light-palette .content .glossary dt,
+.light-palette .content .glossary .document dt,
+.light-palette .document .glossary dt,
+.document .light-palette #search-results dt,
+.light-palette #search-results .document dt,
+.document .light-palette .content dt,
+.light-palette .content .document dt,
+.document .light-palette .content .label,
+.light-palette .content .document .label,
+.light-palette .document dt,
+.light-palette .document .label,
+.document .light-palette .content span.guilabel,
+.light-palette .content .document span.guilabel,
+.light-palette .document span.guilabel,
+.document .dark-palette .content .glossary dt,
+.dark-palette .content .glossary .document dt,
+.dark-palette .document .glossary dt,
+.document .dark-palette #search-results dt,
+.dark-palette #search-results .document dt,
+.document .dark-palette .content dt,
+.dark-palette .content .document dt,
+.document .dark-palette .content .label,
+.dark-palette .content .document .label,
+.dark-palette .document dt,
+.dark-palette .document .label,
+.document .dark-palette .content span.guilabel,
+.dark-palette .content .document span.guilabel,
+.dark-palette .document span.guilabel {
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
 .dark-palette #search-results blockquote,
 .dark-palette .content blockquote,
 .dark-palette .document blockquote {
   background-color: #202d3c;
   border-left: 5px solid #3e4551;
 }
+.dark-palette #search-results .topic,
+.dark-palette .content .topic,
+.dark-palette .document .topic {
+  color: #c9d1d9;
+}
+.dark-palette #search-results .topic-title,
+.dark-palette .content .topic-title,
+.dark-palette .document .topic-title {
+  color: #faf0f0;
+}
+.dark-palette #search-results span.guilabel,
+.dark-palette .content span.guilabel,
+.dark-palette .document span.guilabel {
+  background-color: transparent;
+  color: #885bfb;
+  border: 1px solid #885bfb;
+  height: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.dark-palette #search-results dt,
+.dark-palette #search-results .label,
+.dark-palette .content dt,
+.dark-palette .content .label,
+.dark-palette .document dt,
+.dark-palette .document .label {
+  background-color: transparent;
+  color: #449cc5;
+  border: 1px solid #449cc5;
+}
+.dark-palette #search-results .glossary dt,
+.dark-palette .content .glossary dt,
+.dark-palette .document .glossary dt {
+  background-color: transparent;
+  color: #4078f2;
+  border: 1px solid #4078f2;
+}
+
 .light-palette #search-results blockquote,
 .light-palette .content blockquote,
 .light-palette .document blockquote {
   background-color: whitesmoke;
   border-left: 5px solid #e5dcdc;
+}
+.light-palette #search-results .topic,
+.light-palette .content .topic,
+.light-palette .document .topic {
+  color: #3e4551;
+}
+.light-palette #search-results .topic-title,
+.light-palette .content .topic-title,
+.light-palette .document .topic-title {
+  color: #0d1117;
+}
+.light-palette #search-results span.guilabel,
+.light-palette .content span.guilabel,
+.light-palette .document span.guilabel {
+  background-color: #885bfb;
+  color: #fafafa;
+  border: none;
+  height: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.light-palette #search-results dt,
+.light-palette #search-results .label,
+.light-palette .content dt,
+.light-palette .content .label,
+.light-palette .document dt,
+.light-palette .document .label {
+  background-color: #eff7fa;
+  color: #449cc5;
+  border: none;
+}
+.light-palette #search-results .glossary dt,
+.light-palette .content .glossary dt,
+.light-palette .document .glossary dt {
+  background-color: #4078f2;
+  color: #fafafa;
+  border: none;
+}
+
+#search-results .versionadded,
+#search-results .versionchanged,
+#search-results .deprecated:not(.versionmodified),
+.content .versionadded,
+.content .versionchanged,
+.content .deprecated:not(.versionmodified),
+.document .versionadded,
+.document .versionchanged,
+.document .deprecated:not(.versionmodified) {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.dark-palette #search-results .versionadded,
+.dark-palette #search-results .versionchanged,
+.dark-palette #search-results .deprecated:not(.versionmodified),
+.dark-palette .content .versionadded,
+.dark-palette .content .versionchanged,
+.dark-palette .content .deprecated:not(.versionmodified),
+.dark-palette .document .versionadded,
+.dark-palette .document .versionchanged,
+.dark-palette .document .deprecated:not(.versionmodified) {
+  background-color: #202d3c;
+  border-top: 4px solid #3e4551;
+}
+.dark-palette #search-results .versionadded .versionmodified.added,
+.dark-palette #search-results .versionchanged .versionmodified.added,
+.dark-palette #search-results .deprecated:not(.versionmodified) .versionmodified.added,
+.dark-palette .content .versionadded .versionmodified.added,
+.dark-palette .content .versionchanged .versionmodified.added,
+.dark-palette .content .deprecated:not(.versionmodified) .versionmodified.added,
+.dark-palette .document .versionadded .versionmodified.added,
+.dark-palette .document .versionchanged .versionmodified.added,
+.dark-palette .document .deprecated:not(.versionmodified) .versionmodified.added {
+  color: #449cc5;
+}
+.dark-palette #search-results .versionadded .versionmodified.changed,
+.dark-palette #search-results .versionchanged .versionmodified.changed,
+.dark-palette #search-results .deprecated:not(.versionmodified) .versionmodified.changed,
+.dark-palette .content .versionadded .versionmodified.changed,
+.dark-palette .content .versionchanged .versionmodified.changed,
+.dark-palette .content .deprecated:not(.versionmodified) .versionmodified.changed,
+.dark-palette .document .versionadded .versionmodified.changed,
+.dark-palette .document .versionchanged .versionmodified.changed,
+.dark-palette .document .deprecated:not(.versionmodified) .versionmodified.changed {
+  color: #ff7b00;
+}
+.dark-palette #search-results .versionadded .versionmodified.deprecated,
+.dark-palette #search-results .versionchanged .versionmodified.deprecated,
+.dark-palette #search-results .deprecated:not(.versionmodified) .versionmodified.deprecated,
+.dark-palette .content .versionadded .versionmodified.deprecated,
+.dark-palette .content .versionchanged .versionmodified.deprecated,
+.dark-palette .content .deprecated:not(.versionmodified) .versionmodified.deprecated,
+.dark-palette .document .versionadded .versionmodified.deprecated,
+.dark-palette .document .versionchanged .versionmodified.deprecated,
+.dark-palette .document .deprecated:not(.versionmodified) .versionmodified.deprecated {
+  color: #e31c51;
+}
+
+.light-palette #search-results .versionadded,
+.light-palette #search-results .versionchanged,
+.light-palette #search-results .deprecated:not(.versionmodified),
+.light-palette .content .versionadded,
+.light-palette .content .versionchanged,
+.light-palette .content .deprecated:not(.versionmodified),
+.light-palette .document .versionadded,
+.light-palette .document .versionchanged,
+.light-palette .document .deprecated:not(.versionmodified) {
+  background-color: whitesmoke;
+  border-top: 4px solid #e5dcdc;
+}
+.light-palette #search-results .versionadded .versionmodified.added,
+.light-palette #search-results .versionchanged .versionmodified.added,
+.light-palette #search-results .deprecated:not(.versionmodified) .versionmodified.added,
+.light-palette .content .versionadded .versionmodified.added,
+.light-palette .content .versionchanged .versionmodified.added,
+.light-palette .content .deprecated:not(.versionmodified) .versionmodified.added,
+.light-palette .document .versionadded .versionmodified.added,
+.light-palette .document .versionchanged .versionmodified.added,
+.light-palette .document .deprecated:not(.versionmodified) .versionmodified.added {
+  color: #449cc5;
+}
+.light-palette #search-results .versionadded .versionmodified.changed,
+.light-palette #search-results .versionchanged .versionmodified.changed,
+.light-palette #search-results .deprecated:not(.versionmodified) .versionmodified.changed,
+.light-palette .content .versionadded .versionmodified.changed,
+.light-palette .content .versionchanged .versionmodified.changed,
+.light-palette .content .deprecated:not(.versionmodified) .versionmodified.changed,
+.light-palette .document .versionadded .versionmodified.changed,
+.light-palette .document .versionchanged .versionmodified.changed,
+.light-palette .document .deprecated:not(.versionmodified) .versionmodified.changed {
+  color: #ff7b00;
+}
+.light-palette #search-results .versionadded .versionmodified.deprecated,
+.light-palette #search-results .versionchanged .versionmodified.deprecated,
+.light-palette #search-results .deprecated:not(.versionmodified) .versionmodified.deprecated,
+.light-palette .content .versionadded .versionmodified.deprecated,
+.light-palette .content .versionchanged .versionmodified.deprecated,
+.light-palette .content .deprecated:not(.versionmodified) .versionmodified.deprecated,
+.light-palette .document .versionadded .versionmodified.deprecated,
+.light-palette .document .versionchanged .versionmodified.deprecated,
+.light-palette .document .deprecated:not(.versionmodified) .versionmodified.deprecated {
+  color: #e45649;
 }
 
 /*
@@ -19351,6 +18922,7 @@ aside.menu li {
   background-color: #c9d1d9;
   color: #121921;
 }
+
 .light-palette footer.footer {
   background-color: whitesmoke;
 }
@@ -19372,6 +18944,7 @@ code, pre {
 .dark-palette code, .dark-palette pre {
   background-color: #121921;
 }
+
 .light-palette code, .light-palette pre {
   background-color: #faf0f0;
 }
@@ -19380,10 +18953,12 @@ code, pre {
   padding: 1.5rem;
   color: #e31c51;
 }
+
 .light-palette pre:not(.dummy) {
   padding: 1.5rem;
   color: #e45649;
 }
+
 pre:not(.dummy) span {
   line-height: 20px;
 }
@@ -19394,15 +18969,16 @@ pre:not(.dummy) span.linenos {
 .dark-palette pre:not(.dummy) span.linenos {
   color: #c9d1d9;
 }
+
 .light-palette pre:not(.dummy) span.linenos {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 
 pre {
   padding: 2rem;
 }
 
-div[class^=highlight-] {
+div [class^=highlight-] {
   overflow-x: auto;
   margin-bottom: 1rem;
 }
@@ -19446,6 +19022,7 @@ div[class^=highlight-] {
 .dark-palette .tag:not(footer) .sig-param {
   color: #c9d1d9;
 }
+
 .light-palette .glossary dt:not(footer),
 .light-palette .label:not(footer),
 .light-palette dt:not(footer),
@@ -19483,7 +19060,7 @@ div[class^=highlight-] {
 .light-palette dt:not(footer) .sig-param,
 .light-palette span.guilabel:not(footer) .sig-param,
 .light-palette .tag:not(footer) .sig-param {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 
 .highlight {
@@ -19520,7 +19097,7 @@ div[class^=highlight-] {
   color: #c9d1d9;
 }
 .dark-palette .highlight .nf {
-  color: #d45ece;
+  color: #a3c0ff;
 }
 .dark-palette .highlight .nl {
   color: #a3c0ff;
@@ -19541,14 +19118,14 @@ div[class^=highlight-] {
   color: #ff7b00;
 }
 .dark-palette .highlight .vc, .dark-palette .highlight .vg, .dark-palette .highlight .vi, .dark-palette .highlight .bp, .dark-palette .highlight .o {
-  color: #c9d1d9;
+  color: #255bd0;
 }
 .dark-palette .highlight .ow {
   color: #d45ece;
 }
 .dark-palette .highlight .c, .dark-palette .highlight .cm {
   font-style: italic;
-  color: #c9d1d9;
+  color: #5ea14f;
 }
 .dark-palette .highlight .cp {
   font-style: italic;
@@ -19556,7 +19133,7 @@ div[class^=highlight-] {
 }
 .dark-palette .highlight .c1, .dark-palette .highlight .cs {
   font-style: italic;
-  color: #c9d1d9;
+  color: #5ea14f;
 }
 .dark-palette .highlight .k, .dark-palette .highlight .kc, .dark-palette .highlight .kd {
   color: #d45ece;
@@ -19585,17 +19162,18 @@ div[class^=highlight-] {
 .dark-palette .highlight .g, .dark-palette .highlight .gd, .dark-palette .highlight .ge, .dark-palette .highlight .gr, .dark-palette .highlight .gh, .dark-palette .highlight .gi, .dark-palette .highlight .go, .dark-palette .highlight .gp, .dark-palette .highlight .gs, .dark-palette .highlight .gu, .dark-palette .highlight .gt {
   color: #a3c0ff;
 }
+
 .light-palette .highlight .hll {
   background-color: #ffffcc;
 }
 .light-palette .highlight .err {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 .light-palette .highlight .w {
   color: transparent;
 }
 .light-palette .highlight .x, .light-palette .highlight .n {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 .light-palette .highlight .na {
   color: #4078f2;
@@ -19610,10 +19188,10 @@ div[class^=highlight-] {
   color: #f57fef;
 }
 .light-palette .highlight .ni, .light-palette .highlight .ne {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 .light-palette .highlight .nf {
-  color: #f57fef;
+  color: #a3c0ff;
 }
 .light-palette .highlight .nl {
   color: #4078f2;
@@ -19625,7 +19203,7 @@ div[class^=highlight-] {
   color: #449cc5;
 }
 .light-palette .highlight .py {
-  color: #a1b1bf;
+  color: #2f3546;
 }
 .light-palette .highlight .nt {
   color: #c18401;
@@ -19634,14 +19212,14 @@ div[class^=highlight-] {
   color: #ff7b00;
 }
 .light-palette .highlight .vc, .light-palette .highlight .vg, .light-palette .highlight .vi, .light-palette .highlight .bp, .light-palette .highlight .o {
-  color: #a1b1bf;
+  color: #4078f2;
 }
 .light-palette .highlight .ow {
   color: #f57fef;
 }
 .light-palette .highlight .c, .light-palette .highlight .cm {
   font-style: italic;
-  color: #a1b1bf;
+  color: #5ea14f;
 }
 .light-palette .highlight .cp {
   font-style: italic;
@@ -19649,7 +19227,7 @@ div[class^=highlight-] {
 }
 .light-palette .highlight .c1, .light-palette .highlight .cs {
   font-style: italic;
-  color: #a1b1bf;
+  color: #5ea14f;
 }
 .light-palette .highlight .k, .light-palette .highlight .kc, .light-palette .highlight .kd {
   color: #f57fef;

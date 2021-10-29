@@ -35,7 +35,7 @@ pre {
   padding: 2rem;
 }
 
-div[class^='highlight-'] {
+div [class^='highlight-'] {
   overflow-x: auto;
   margin-bottom: 1rem;
 }
@@ -118,7 +118,7 @@ span.guilabel:not(footer),
     }
 
     .nf {
-      color: palette.get('pink');
+      color: palette.get('blueish');
     }
 
     .nl {
@@ -146,7 +146,7 @@ span.guilabel:not(footer),
     }
 
     .vc, .vg, .vi, .bp, .o {
-      color: palette.get('code-color');
+      color: palette.get('blue');
     }
 
     .ow {
@@ -155,7 +155,7 @@ span.guilabel:not(footer),
 
     .c, .cm {
       font-style: italic;
-      color: palette.get('code-color');
+      color: palette.get('greenish');
     }
 
     .cp {
@@ -165,7 +165,7 @@ span.guilabel:not(footer),
 
     .c1, .cs {
       font-style: italic;
-      color: palette.get('code-color');
+      color: palette.get('greenish');
     }
 
     .k, .kc, .kd {

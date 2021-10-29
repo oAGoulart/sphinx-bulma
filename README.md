@@ -6,7 +6,7 @@
 
 > Currently updating major changes and updates from [AccentDesign/karma_sphinx_theme](https://github.com/AccentDesign/karma_sphinx_theme)
 > 
-> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.11_)
+> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.12_)
 
 ### A simple responsive theme for sphinx using **[Bulma]** featuring:
   1.  Has built-in dark/light color themes using native _CSS_ and _JavaScript_
@@ -17,13 +17,13 @@
   6.  Theme user-defined documentation repository reference
 
 ### Yet to be done a.k.a todo
-  - [ ] Support user-defined colors(at least primary)<br>
-  <input type="checkbox" indeterminate><span><del>Enable custom Sass rules on docs build</del> (can be done but requires user to build theme again)</span>
+  - [x] Support user-defined colors (primary color can be changed from `conf.py`)
+  - [x] <del>Enable custom Sass rules on docs build</del> (can be done but requires user to build theme again)
   - [ ] Examples of use with [breathe] for **C++** docs
 
 ## Installing
 
-Using pip to install from this repository:
+Using pip to install this package (recommended using it within a [venv]):
 
 ```sh
 pip install sphinx-bulma
@@ -49,7 +49,9 @@ html_theme_options = {
   'git_icon': 'github',            # icon to show on docs
   'git_desc': 'Check the sources', # link description
   'default_palette': 'dark',       # default color palette (dark or light)
-  'sidebar': True                  # if true sidebar will be rendered
+  'sidebar': True,                 # if true sidebar will be rendered
+  'primary': 885bfb,               # primary color hex value (do not add preceding #)
+  'primary_invert': fff            # primary inverted color hex value (do not add preceding #)
 }
 ```
 
@@ -57,3 +59,4 @@ html_theme_options = {
 [Fontello]: https://fontello.com/
 [todo]: /#yet-to-be-done-aka-todo
 [breathe]: https://github.com/michaeljones/breathe
+[venv]: https://docs.python.org/3/library/venv.html

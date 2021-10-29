@@ -28,6 +28,7 @@
   $family-sans-serif: ('Josefin Sans', sans-serif),
   $family-monospace: ('Courier Prime', monospace),
   $primary: hsl(257, 95%, 67%),
+  $primary-invert: hsl(0, 0%, 100%),
   $link: hsl(221, 87%, 60%),
   $link-invert: hsl(39, 13%, 40%),
   $link-light: hsl(221, 87%, 75%),
@@ -83,7 +84,7 @@ $palettes: (
     'switch-icon': '\e900'
   ),
   'light-palette': (
-    'code-color': bulma.$grey-light,
+    'code-color': bulma.$grey-darker,
     'text-color': bulma.$text,
     'bg-color': bulma.$background,
     'tab-color': bulma.$border-light,
