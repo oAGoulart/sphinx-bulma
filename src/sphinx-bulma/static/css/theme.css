@@ -87,9 +87,7 @@ fieldset[disabled] .file-name, fieldset[disabled] .select select, .select fields
   width: 0.625em;
 }
 
-.tabs:not(:last-child), .pagination:not(:last-child), .message:not(:last-child), #search-results .admonition:not(:last-child),
-.content .admonition:not(:last-child),
-.document .admonition:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child), .block:not(:last-child), .title:not(:last-child), .dark-palette #search-results .topic-title:not(:last-child),
+.tabs:not(:last-child), .pagination:not(:last-child), .message:not(:last-child), .level:not(:last-child), .breadcrumb:not(:last-child), .block:not(:last-child), .title:not(:last-child), .dark-palette #search-results .topic-title:not(:last-child),
 .dark-palette .content .topic-title:not(:last-child),
 .dark-palette .document .topic-title:not(:last-child), .light-palette #search-results .topic-title:not(:last-child),
 .light-palette .content .topic-title:not(:last-child),
@@ -5507,1081 +5505,201 @@ button.dropdown-item.is-active {
   margin-bottom: 1em;
 }
 
-.message, #search-results .admonition,
-.content .admonition,
-.document .admonition {
+.message {
   background-color: #faf0f0;
   border-radius: 4px;
   font-size: 1rem;
 }
-.message strong, #search-results .admonition strong,
-.content .admonition strong,
-.document .admonition strong {
+.message strong {
   color: currentColor;
 }
-.message a:not(.button):not(.tag):not(.dropdown-item), #search-results .admonition a:not(.button):not(.tag):not(.dropdown-item),
-.content .admonition a:not(.button):not(.tag):not(.dropdown-item),
-.document .admonition a:not(.button):not(.tag):not(.dropdown-item) {
+.message a:not(.button):not(.tag):not(.dropdown-item) {
   color: currentColor;
   text-decoration: underline;
 }
-.message.is-small, #search-results .is-small.admonition,
-.content .is-small.admonition,
-.document .is-small.admonition {
+.message.is-small {
   font-size: 0.75rem;
 }
-.message.is-medium, #search-results .is-medium.admonition,
-.content .is-medium.admonition,
-.document .is-medium.admonition {
+.message.is-medium {
   font-size: 1.25rem;
 }
-.message.is-large, #search-results .is-large.admonition,
-.content .is-large.admonition,
-.document .is-large.admonition {
+.message.is-large {
   font-size: 1.5rem;
 }
-.message.is-white, #search-results .is-white.admonition,
-.content .is-white.admonition,
-.document .is-white.admonition {
+.message.is-white {
   background-color: #fafafa;
 }
-.message.is-white .message-header, #search-results .is-white.admonition .message-header,
-.content .is-white.admonition .message-header,
-.document .is-white.admonition .message-header, .message.is-white .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-white p.admonition-title, .dark-palette #search-results .is-white.admonition p.admonition-title,
-.message.is-white .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-white p.admonition-title,
-#search-results .dark-palette .content .is-white.admonition p.admonition-title,
-.dark-palette .content .is-white.admonition p.admonition-title,
-.document .dark-palette .content .is-white.admonition p.admonition-title,
-.dark-palette .content .document .is-white.admonition p.admonition-title,
-.message.is-white .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-white p.admonition-title,
-#search-results .dark-palette .document .is-white.admonition p.admonition-title,
-.content .dark-palette .document .is-white.admonition p.admonition-title,
-.dark-palette .document .content .is-white.admonition p.admonition-title,
-.dark-palette .document .is-white.admonition p.admonition-title, .message.is-white .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-white p.admonition-title, .light-palette #search-results .is-white.admonition p.admonition-title,
-.message.is-white .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-white p.admonition-title,
-#search-results .light-palette .content .is-white.admonition p.admonition-title,
-.light-palette .content .is-white.admonition p.admonition-title,
-.document .light-palette .content .is-white.admonition p.admonition-title,
-.light-palette .content .document .is-white.admonition p.admonition-title,
-.message.is-white .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-white p.admonition-title,
-#search-results .light-palette .document .is-white.admonition p.admonition-title,
-.content .light-palette .document .is-white.admonition p.admonition-title,
-.light-palette .document .content .is-white.admonition p.admonition-title,
-.light-palette .document .is-white.admonition p.admonition-title {
+.message.is-white .message-header {
   background-color: #fafafa;
   color: #0d1117;
 }
-.message.is-white .message-body, #search-results .is-white.admonition .message-body,
-.content .is-white.admonition .message-body,
-.document .is-white.admonition .message-body, .message.is-white .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-white p:not(.admonition-title), .dark-palette #search-results .is-white.admonition p:not(.admonition-title),
-.message.is-white .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-white p:not(.admonition-title),
-#search-results .dark-palette .content .is-white.admonition p:not(.admonition-title),
-.dark-palette .content .is-white.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-white.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-white.admonition p:not(.admonition-title),
-.message.is-white .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-white p:not(.admonition-title),
-#search-results .dark-palette .document .is-white.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-white.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-white.admonition p:not(.admonition-title),
-.dark-palette .document .is-white.admonition p:not(.admonition-title), .message.is-white .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-white p:not(.admonition-title), .light-palette #search-results .is-white.admonition p:not(.admonition-title),
-.message.is-white .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-white p:not(.admonition-title),
-#search-results .light-palette .content .is-white.admonition p:not(.admonition-title),
-.light-palette .content .is-white.admonition p:not(.admonition-title),
-.document .light-palette .content .is-white.admonition p:not(.admonition-title),
-.light-palette .content .document .is-white.admonition p:not(.admonition-title),
-.message.is-white .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-white p:not(.admonition-title),
-#search-results .light-palette .document .is-white.admonition p:not(.admonition-title),
-.content .light-palette .document .is-white.admonition p:not(.admonition-title),
-.light-palette .document .content .is-white.admonition p:not(.admonition-title),
-.light-palette .document .is-white.admonition p:not(.admonition-title) {
+.message.is-white .message-body {
   border-color: #fafafa;
 }
-.message.is-black, #search-results .is-black.admonition,
-.content .is-black.admonition,
-.document .is-black.admonition {
+.message.is-black {
   background-color: #f8fafb;
 }
-.message.is-black .message-header, #search-results .is-black.admonition .message-header,
-.content .is-black.admonition .message-header,
-.document .is-black.admonition .message-header, .message.is-black .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-black p.admonition-title, .dark-palette #search-results .is-black.admonition p.admonition-title,
-.message.is-black .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-black p.admonition-title,
-#search-results .dark-palette .content .is-black.admonition p.admonition-title,
-.dark-palette .content .is-black.admonition p.admonition-title,
-.document .dark-palette .content .is-black.admonition p.admonition-title,
-.dark-palette .content .document .is-black.admonition p.admonition-title,
-.message.is-black .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-black p.admonition-title,
-#search-results .dark-palette .document .is-black.admonition p.admonition-title,
-.content .dark-palette .document .is-black.admonition p.admonition-title,
-.dark-palette .document .content .is-black.admonition p.admonition-title,
-.dark-palette .document .is-black.admonition p.admonition-title, .message.is-black .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-black p.admonition-title, .light-palette #search-results .is-black.admonition p.admonition-title,
-.message.is-black .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-black p.admonition-title,
-#search-results .light-palette .content .is-black.admonition p.admonition-title,
-.light-palette .content .is-black.admonition p.admonition-title,
-.document .light-palette .content .is-black.admonition p.admonition-title,
-.light-palette .content .document .is-black.admonition p.admonition-title,
-.message.is-black .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-black p.admonition-title,
-#search-results .light-palette .document .is-black.admonition p.admonition-title,
-.content .light-palette .document .is-black.admonition p.admonition-title,
-.light-palette .document .content .is-black.admonition p.admonition-title,
-.light-palette .document .is-black.admonition p.admonition-title {
+.message.is-black .message-header {
   background-color: #0d1117;
   color: #fafafa;
 }
-.message.is-black .message-body, #search-results .is-black.admonition .message-body,
-.content .is-black.admonition .message-body,
-.document .is-black.admonition .message-body, .message.is-black .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-black p:not(.admonition-title), .dark-palette #search-results .is-black.admonition p:not(.admonition-title),
-.message.is-black .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-black p:not(.admonition-title),
-#search-results .dark-palette .content .is-black.admonition p:not(.admonition-title),
-.dark-palette .content .is-black.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-black.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-black.admonition p:not(.admonition-title),
-.message.is-black .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-black p:not(.admonition-title),
-#search-results .dark-palette .document .is-black.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-black.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-black.admonition p:not(.admonition-title),
-.dark-palette .document .is-black.admonition p:not(.admonition-title), .message.is-black .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-black p:not(.admonition-title), .light-palette #search-results .is-black.admonition p:not(.admonition-title),
-.message.is-black .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-black p:not(.admonition-title),
-#search-results .light-palette .content .is-black.admonition p:not(.admonition-title),
-.light-palette .content .is-black.admonition p:not(.admonition-title),
-.document .light-palette .content .is-black.admonition p:not(.admonition-title),
-.light-palette .content .document .is-black.admonition p:not(.admonition-title),
-.message.is-black .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-black p:not(.admonition-title),
-#search-results .light-palette .document .is-black.admonition p:not(.admonition-title),
-.content .light-palette .document .is-black.admonition p:not(.admonition-title),
-.light-palette .document .content .is-black.admonition p:not(.admonition-title),
-.light-palette .document .is-black.admonition p:not(.admonition-title) {
+.message.is-black .message-body {
   border-color: #0d1117;
 }
-.message.is-light, #search-results .is-light.admonition,
-.content .is-light.admonition,
-.document .is-light.admonition {
+.message.is-light {
   background-color: #fcf7f7;
 }
-.message.is-light .message-header, #search-results .is-light.admonition .message-header,
-.content .is-light.admonition .message-header,
-.document .is-light.admonition .message-header, .message.is-light .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-light p.admonition-title, .dark-palette #search-results .is-light.admonition p.admonition-title,
-.message.is-light .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-light p.admonition-title,
-#search-results .dark-palette .content .is-light.admonition p.admonition-title,
-.dark-palette .content .is-light.admonition p.admonition-title,
-.document .dark-palette .content .is-light.admonition p.admonition-title,
-.dark-palette .content .document .is-light.admonition p.admonition-title,
-.message.is-light .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-light p.admonition-title,
-#search-results .dark-palette .document .is-light.admonition p.admonition-title,
-.content .dark-palette .document .is-light.admonition p.admonition-title,
-.dark-palette .document .content .is-light.admonition p.admonition-title,
-.dark-palette .document .is-light.admonition p.admonition-title, .message.is-light .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-light p.admonition-title, .light-palette #search-results .is-light.admonition p.admonition-title,
-.message.is-light .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-light p.admonition-title,
-#search-results .light-palette .content .is-light.admonition p.admonition-title,
-.light-palette .content .is-light.admonition p.admonition-title,
-.document .light-palette .content .is-light.admonition p.admonition-title,
-.light-palette .content .document .is-light.admonition p.admonition-title,
-.message.is-light .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-light p.admonition-title,
-#search-results .light-palette .document .is-light.admonition p.admonition-title,
-.content .light-palette .document .is-light.admonition p.admonition-title,
-.light-palette .document .content .is-light.admonition p.admonition-title,
-.light-palette .document .is-light.admonition p.admonition-title {
+.message.is-light .message-header {
   background-color: #faf0f0;
   color: rgba(0, 0, 0, 0.7);
 }
-.message.is-light .message-body, #search-results .is-light.admonition .message-body,
-.content .is-light.admonition .message-body,
-.document .is-light.admonition .message-body, .message.is-light .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-light p:not(.admonition-title), .dark-palette #search-results .is-light.admonition p:not(.admonition-title),
-.message.is-light .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-light p:not(.admonition-title),
-#search-results .dark-palette .content .is-light.admonition p:not(.admonition-title),
-.dark-palette .content .is-light.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-light.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-light.admonition p:not(.admonition-title),
-.message.is-light .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-light p:not(.admonition-title),
-#search-results .dark-palette .document .is-light.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-light.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-light.admonition p:not(.admonition-title),
-.dark-palette .document .is-light.admonition p:not(.admonition-title), .message.is-light .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-light p:not(.admonition-title), .light-palette #search-results .is-light.admonition p:not(.admonition-title),
-.message.is-light .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-light p:not(.admonition-title),
-#search-results .light-palette .content .is-light.admonition p:not(.admonition-title),
-.light-palette .content .is-light.admonition p:not(.admonition-title),
-.document .light-palette .content .is-light.admonition p:not(.admonition-title),
-.light-palette .content .document .is-light.admonition p:not(.admonition-title),
-.message.is-light .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-light p:not(.admonition-title),
-#search-results .light-palette .document .is-light.admonition p:not(.admonition-title),
-.content .light-palette .document .is-light.admonition p:not(.admonition-title),
-.light-palette .document .content .is-light.admonition p:not(.admonition-title),
-.light-palette .document .is-light.admonition p:not(.admonition-title) {
+.message.is-light .message-body {
   border-color: #faf0f0;
 }
-.message.is-dark, #search-results .is-dark.admonition,
-.content .is-dark.admonition,
-.document .is-dark.admonition {
+.message.is-dark {
   background-color: #f9f9fb;
 }
-.message.is-dark .message-header, #search-results .is-dark.admonition .message-header,
-.content .is-dark.admonition .message-header,
-.document .is-dark.admonition .message-header, .message.is-dark .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-dark p.admonition-title, .dark-palette #search-results .is-dark.admonition p.admonition-title,
-.message.is-dark .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-dark p.admonition-title,
-#search-results .dark-palette .content .is-dark.admonition p.admonition-title,
-.dark-palette .content .is-dark.admonition p.admonition-title,
-.document .dark-palette .content .is-dark.admonition p.admonition-title,
-.dark-palette .content .document .is-dark.admonition p.admonition-title,
-.message.is-dark .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-dark p.admonition-title,
-#search-results .dark-palette .document .is-dark.admonition p.admonition-title,
-.content .dark-palette .document .is-dark.admonition p.admonition-title,
-.dark-palette .document .content .is-dark.admonition p.admonition-title,
-.dark-palette .document .is-dark.admonition p.admonition-title, .message.is-dark .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-dark p.admonition-title, .light-palette #search-results .is-dark.admonition p.admonition-title,
-.message.is-dark .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-dark p.admonition-title,
-#search-results .light-palette .content .is-dark.admonition p.admonition-title,
-.light-palette .content .is-dark.admonition p.admonition-title,
-.document .light-palette .content .is-dark.admonition p.admonition-title,
-.light-palette .content .document .is-dark.admonition p.admonition-title,
-.message.is-dark .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-dark p.admonition-title,
-#search-results .light-palette .document .is-dark.admonition p.admonition-title,
-.content .light-palette .document .is-dark.admonition p.admonition-title,
-.light-palette .document .content .is-dark.admonition p.admonition-title,
-.light-palette .document .is-dark.admonition p.admonition-title {
+.message.is-dark .message-header {
   background-color: #2f3546;
   color: #fff;
 }
-.message.is-dark .message-body, #search-results .is-dark.admonition .message-body,
-.content .is-dark.admonition .message-body,
-.document .is-dark.admonition .message-body, .message.is-dark .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-dark p:not(.admonition-title), .dark-palette #search-results .is-dark.admonition p:not(.admonition-title),
-.message.is-dark .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-dark p:not(.admonition-title),
-#search-results .dark-palette .content .is-dark.admonition p:not(.admonition-title),
-.dark-palette .content .is-dark.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-dark.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-dark.admonition p:not(.admonition-title),
-.message.is-dark .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-dark p:not(.admonition-title),
-#search-results .dark-palette .document .is-dark.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-dark.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-dark.admonition p:not(.admonition-title),
-.dark-palette .document .is-dark.admonition p:not(.admonition-title), .message.is-dark .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-dark p:not(.admonition-title), .light-palette #search-results .is-dark.admonition p:not(.admonition-title),
-.message.is-dark .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-dark p:not(.admonition-title),
-#search-results .light-palette .content .is-dark.admonition p:not(.admonition-title),
-.light-palette .content .is-dark.admonition p:not(.admonition-title),
-.document .light-palette .content .is-dark.admonition p:not(.admonition-title),
-.light-palette .content .document .is-dark.admonition p:not(.admonition-title),
-.message.is-dark .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-dark p:not(.admonition-title),
-#search-results .light-palette .document .is-dark.admonition p:not(.admonition-title),
-.content .light-palette .document .is-dark.admonition p:not(.admonition-title),
-.light-palette .document .content .is-dark.admonition p:not(.admonition-title),
-.light-palette .document .is-dark.admonition p:not(.admonition-title) {
+.message.is-dark .message-body {
   border-color: #2f3546;
 }
-.message.is-primary, #search-results .is-primary.admonition,
-.content .is-primary.admonition,
-.document .is-primary.admonition {
+.message.is-primary {
   background-color: #f1ebfe;
 }
-.message.is-primary .message-header, #search-results .is-primary.admonition .message-header,
-.content .is-primary.admonition .message-header,
-.document .is-primary.admonition .message-header, .message.is-primary .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-primary p.admonition-title, .dark-palette #search-results .is-primary.admonition p.admonition-title,
-.message.is-primary .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-primary p.admonition-title,
-#search-results .dark-palette .content .is-primary.admonition p.admonition-title,
-.dark-palette .content .is-primary.admonition p.admonition-title,
-.document .dark-palette .content .is-primary.admonition p.admonition-title,
-.dark-palette .content .document .is-primary.admonition p.admonition-title,
-.message.is-primary .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-primary p.admonition-title,
-#search-results .dark-palette .document .is-primary.admonition p.admonition-title,
-.content .dark-palette .document .is-primary.admonition p.admonition-title,
-.dark-palette .document .content .is-primary.admonition p.admonition-title,
-.dark-palette .document .is-primary.admonition p.admonition-title, .message.is-primary .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-primary p.admonition-title, .light-palette #search-results .is-primary.admonition p.admonition-title,
-.message.is-primary .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-primary p.admonition-title,
-#search-results .light-palette .content .is-primary.admonition p.admonition-title,
-.light-palette .content .is-primary.admonition p.admonition-title,
-.document .light-palette .content .is-primary.admonition p.admonition-title,
-.light-palette .content .document .is-primary.admonition p.admonition-title,
-.message.is-primary .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-primary p.admonition-title,
-#search-results .light-palette .document .is-primary.admonition p.admonition-title,
-.content .light-palette .document .is-primary.admonition p.admonition-title,
-.light-palette .document .content .is-primary.admonition p.admonition-title,
-.light-palette .document .is-primary.admonition p.admonition-title {
+.message.is-primary .message-header {
   background-color: #885bfb;
   color: white;
 }
-.message.is-primary .message-body, #search-results .is-primary.admonition .message-body,
-.content .is-primary.admonition .message-body,
-.document .is-primary.admonition .message-body, .message.is-primary .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-primary p:not(.admonition-title), .dark-palette #search-results .is-primary.admonition p:not(.admonition-title),
-.message.is-primary .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-primary p:not(.admonition-title),
-#search-results .dark-palette .content .is-primary.admonition p:not(.admonition-title),
-.dark-palette .content .is-primary.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-primary.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-primary.admonition p:not(.admonition-title),
-.message.is-primary .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-primary p:not(.admonition-title),
-#search-results .dark-palette .document .is-primary.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-primary.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-primary.admonition p:not(.admonition-title),
-.dark-palette .document .is-primary.admonition p:not(.admonition-title), .message.is-primary .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-primary p:not(.admonition-title), .light-palette #search-results .is-primary.admonition p:not(.admonition-title),
-.message.is-primary .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-primary p:not(.admonition-title),
-#search-results .light-palette .content .is-primary.admonition p:not(.admonition-title),
-.light-palette .content .is-primary.admonition p:not(.admonition-title),
-.document .light-palette .content .is-primary.admonition p:not(.admonition-title),
-.light-palette .content .document .is-primary.admonition p:not(.admonition-title),
-.message.is-primary .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-primary p:not(.admonition-title),
-#search-results .light-palette .document .is-primary.admonition p:not(.admonition-title),
-.content .light-palette .document .is-primary.admonition p:not(.admonition-title),
-.light-palette .document .content .is-primary.admonition p:not(.admonition-title),
-.light-palette .document .is-primary.admonition p:not(.admonition-title) {
+.message.is-primary .message-body {
   border-color: #885bfb;
   color: #4206db;
 }
-.message.is-link, #search-results .is-link.admonition,
-.content .is-link.admonition,
-.document .is-link.admonition {
+.message.is-link {
   background-color: #88abf7;
 }
-.message.is-link .message-header, #search-results .is-link.admonition .message-header,
-.content .is-link.admonition .message-header,
-.document .is-link.admonition .message-header, .message.is-link .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-link p.admonition-title, .dark-palette #search-results .is-link.admonition p.admonition-title,
-.message.is-link .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-link p.admonition-title,
-#search-results .dark-palette .content .is-link.admonition p.admonition-title,
-.dark-palette .content .is-link.admonition p.admonition-title,
-.document .dark-palette .content .is-link.admonition p.admonition-title,
-.dark-palette .content .document .is-link.admonition p.admonition-title,
-.message.is-link .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-link p.admonition-title,
-#search-results .dark-palette .document .is-link.admonition p.admonition-title,
-.content .dark-palette .document .is-link.admonition p.admonition-title,
-.dark-palette .document .content .is-link.admonition p.admonition-title,
-.dark-palette .document .is-link.admonition p.admonition-title, .message.is-link .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-link p.admonition-title, .light-palette #search-results .is-link.admonition p.admonition-title,
-.message.is-link .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-link p.admonition-title,
-#search-results .light-palette .content .is-link.admonition p.admonition-title,
-.light-palette .content .is-link.admonition p.admonition-title,
-.document .light-palette .content .is-link.admonition p.admonition-title,
-.light-palette .content .document .is-link.admonition p.admonition-title,
-.message.is-link .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-link p.admonition-title,
-#search-results .light-palette .document .is-link.admonition p.admonition-title,
-.content .light-palette .document .is-link.admonition p.admonition-title,
-.light-palette .document .content .is-link.admonition p.admonition-title,
-.light-palette .document .is-link.admonition p.admonition-title {
+.message.is-link .message-header {
   background-color: #4078f2;
   color: #736a59;
 }
-.message.is-link .message-body, #search-results .is-link.admonition .message-body,
-.content .is-link.admonition .message-body,
-.document .is-link.admonition .message-body, .message.is-link .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-link p:not(.admonition-title), .dark-palette #search-results .is-link.admonition p:not(.admonition-title),
-.message.is-link .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-link p:not(.admonition-title),
-#search-results .dark-palette .content .is-link.admonition p:not(.admonition-title),
-.dark-palette .content .is-link.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-link.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-link.admonition p:not(.admonition-title),
-.message.is-link .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-link p:not(.admonition-title),
-#search-results .dark-palette .document .is-link.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-link.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-link.admonition p:not(.admonition-title),
-.dark-palette .document .is-link.admonition p:not(.admonition-title), .message.is-link .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-link p:not(.admonition-title), .light-palette #search-results .is-link.admonition p:not(.admonition-title),
-.message.is-link .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-link p:not(.admonition-title),
-#search-results .light-palette .content .is-link.admonition p:not(.admonition-title),
-.light-palette .content .is-link.admonition p:not(.admonition-title),
-.document .light-palette .content .is-link.admonition p:not(.admonition-title),
-.light-palette .content .document .is-link.admonition p:not(.admonition-title),
-.message.is-link .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-link p:not(.admonition-title),
-#search-results .light-palette .document .is-link.admonition p:not(.admonition-title),
-.content .light-palette .document .is-link.admonition p:not(.admonition-title),
-.light-palette .document .content .is-link.admonition p:not(.admonition-title),
-.light-palette .document .is-link.admonition p:not(.admonition-title) {
+.message.is-link .message-body {
   border-color: #4078f2;
   color: #30529c;
 }
-.message.is-info, #search-results .is-info.admonition,
-.content .is-info.admonition,
-.document .is-info.admonition {
+.message.is-info {
   background-color: #eff7fa;
 }
-.message.is-info .message-header, #search-results .is-info.admonition .message-header,
-.content .is-info.admonition .message-header,
-.document .is-info.admonition .message-header, .message.is-info .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-info p.admonition-title, .dark-palette #search-results .is-info.admonition p.admonition-title,
-.message.is-info .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-info p.admonition-title,
-#search-results .dark-palette .content .is-info.admonition p.admonition-title,
-.dark-palette .content .is-info.admonition p.admonition-title,
-.document .dark-palette .content .is-info.admonition p.admonition-title,
-.dark-palette .content .document .is-info.admonition p.admonition-title,
-.message.is-info .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-info p.admonition-title,
-#search-results .dark-palette .document .is-info.admonition p.admonition-title,
-.content .dark-palette .document .is-info.admonition p.admonition-title,
-.dark-palette .document .content .is-info.admonition p.admonition-title,
-.dark-palette .document .is-info.admonition p.admonition-title, .message.is-info .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-info p.admonition-title, .light-palette #search-results .is-info.admonition p.admonition-title,
-.message.is-info .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-info p.admonition-title,
-#search-results .light-palette .content .is-info.admonition p.admonition-title,
-.light-palette .content .is-info.admonition p.admonition-title,
-.document .light-palette .content .is-info.admonition p.admonition-title,
-.light-palette .content .document .is-info.admonition p.admonition-title,
-.message.is-info .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-info p.admonition-title,
-#search-results .light-palette .document .is-info.admonition p.admonition-title,
-.content .light-palette .document .is-info.admonition p.admonition-title,
-.light-palette .document .content .is-info.admonition p.admonition-title,
-.light-palette .document .is-info.admonition p.admonition-title {
+.message.is-info .message-header {
   background-color: #449cc5;
   color: #fff;
 }
-.message.is-info .message-body, #search-results .is-info.admonition .message-body,
-.content .is-info.admonition .message-body,
-.document .is-info.admonition .message-body, .message.is-info .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-info p:not(.admonition-title), .dark-palette #search-results .is-info.admonition p:not(.admonition-title),
-.message.is-info .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-info p:not(.admonition-title),
-#search-results .dark-palette .content .is-info.admonition p:not(.admonition-title),
-.dark-palette .content .is-info.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-info.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-info.admonition p:not(.admonition-title),
-.message.is-info .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-info p:not(.admonition-title),
-#search-results .dark-palette .document .is-info.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-info.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-info.admonition p:not(.admonition-title),
-.dark-palette .document .is-info.admonition p:not(.admonition-title), .message.is-info .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-info p:not(.admonition-title), .light-palette #search-results .is-info.admonition p:not(.admonition-title),
-.message.is-info .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-info p:not(.admonition-title),
-#search-results .light-palette .content .is-info.admonition p:not(.admonition-title),
-.light-palette .content .is-info.admonition p:not(.admonition-title),
-.document .light-palette .content .is-info.admonition p:not(.admonition-title),
-.light-palette .content .document .is-info.admonition p:not(.admonition-title),
-.message.is-info .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-info p:not(.admonition-title),
-#search-results .light-palette .document .is-info.admonition p:not(.admonition-title),
-.content .light-palette .document .is-info.admonition p:not(.admonition-title),
-.light-palette .document .content .is-info.admonition p:not(.admonition-title),
-.light-palette .document .is-info.admonition p:not(.admonition-title) {
+.message.is-info .message-body {
   border-color: #449cc5;
   color: #2f7798;
 }
-.message.is-success, #search-results .is-success.admonition,
-.content .is-success.admonition,
-.document .is-success.admonition {
+.message.is-success {
   background-color: #ebfff7;
 }
-.message.is-success .message-header, #search-results .is-success.admonition .message-header,
-.content .is-success.admonition .message-header,
-.document .is-success.admonition .message-header, .message.is-success .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-success p.admonition-title, .dark-palette #search-results .is-success.admonition p.admonition-title,
-.message.is-success .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-success p.admonition-title,
-#search-results .dark-palette .content .is-success.admonition p.admonition-title,
-.dark-palette .content .is-success.admonition p.admonition-title,
-.document .dark-palette .content .is-success.admonition p.admonition-title,
-.dark-palette .content .document .is-success.admonition p.admonition-title,
-.message.is-success .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-success p.admonition-title,
-#search-results .dark-palette .document .is-success.admonition p.admonition-title,
-.content .dark-palette .document .is-success.admonition p.admonition-title,
-.dark-palette .document .content .is-success.admonition p.admonition-title,
-.dark-palette .document .is-success.admonition p.admonition-title, .message.is-success .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-success p.admonition-title, .light-palette #search-results .is-success.admonition p.admonition-title,
-.message.is-success .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-success p.admonition-title,
-#search-results .light-palette .content .is-success.admonition p.admonition-title,
-.light-palette .content .is-success.admonition p.admonition-title,
-.document .light-palette .content .is-success.admonition p.admonition-title,
-.light-palette .content .document .is-success.admonition p.admonition-title,
-.message.is-success .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-success p.admonition-title,
-#search-results .light-palette .document .is-success.admonition p.admonition-title,
-.content .light-palette .document .is-success.admonition p.admonition-title,
-.light-palette .document .content .is-success.admonition p.admonition-title,
-.light-palette .document .is-success.admonition p.admonition-title {
+.message.is-success .message-header {
   background-color: #00ad6b;
   color: #fff;
 }
-.message.is-success .message-body, #search-results .is-success.admonition .message-body,
-.content .is-success.admonition .message-body,
-.document .is-success.admonition .message-body, .message.is-success .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-success p:not(.admonition-title), .dark-palette #search-results .is-success.admonition p:not(.admonition-title),
-.message.is-success .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-success p:not(.admonition-title),
-#search-results .dark-palette .content .is-success.admonition p:not(.admonition-title),
-.dark-palette .content .is-success.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-success.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-success.admonition p:not(.admonition-title),
-.message.is-success .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-success p:not(.admonition-title),
-#search-results .dark-palette .document .is-success.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-success.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-success.admonition p:not(.admonition-title),
-.dark-palette .document .is-success.admonition p:not(.admonition-title), .message.is-success .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-success p:not(.admonition-title), .light-palette #search-results .is-success.admonition p:not(.admonition-title),
-.message.is-success .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-success p:not(.admonition-title),
-#search-results .light-palette .content .is-success.admonition p:not(.admonition-title),
-.light-palette .content .is-success.admonition p:not(.admonition-title),
-.document .light-palette .content .is-success.admonition p:not(.admonition-title),
-.light-palette .content .document .is-success.admonition p:not(.admonition-title),
-.message.is-success .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-success p:not(.admonition-title),
-#search-results .light-palette .document .is-success.admonition p:not(.admonition-title),
-.content .light-palette .document .is-success.admonition p:not(.admonition-title),
-.light-palette .document .content .is-success.admonition p:not(.admonition-title),
-.light-palette .document .is-success.admonition p:not(.admonition-title) {
+.message.is-success .message-body {
   border-color: #00ad6b;
   color: #00c278;
 }
-.message.is-warning, #search-results .is-warning.admonition,
-.content .is-warning.admonition,
-.document .is-warning.admonition {
+.message.is-warning {
   background-color: #fffaeb;
 }
-.message.is-warning .message-header, #search-results .is-warning.admonition .message-header,
-.content .is-warning.admonition .message-header,
-.document .is-warning.admonition .message-header, .message.is-warning .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-warning p.admonition-title, .dark-palette #search-results .is-warning.admonition p.admonition-title,
-.message.is-warning .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-warning p.admonition-title,
-#search-results .dark-palette .content .is-warning.admonition p.admonition-title,
-.dark-palette .content .is-warning.admonition p.admonition-title,
-.document .dark-palette .content .is-warning.admonition p.admonition-title,
-.dark-palette .content .document .is-warning.admonition p.admonition-title,
-.message.is-warning .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-warning p.admonition-title,
-#search-results .dark-palette .document .is-warning.admonition p.admonition-title,
-.content .dark-palette .document .is-warning.admonition p.admonition-title,
-.dark-palette .document .content .is-warning.admonition p.admonition-title,
-.dark-palette .document .is-warning.admonition p.admonition-title, .message.is-warning .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-warning p.admonition-title, .light-palette #search-results .is-warning.admonition p.admonition-title,
-.message.is-warning .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-warning p.admonition-title,
-#search-results .light-palette .content .is-warning.admonition p.admonition-title,
-.light-palette .content .is-warning.admonition p.admonition-title,
-.document .light-palette .content .is-warning.admonition p.admonition-title,
-.light-palette .content .document .is-warning.admonition p.admonition-title,
-.message.is-warning .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-warning p.admonition-title,
-#search-results .light-palette .document .is-warning.admonition p.admonition-title,
-.content .light-palette .document .is-warning.admonition p.admonition-title,
-.light-palette .document .content .is-warning.admonition p.admonition-title,
-.light-palette .document .is-warning.admonition p.admonition-title {
+.message.is-warning .message-header {
   background-color: #ffc400;
   color: rgba(0, 0, 0, 0.7);
 }
-.message.is-warning .message-body, #search-results .is-warning.admonition .message-body,
-.content .is-warning.admonition .message-body,
-.document .is-warning.admonition .message-body, .message.is-warning .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-warning p:not(.admonition-title), .dark-palette #search-results .is-warning.admonition p:not(.admonition-title),
-.message.is-warning .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-warning p:not(.admonition-title),
-#search-results .dark-palette .content .is-warning.admonition p:not(.admonition-title),
-.dark-palette .content .is-warning.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-warning.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-warning.admonition p:not(.admonition-title),
-.message.is-warning .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-warning p:not(.admonition-title),
-#search-results .dark-palette .document .is-warning.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-warning.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-warning.admonition p:not(.admonition-title),
-.dark-palette .document .is-warning.admonition p:not(.admonition-title), .message.is-warning .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-warning p:not(.admonition-title), .light-palette #search-results .is-warning.admonition p:not(.admonition-title),
-.message.is-warning .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-warning p:not(.admonition-title),
-#search-results .light-palette .content .is-warning.admonition p:not(.admonition-title),
-.light-palette .content .is-warning.admonition p:not(.admonition-title),
-.document .light-palette .content .is-warning.admonition p:not(.admonition-title),
-.light-palette .content .document .is-warning.admonition p:not(.admonition-title),
-.message.is-warning .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-warning p:not(.admonition-title),
-#search-results .light-palette .document .is-warning.admonition p:not(.admonition-title),
-.content .light-palette .document .is-warning.admonition p:not(.admonition-title),
-.light-palette .document .content .is-warning.admonition p:not(.admonition-title),
-.light-palette .document .is-warning.admonition p:not(.admonition-title) {
+.message.is-warning .message-body {
   border-color: #ffc400;
   color: #947100;
 }
-.message.is-danger, #search-results .is-danger.admonition,
-.content .is-danger.admonition,
-.document .is-danger.admonition {
+.message.is-danger {
   background-color: #fcefed;
 }
-.message.is-danger .message-header, #search-results .is-danger.admonition .message-header,
-.content .is-danger.admonition .message-header,
-.document .is-danger.admonition .message-header, .message.is-danger .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-danger p.admonition-title, .dark-palette #search-results .is-danger.admonition p.admonition-title,
-.message.is-danger .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-danger p.admonition-title,
-#search-results .dark-palette .content .is-danger.admonition p.admonition-title,
-.dark-palette .content .is-danger.admonition p.admonition-title,
-.document .dark-palette .content .is-danger.admonition p.admonition-title,
-.dark-palette .content .document .is-danger.admonition p.admonition-title,
-.message.is-danger .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-danger p.admonition-title,
-#search-results .dark-palette .document .is-danger.admonition p.admonition-title,
-.content .dark-palette .document .is-danger.admonition p.admonition-title,
-.dark-palette .document .content .is-danger.admonition p.admonition-title,
-.dark-palette .document .is-danger.admonition p.admonition-title, .message.is-danger .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-danger p.admonition-title, .light-palette #search-results .is-danger.admonition p.admonition-title,
-.message.is-danger .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-danger p.admonition-title,
-#search-results .light-palette .content .is-danger.admonition p.admonition-title,
-.light-palette .content .is-danger.admonition p.admonition-title,
-.document .light-palette .content .is-danger.admonition p.admonition-title,
-.light-palette .content .document .is-danger.admonition p.admonition-title,
-.message.is-danger .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-danger p.admonition-title,
-#search-results .light-palette .document .is-danger.admonition p.admonition-title,
-.content .light-palette .document .is-danger.admonition p.admonition-title,
-.light-palette .document .content .is-danger.admonition p.admonition-title,
-.light-palette .document .is-danger.admonition p.admonition-title {
+.message.is-danger .message-header {
   background-color: #e45649;
   color: #fff;
 }
-.message.is-danger .message-body, #search-results .is-danger.admonition .message-body,
-.content .is-danger.admonition .message-body,
-.document .is-danger.admonition .message-body, .message.is-danger .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-danger p:not(.admonition-title), .dark-palette #search-results .is-danger.admonition p:not(.admonition-title),
-.message.is-danger .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-danger p:not(.admonition-title),
-#search-results .dark-palette .content .is-danger.admonition p:not(.admonition-title),
-.dark-palette .content .is-danger.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-danger.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-danger.admonition p:not(.admonition-title),
-.message.is-danger .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-danger p:not(.admonition-title),
-#search-results .dark-palette .document .is-danger.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-danger.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-danger.admonition p:not(.admonition-title),
-.dark-palette .document .is-danger.admonition p:not(.admonition-title), .message.is-danger .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-danger p:not(.admonition-title), .light-palette #search-results .is-danger.admonition p:not(.admonition-title),
-.message.is-danger .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-danger p:not(.admonition-title),
-#search-results .light-palette .content .is-danger.admonition p:not(.admonition-title),
-.light-palette .content .is-danger.admonition p:not(.admonition-title),
-.document .light-palette .content .is-danger.admonition p:not(.admonition-title),
-.light-palette .content .document .is-danger.admonition p:not(.admonition-title),
-.message.is-danger .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-danger p:not(.admonition-title),
-#search-results .light-palette .document .is-danger.admonition p:not(.admonition-title),
-.content .light-palette .document .is-danger.admonition p:not(.admonition-title),
-.light-palette .document .content .is-danger.admonition p:not(.admonition-title),
-.light-palette .document .is-danger.admonition p:not(.admonition-title) {
+.message.is-danger .message-body {
   border-color: #e45649;
   color: #ba291c;
 }
-.message.is-redish, #search-results .is-redish.admonition,
-.content .is-redish.admonition,
-.document .is-redish.admonition {
+.message.is-redish {
   background-color: #fdecf1;
 }
-.message.is-redish .message-header, #search-results .is-redish.admonition .message-header,
-.content .is-redish.admonition .message-header,
-.document .is-redish.admonition .message-header, .message.is-redish .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-redish p.admonition-title, .dark-palette #search-results .is-redish.admonition p.admonition-title,
-.message.is-redish .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-redish p.admonition-title,
-#search-results .dark-palette .content .is-redish.admonition p.admonition-title,
-.dark-palette .content .is-redish.admonition p.admonition-title,
-.document .dark-palette .content .is-redish.admonition p.admonition-title,
-.dark-palette .content .document .is-redish.admonition p.admonition-title,
-.message.is-redish .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-redish p.admonition-title,
-#search-results .dark-palette .document .is-redish.admonition p.admonition-title,
-.content .dark-palette .document .is-redish.admonition p.admonition-title,
-.dark-palette .document .content .is-redish.admonition p.admonition-title,
-.dark-palette .document .is-redish.admonition p.admonition-title, .message.is-redish .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-redish p.admonition-title, .light-palette #search-results .is-redish.admonition p.admonition-title,
-.message.is-redish .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-redish p.admonition-title,
-#search-results .light-palette .content .is-redish.admonition p.admonition-title,
-.light-palette .content .is-redish.admonition p.admonition-title,
-.document .light-palette .content .is-redish.admonition p.admonition-title,
-.light-palette .content .document .is-redish.admonition p.admonition-title,
-.message.is-redish .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-redish p.admonition-title,
-#search-results .light-palette .document .is-redish.admonition p.admonition-title,
-.content .light-palette .document .is-redish.admonition p.admonition-title,
-.light-palette .document .content .is-redish.admonition p.admonition-title,
-.light-palette .document .is-redish.admonition p.admonition-title {
+.message.is-redish .message-header {
   background-color: #ca1243;
   color: #fff;
 }
-.message.is-redish .message-body, #search-results .is-redish.admonition .message-body,
-.content .is-redish.admonition .message-body,
-.document .is-redish.admonition .message-body, .message.is-redish .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-redish p:not(.admonition-title), .dark-palette #search-results .is-redish.admonition p:not(.admonition-title),
-.message.is-redish .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-redish p:not(.admonition-title),
-#search-results .dark-palette .content .is-redish.admonition p:not(.admonition-title),
-.dark-palette .content .is-redish.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-redish.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-redish.admonition p:not(.admonition-title),
-.message.is-redish .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-redish p:not(.admonition-title),
-#search-results .dark-palette .document .is-redish.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-redish.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-redish.admonition p:not(.admonition-title),
-.dark-palette .document .is-redish.admonition p:not(.admonition-title), .message.is-redish .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-redish p:not(.admonition-title), .light-palette #search-results .is-redish.admonition p:not(.admonition-title),
-.message.is-redish .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-redish p:not(.admonition-title),
-#search-results .light-palette .content .is-redish.admonition p:not(.admonition-title),
-.light-palette .content .is-redish.admonition p:not(.admonition-title),
-.document .light-palette .content .is-redish.admonition p:not(.admonition-title),
-.light-palette .content .document .is-redish.admonition p:not(.admonition-title),
-.message.is-redish .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-redish p:not(.admonition-title),
-#search-results .light-palette .document .is-redish.admonition p:not(.admonition-title),
-.content .light-palette .document .is-redish.admonition p:not(.admonition-title),
-.light-palette .document .content .is-redish.admonition p:not(.admonition-title),
-.light-palette .document .is-redish.admonition p:not(.admonition-title) {
+.message.is-redish .message-body {
   border-color: #ca1243;
   color: #e6144c;
 }
-.message.is-blueish, #search-results .is-blueish.admonition,
-.content .is-blueish.admonition,
-.document .is-blueish.admonition {
+.message.is-blueish {
   background-color: #ebf1ff;
 }
-.message.is-blueish .message-header, #search-results .is-blueish.admonition .message-header,
-.content .is-blueish.admonition .message-header,
-.document .is-blueish.admonition .message-header, .message.is-blueish .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-blueish p.admonition-title, .dark-palette #search-results .is-blueish.admonition p.admonition-title,
-.message.is-blueish .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-blueish p.admonition-title,
-#search-results .dark-palette .content .is-blueish.admonition p.admonition-title,
-.dark-palette .content .is-blueish.admonition p.admonition-title,
-.document .dark-palette .content .is-blueish.admonition p.admonition-title,
-.dark-palette .content .document .is-blueish.admonition p.admonition-title,
-.message.is-blueish .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-blueish p.admonition-title,
-#search-results .dark-palette .document .is-blueish.admonition p.admonition-title,
-.content .dark-palette .document .is-blueish.admonition p.admonition-title,
-.dark-palette .document .content .is-blueish.admonition p.admonition-title,
-.dark-palette .document .is-blueish.admonition p.admonition-title, .message.is-blueish .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-blueish p.admonition-title, .light-palette #search-results .is-blueish.admonition p.admonition-title,
-.message.is-blueish .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-blueish p.admonition-title,
-#search-results .light-palette .content .is-blueish.admonition p.admonition-title,
-.light-palette .content .is-blueish.admonition p.admonition-title,
-.document .light-palette .content .is-blueish.admonition p.admonition-title,
-.light-palette .content .document .is-blueish.admonition p.admonition-title,
-.message.is-blueish .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-blueish p.admonition-title,
-#search-results .light-palette .document .is-blueish.admonition p.admonition-title,
-.content .light-palette .document .is-blueish.admonition p.admonition-title,
-.light-palette .document .content .is-blueish.admonition p.admonition-title,
-.light-palette .document .is-blueish.admonition p.admonition-title {
+.message.is-blueish .message-header {
   background-color: #a3c0ff;
   color: rgba(0, 0, 0, 0.7);
 }
-.message.is-blueish .message-body, #search-results .is-blueish.admonition .message-body,
-.content .is-blueish.admonition .message-body,
-.document .is-blueish.admonition .message-body, .message.is-blueish .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-blueish p:not(.admonition-title), .dark-palette #search-results .is-blueish.admonition p:not(.admonition-title),
-.message.is-blueish .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-blueish p:not(.admonition-title),
-#search-results .dark-palette .content .is-blueish.admonition p:not(.admonition-title),
-.dark-palette .content .is-blueish.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-blueish.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-blueish.admonition p:not(.admonition-title),
-.message.is-blueish .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-blueish p:not(.admonition-title),
-#search-results .dark-palette .document .is-blueish.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-blueish.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-blueish.admonition p:not(.admonition-title),
-.dark-palette .document .is-blueish.admonition p:not(.admonition-title), .message.is-blueish .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-blueish p:not(.admonition-title), .light-palette #search-results .is-blueish.admonition p:not(.admonition-title),
-.message.is-blueish .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-blueish p:not(.admonition-title),
-#search-results .light-palette .content .is-blueish.admonition p:not(.admonition-title),
-.light-palette .content .is-blueish.admonition p:not(.admonition-title),
-.document .light-palette .content .is-blueish.admonition p:not(.admonition-title),
-.light-palette .content .document .is-blueish.admonition p:not(.admonition-title),
-.message.is-blueish .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-blueish p:not(.admonition-title),
-#search-results .light-palette .document .is-blueish.admonition p:not(.admonition-title),
-.content .light-palette .document .is-blueish.admonition p:not(.admonition-title),
-.light-palette .document .content .is-blueish.admonition p:not(.admonition-title),
-.light-palette .document .is-blueish.admonition p:not(.admonition-title) {
+.message.is-blueish .message-body {
   border-color: #a3c0ff;
   color: #002f94;
 }
-.message.is-pink, #search-results .is-pink.admonition,
-.content .is-pink.admonition,
-.document .is-pink.admonition {
+.message.is-pink {
   background-color: #feecfd;
 }
-.message.is-pink .message-header, #search-results .is-pink.admonition .message-header,
-.content .is-pink.admonition .message-header,
-.document .is-pink.admonition .message-header, .message.is-pink .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-pink p.admonition-title, .dark-palette #search-results .is-pink.admonition p.admonition-title,
-.message.is-pink .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-pink p.admonition-title,
-#search-results .dark-palette .content .is-pink.admonition p.admonition-title,
-.dark-palette .content .is-pink.admonition p.admonition-title,
-.document .dark-palette .content .is-pink.admonition p.admonition-title,
-.dark-palette .content .document .is-pink.admonition p.admonition-title,
-.message.is-pink .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-pink p.admonition-title,
-#search-results .dark-palette .document .is-pink.admonition p.admonition-title,
-.content .dark-palette .document .is-pink.admonition p.admonition-title,
-.dark-palette .document .content .is-pink.admonition p.admonition-title,
-.dark-palette .document .is-pink.admonition p.admonition-title, .message.is-pink .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-pink p.admonition-title, .light-palette #search-results .is-pink.admonition p.admonition-title,
-.message.is-pink .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-pink p.admonition-title,
-#search-results .light-palette .content .is-pink.admonition p.admonition-title,
-.light-palette .content .is-pink.admonition p.admonition-title,
-.document .light-palette .content .is-pink.admonition p.admonition-title,
-.light-palette .content .document .is-pink.admonition p.admonition-title,
-.message.is-pink .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-pink p.admonition-title,
-#search-results .light-palette .document .is-pink.admonition p.admonition-title,
-.content .light-palette .document .is-pink.admonition p.admonition-title,
-.light-palette .document .content .is-pink.admonition p.admonition-title,
-.light-palette .document .is-pink.admonition p.admonition-title {
+.message.is-pink .message-header {
   background-color: #f57fef;
   color: #fff;
 }
-.message.is-pink .message-body, #search-results .is-pink.admonition .message-body,
-.content .is-pink.admonition .message-body,
-.document .is-pink.admonition .message-body, .message.is-pink .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-pink p:not(.admonition-title), .dark-palette #search-results .is-pink.admonition p:not(.admonition-title),
-.message.is-pink .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-pink p:not(.admonition-title),
-#search-results .dark-palette .content .is-pink.admonition p:not(.admonition-title),
-.dark-palette .content .is-pink.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-pink.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-pink.admonition p:not(.admonition-title),
-.message.is-pink .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-pink p:not(.admonition-title),
-#search-results .dark-palette .document .is-pink.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-pink.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-pink.admonition p:not(.admonition-title),
-.dark-palette .document .is-pink.admonition p:not(.admonition-title), .message.is-pink .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-pink p:not(.admonition-title), .light-palette #search-results .is-pink.admonition p:not(.admonition-title),
-.message.is-pink .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-pink p:not(.admonition-title),
-#search-results .light-palette .content .is-pink.admonition p:not(.admonition-title),
-.light-palette .content .is-pink.admonition p:not(.admonition-title),
-.document .light-palette .content .is-pink.admonition p:not(.admonition-title),
-.light-palette .content .document .is-pink.admonition p:not(.admonition-title),
-.message.is-pink .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-pink p:not(.admonition-title),
-#search-results .light-palette .document .is-pink.admonition p:not(.admonition-title),
-.content .light-palette .document .is-pink.admonition p:not(.admonition-title),
-.light-palette .document .content .is-pink.admonition p:not(.admonition-title),
-.light-palette .document .is-pink.admonition p:not(.admonition-title) {
+.message.is-pink .message-body {
   border-color: #f57fef;
   color: #9d0c95;
 }
-.message.is-gold, #search-results .is-gold.admonition,
-.content .is-gold.admonition,
-.document .is-gold.admonition {
+.message.is-gold {
   background-color: #fff9eb;
 }
-.message.is-gold .message-header, #search-results .is-gold.admonition .message-header,
-.content .is-gold.admonition .message-header,
-.document .is-gold.admonition .message-header, .message.is-gold .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-gold p.admonition-title, .dark-palette #search-results .is-gold.admonition p.admonition-title,
-.message.is-gold .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-gold p.admonition-title,
-#search-results .dark-palette .content .is-gold.admonition p.admonition-title,
-.dark-palette .content .is-gold.admonition p.admonition-title,
-.document .dark-palette .content .is-gold.admonition p.admonition-title,
-.dark-palette .content .document .is-gold.admonition p.admonition-title,
-.message.is-gold .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-gold p.admonition-title,
-#search-results .dark-palette .document .is-gold.admonition p.admonition-title,
-.content .dark-palette .document .is-gold.admonition p.admonition-title,
-.dark-palette .document .content .is-gold.admonition p.admonition-title,
-.dark-palette .document .is-gold.admonition p.admonition-title, .message.is-gold .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-gold p.admonition-title, .light-palette #search-results .is-gold.admonition p.admonition-title,
-.message.is-gold .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-gold p.admonition-title,
-#search-results .light-palette .content .is-gold.admonition p.admonition-title,
-.light-palette .content .is-gold.admonition p.admonition-title,
-.document .light-palette .content .is-gold.admonition p.admonition-title,
-.light-palette .content .document .is-gold.admonition p.admonition-title,
-.message.is-gold .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-gold p.admonition-title,
-#search-results .light-palette .document .is-gold.admonition p.admonition-title,
-.content .light-palette .document .is-gold.admonition p.admonition-title,
-.light-palette .document .content .is-gold.admonition p.admonition-title,
-.light-palette .document .is-gold.admonition p.admonition-title {
+.message.is-gold .message-header {
   background-color: #c18401;
   color: #fff;
 }
-.message.is-gold .message-body, #search-results .is-gold.admonition .message-body,
-.content .is-gold.admonition .message-body,
-.document .is-gold.admonition .message-body, .message.is-gold .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-gold p:not(.admonition-title), .dark-palette #search-results .is-gold.admonition p:not(.admonition-title),
-.message.is-gold .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-gold p:not(.admonition-title),
-#search-results .dark-palette .content .is-gold.admonition p:not(.admonition-title),
-.dark-palette .content .is-gold.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-gold.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-gold.admonition p:not(.admonition-title),
-.message.is-gold .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-gold p:not(.admonition-title),
-#search-results .dark-palette .document .is-gold.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-gold.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-gold.admonition p:not(.admonition-title),
-.dark-palette .document .is-gold.admonition p:not(.admonition-title), .message.is-gold .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-gold p:not(.admonition-title), .light-palette #search-results .is-gold.admonition p:not(.admonition-title),
-.message.is-gold .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-gold p:not(.admonition-title),
-#search-results .light-palette .content .is-gold.admonition p:not(.admonition-title),
-.light-palette .content .is-gold.admonition p:not(.admonition-title),
-.document .light-palette .content .is-gold.admonition p:not(.admonition-title),
-.light-palette .content .document .is-gold.admonition p:not(.admonition-title),
-.message.is-gold .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-gold p:not(.admonition-title),
-#search-results .light-palette .document .is-gold.admonition p:not(.admonition-title),
-.content .light-palette .document .is-gold.admonition p:not(.admonition-title),
-.light-palette .document .content .is-gold.admonition p:not(.admonition-title),
-.light-palette .document .is-gold.admonition p:not(.admonition-title) {
+.message.is-gold .message-body {
   border-color: #c18401;
   color: #c68801;
 }
-.message.is-greenish, #search-results .is-greenish.admonition,
-.content .is-greenish.admonition,
-.document .is-greenish.admonition {
+.message.is-greenish {
   background-color: #f3f8f1;
 }
-.message.is-greenish .message-header, #search-results .is-greenish.admonition .message-header,
-.content .is-greenish.admonition .message-header,
-.document .is-greenish.admonition .message-header, .message.is-greenish .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-greenish p.admonition-title, .dark-palette #search-results .is-greenish.admonition p.admonition-title,
-.message.is-greenish .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-greenish p.admonition-title,
-#search-results .dark-palette .content .is-greenish.admonition p.admonition-title,
-.dark-palette .content .is-greenish.admonition p.admonition-title,
-.document .dark-palette .content .is-greenish.admonition p.admonition-title,
-.dark-palette .content .document .is-greenish.admonition p.admonition-title,
-.message.is-greenish .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-greenish p.admonition-title,
-#search-results .dark-palette .document .is-greenish.admonition p.admonition-title,
-.content .dark-palette .document .is-greenish.admonition p.admonition-title,
-.dark-palette .document .content .is-greenish.admonition p.admonition-title,
-.dark-palette .document .is-greenish.admonition p.admonition-title, .message.is-greenish .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-greenish p.admonition-title, .light-palette #search-results .is-greenish.admonition p.admonition-title,
-.message.is-greenish .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-greenish p.admonition-title,
-#search-results .light-palette .content .is-greenish.admonition p.admonition-title,
-.light-palette .content .is-greenish.admonition p.admonition-title,
-.document .light-palette .content .is-greenish.admonition p.admonition-title,
-.light-palette .content .document .is-greenish.admonition p.admonition-title,
-.message.is-greenish .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-greenish p.admonition-title,
-#search-results .light-palette .document .is-greenish.admonition p.admonition-title,
-.content .light-palette .document .is-greenish.admonition p.admonition-title,
-.light-palette .document .content .is-greenish.admonition p.admonition-title,
-.light-palette .document .is-greenish.admonition p.admonition-title {
+.message.is-greenish .message-header {
   background-color: #5ea14f;
   color: #fff;
 }
-.message.is-greenish .message-body, #search-results .is-greenish.admonition .message-body,
-.content .is-greenish.admonition .message-body,
-.document .is-greenish.admonition .message-body, .message.is-greenish .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-greenish p:not(.admonition-title), .dark-palette #search-results .is-greenish.admonition p:not(.admonition-title),
-.message.is-greenish .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-greenish p:not(.admonition-title),
-#search-results .dark-palette .content .is-greenish.admonition p:not(.admonition-title),
-.dark-palette .content .is-greenish.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-greenish.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-greenish.admonition p:not(.admonition-title),
-.message.is-greenish .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-greenish p:not(.admonition-title),
-#search-results .dark-palette .document .is-greenish.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-greenish.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-greenish.admonition p:not(.admonition-title),
-.dark-palette .document .is-greenish.admonition p:not(.admonition-title), .message.is-greenish .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-greenish p:not(.admonition-title), .light-palette #search-results .is-greenish.admonition p:not(.admonition-title),
-.message.is-greenish .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-greenish p:not(.admonition-title),
-#search-results .light-palette .content .is-greenish.admonition p:not(.admonition-title),
-.light-palette .content .is-greenish.admonition p:not(.admonition-title),
-.document .light-palette .content .is-greenish.admonition p:not(.admonition-title),
-.light-palette .content .document .is-greenish.admonition p:not(.admonition-title),
-.message.is-greenish .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-greenish p:not(.admonition-title),
-#search-results .light-palette .document .is-greenish.admonition p:not(.admonition-title),
-.content .light-palette .document .is-greenish.admonition p:not(.admonition-title),
-.light-palette .document .content .is-greenish.admonition p:not(.admonition-title),
-.light-palette .document .is-greenish.admonition p:not(.admonition-title) {
+.message.is-greenish .message-body {
   border-color: #5ea14f;
   color: #4e8542;
 }
-.message.is-blood, #search-results .is-blood.admonition,
-.content .is-blood.admonition,
-.document .is-blood.admonition {
+.message.is-blood {
   background-color: #feecef;
 }
-.message.is-blood .message-header, #search-results .is-blood.admonition .message-header,
-.content .is-blood.admonition .message-header,
-.document .is-blood.admonition .message-header, .message.is-blood .dark-palette #search-results .admonition p.admonition-title, .dark-palette #search-results .admonition .message.is-blood p.admonition-title, .dark-palette #search-results .is-blood.admonition p.admonition-title,
-.message.is-blood .dark-palette .content .admonition p.admonition-title,
-.dark-palette .content .admonition .message.is-blood p.admonition-title,
-#search-results .dark-palette .content .is-blood.admonition p.admonition-title,
-.dark-palette .content .is-blood.admonition p.admonition-title,
-.document .dark-palette .content .is-blood.admonition p.admonition-title,
-.dark-palette .content .document .is-blood.admonition p.admonition-title,
-.message.is-blood .dark-palette .document .admonition p.admonition-title,
-.dark-palette .document .admonition .message.is-blood p.admonition-title,
-#search-results .dark-palette .document .is-blood.admonition p.admonition-title,
-.content .dark-palette .document .is-blood.admonition p.admonition-title,
-.dark-palette .document .content .is-blood.admonition p.admonition-title,
-.dark-palette .document .is-blood.admonition p.admonition-title, .message.is-blood .light-palette #search-results .admonition p.admonition-title, .light-palette #search-results .admonition .message.is-blood p.admonition-title, .light-palette #search-results .is-blood.admonition p.admonition-title,
-.message.is-blood .light-palette .content .admonition p.admonition-title,
-.light-palette .content .admonition .message.is-blood p.admonition-title,
-#search-results .light-palette .content .is-blood.admonition p.admonition-title,
-.light-palette .content .is-blood.admonition p.admonition-title,
-.document .light-palette .content .is-blood.admonition p.admonition-title,
-.light-palette .content .document .is-blood.admonition p.admonition-title,
-.message.is-blood .light-palette .document .admonition p.admonition-title,
-.light-palette .document .admonition .message.is-blood p.admonition-title,
-#search-results .light-palette .document .is-blood.admonition p.admonition-title,
-.content .light-palette .document .is-blood.admonition p.admonition-title,
-.light-palette .document .content .is-blood.admonition p.admonition-title,
-.light-palette .document .is-blood.admonition p.admonition-title {
+.message.is-blood .message-header {
   background-color: #39040c;
   color: #fff;
 }
-.message.is-blood .message-body, #search-results .is-blood.admonition .message-body,
-.content .is-blood.admonition .message-body,
-.document .is-blood.admonition .message-body, .message.is-blood .dark-palette #search-results .admonition p:not(.admonition-title), .dark-palette #search-results .admonition .message.is-blood p:not(.admonition-title), .dark-palette #search-results .is-blood.admonition p:not(.admonition-title),
-.message.is-blood .dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .content .admonition .message.is-blood p:not(.admonition-title),
-#search-results .dark-palette .content .is-blood.admonition p:not(.admonition-title),
-.dark-palette .content .is-blood.admonition p:not(.admonition-title),
-.document .dark-palette .content .is-blood.admonition p:not(.admonition-title),
-.dark-palette .content .document .is-blood.admonition p:not(.admonition-title),
-.message.is-blood .dark-palette .document .admonition p:not(.admonition-title),
-.dark-palette .document .admonition .message.is-blood p:not(.admonition-title),
-#search-results .dark-palette .document .is-blood.admonition p:not(.admonition-title),
-.content .dark-palette .document .is-blood.admonition p:not(.admonition-title),
-.dark-palette .document .content .is-blood.admonition p:not(.admonition-title),
-.dark-palette .document .is-blood.admonition p:not(.admonition-title), .message.is-blood .light-palette #search-results .admonition p:not(.admonition-title), .light-palette #search-results .admonition .message.is-blood p:not(.admonition-title), .light-palette #search-results .is-blood.admonition p:not(.admonition-title),
-.message.is-blood .light-palette .content .admonition p:not(.admonition-title),
-.light-palette .content .admonition .message.is-blood p:not(.admonition-title),
-#search-results .light-palette .content .is-blood.admonition p:not(.admonition-title),
-.light-palette .content .is-blood.admonition p:not(.admonition-title),
-.document .light-palette .content .is-blood.admonition p:not(.admonition-title),
-.light-palette .content .document .is-blood.admonition p:not(.admonition-title),
-.message.is-blood .light-palette .document .admonition p:not(.admonition-title),
-.light-palette .document .admonition .message.is-blood p:not(.admonition-title),
-#search-results .light-palette .document .is-blood.admonition p:not(.admonition-title),
-.content .light-palette .document .is-blood.admonition p:not(.admonition-title),
-.light-palette .document .content .is-blood.admonition p:not(.admonition-title),
-.light-palette .document .is-blood.admonition p:not(.admonition-title) {
+.message.is-blood .message-body {
   border-color: #39040c;
   color: #f02d4a;
 }
 
-.message-header, .dark-palette #search-results .admonition p.admonition-title,
-.dark-palette .content .admonition p.admonition-title,
-.dark-palette .document .admonition p.admonition-title, .light-palette #search-results .admonition p.admonition-title,
-.light-palette .content .admonition p.admonition-title,
-.light-palette .document .admonition p.admonition-title {
+.message-header {
   align-items: center;
   background-color: #3e4551;
   border-radius: 4px 4px 0 0;
@@ -6593,62 +5711,18 @@ button.dropdown-item.is-active {
   padding: 0.75em 1em;
   position: relative;
 }
-.message-header .delete, .dark-palette #search-results .admonition p.admonition-title .delete,
-.dark-palette .content .admonition p.admonition-title .delete,
-.dark-palette .document .admonition p.admonition-title .delete, .light-palette #search-results .admonition p.admonition-title .delete,
-.light-palette .content .admonition p.admonition-title .delete,
-.light-palette .document .admonition p.admonition-title .delete {
+.message-header .delete {
   flex-grow: 0;
   flex-shrink: 0;
   margin-left: 0.75em;
 }
-.message-header + .message-body, .dark-palette #search-results .admonition p.admonition-title + .message-body,
-.dark-palette .content .admonition p.admonition-title + .message-body,
-.dark-palette .document .admonition p.admonition-title + .message-body, .light-palette #search-results .admonition p.admonition-title + .message-body,
-.light-palette .content .admonition p.admonition-title + .message-body,
-.light-palette .document .admonition p.admonition-title + .message-body, .dark-palette #search-results .admonition .message-header + p:not(.admonition-title), .dark-palette #search-results .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .content .admonition .message-header + p:not(.admonition-title),
-.dark-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .content .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .dark-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .light-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .dark-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .content .light-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .admonition .message-header + p:not(.admonition-title),
-.dark-palette .content .document .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .dark-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .light-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .dark-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .light-palette .document .admonition p.admonition-title + p:not(.admonition-title), .light-palette #search-results .admonition .message-header + p:not(.admonition-title), .light-palette #search-results .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .admonition .message-header + p:not(.admonition-title),
-.dark-palette .light-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .dark-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .document .light-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .dark-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .admonition .message-header + p:not(.admonition-title),
-.dark-palette .content .light-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .dark-palette .content .admonition p.admonition-title + p:not(.admonition-title),
-.dark-palette .light-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .dark-palette .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .content .document .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .content .admonition p.admonition-title + p:not(.admonition-title),
-.light-palette .document .admonition p.admonition-title + p:not(.admonition-title) {
+.message-header + .message-body {
   border-width: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.message-body, .dark-palette #search-results .admonition p:not(.admonition-title),
-.dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .document .admonition p:not(.admonition-title), .light-palette #search-results .admonition p:not(.admonition-title),
-.light-palette .content .admonition p:not(.admonition-title),
-.light-palette .document .admonition p:not(.admonition-title) {
+.message-body {
   border-color: #c9d1d9;
   border-radius: 4px;
   border-style: solid;
@@ -6656,25 +5730,11 @@ button.dropdown-item.is-active {
   color: #3e4551;
   padding: 1.25em 1.5em;
 }
-.message-body code, .dark-palette #search-results .admonition p:not(.admonition-title) code,
-.dark-palette .content .admonition p:not(.admonition-title) code,
-.dark-palette .document .admonition p:not(.admonition-title) code, .light-palette #search-results .admonition p:not(.admonition-title) code,
-.light-palette .content .admonition p:not(.admonition-title) code,
-.light-palette .document .admonition p:not(.admonition-title) code,
-.message-body pre,
-.dark-palette #search-results .admonition p:not(.admonition-title) pre,
-.dark-palette .content .admonition p:not(.admonition-title) pre,
-.dark-palette .document .admonition p:not(.admonition-title) pre,
-.light-palette #search-results .admonition p:not(.admonition-title) pre,
-.light-palette .content .admonition p:not(.admonition-title) pre,
-.light-palette .document .admonition p:not(.admonition-title) pre {
+.message-body code,
+.message-body pre {
   background-color: #fafafa;
 }
-.message-body pre code, .dark-palette #search-results .admonition p:not(.admonition-title) pre code,
-.dark-palette .content .admonition p:not(.admonition-title) pre code,
-.dark-palette .document .admonition p:not(.admonition-title) pre code, .light-palette #search-results .admonition p:not(.admonition-title) pre code,
-.light-palette .content .admonition p:not(.admonition-title) pre code,
-.light-palette .document .admonition p:not(.admonition-title) pre code {
+.message-body pre code {
   background-color: transparent;
 }
 
@@ -18211,45 +17271,60 @@ aside.menu li {
 .dark-palette #search-results .admonition,
 .dark-palette .content .admonition,
 .dark-palette .document .admonition {
+  margin: 0.5rem;
   background-color: #121921;
+}
+.dark-palette #search-results .admonition p,
+.dark-palette .content .admonition p,
+.dark-palette .document .admonition p {
+  padding: 0 0.75rem 0.25rem 0.75rem;
+  background-color: rgba(62, 69, 81, 0.25);
+  color: white;
 }
 .dark-palette #search-results .admonition p.admonition-title,
 .dark-palette .content .admonition p.admonition-title,
 .dark-palette .document .admonition p.admonition-title {
-  background-color: #c9d1d9;
-  color: #3e4551;
+  padding-top: 0.5rem;
 }
-.dark-palette #search-results .admonition p.admonition-title:not(:last-child),
-.dark-palette .content .admonition p.admonition-title:not(:last-child),
-.dark-palette .document .admonition p.admonition-title:not(:last-child) {
+.dark-palette #search-results .admonition p.admonition-title::before,
+.dark-palette .content .admonition p.admonition-title::before,
+.dark-palette .document .admonition p.admonition-title::before {
+  margin-right: 0.5rem;
+}
+.dark-palette #search-results .admonition p:not(:last-child),
+.dark-palette .content .admonition p:not(:last-child),
+.dark-palette .document .admonition p:not(:last-child) {
   margin: 0;
 }
-.dark-palette #search-results .admonition p:not(.admonition-title),
-.dark-palette .content .admonition p:not(.admonition-title),
-.dark-palette .document .admonition p:not(.admonition-title) {
-  background-color: #3e4551;
-  color: #c9d1d9;
+.dark-palette #search-results .admonition p:first-child,
+.dark-palette .content .admonition p:first-child,
+.dark-palette .document .admonition p:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.dark-palette #search-results .admonition p:last-child,
+.dark-palette .content .admonition p:last-child,
+.dark-palette .document .admonition p:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .dark-palette #search-results .admonition.note p, .dark-palette #search-results .admonition.important p,
 .dark-palette .content .admonition.note p,
 .dark-palette .content .admonition.important p,
 .dark-palette .document .admonition.note p,
 .dark-palette .document .admonition.important p {
-  color: #00ad6b;
+  background-color: rgba(0, 173, 107, 0.25);
 }
-.dark-palette #search-results .admonition.note .admonition-title, .dark-palette #search-results .admonition.important .admonition-title,
-.dark-palette .content .admonition.note .admonition-title,
-.dark-palette .content .admonition.important .admonition-title,
-.dark-palette .document .admonition.note .admonition-title,
-.dark-palette .document .admonition.important .admonition-title {
-  background-color: #00ad6b;
-  color: #faf0f0;
+.dark-palette #search-results .admonition.note p.admonition-title, .dark-palette #search-results .admonition.important p.admonition-title,
+.dark-palette .content .admonition.note p.admonition-title,
+.dark-palette .content .admonition.important p.admonition-title,
+.dark-palette .document .admonition.note p.admonition-title,
+.dark-palette .document .admonition.important p.admonition-title {
+  color: #14ffa5;
 }
-.dark-palette #search-results .admonition.note .admonition-title::after, .dark-palette #search-results .admonition.important .admonition-title::after,
-.dark-palette .content .admonition.note .admonition-title::after,
-.dark-palette .content .admonition.important .admonition-title::after,
-.dark-palette .document .admonition.note .admonition-title::after,
-.dark-palette .document .admonition.important .admonition-title::after {
+.dark-palette #search-results .admonition.note p.admonition-title::before, .dark-palette #search-results .admonition.important p.admonition-title::before,
+.dark-palette .content .admonition.note p.admonition-title::before,
+.dark-palette .content .admonition.important p.admonition-title::before,
+.dark-palette .document .admonition.note p.admonition-title::before,
+.dark-palette .document .admonition.important p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e859";
@@ -18259,21 +17334,20 @@ aside.menu li {
 .dark-palette .content .admonition.tip p,
 .dark-palette .document .admonition.hint p,
 .dark-palette .document .admonition.tip p {
-  color: #449cc5;
+  background-color: rgba(68, 156, 197, 0.25);
 }
-.dark-palette #search-results .admonition.hint .admonition-title, .dark-palette #search-results .admonition.tip .admonition-title,
-.dark-palette .content .admonition.hint .admonition-title,
-.dark-palette .content .admonition.tip .admonition-title,
-.dark-palette .document .admonition.hint .admonition-title,
-.dark-palette .document .admonition.tip .admonition-title {
-  background-color: #449cc5;
-  color: #faf0f0;
+.dark-palette #search-results .admonition.hint p.admonition-title, .dark-palette #search-results .admonition.tip p.admonition-title,
+.dark-palette .content .admonition.hint p.admonition-title,
+.dark-palette .content .admonition.tip p.admonition-title,
+.dark-palette .document .admonition.hint p.admonition-title,
+.dark-palette .document .admonition.tip p.admonition-title {
+  color: #92c5dd;
 }
-.dark-palette #search-results .admonition.hint .admonition-title::after, .dark-palette #search-results .admonition.tip .admonition-title::after,
-.dark-palette .content .admonition.hint .admonition-title::after,
-.dark-palette .content .admonition.tip .admonition-title::after,
-.dark-palette .document .admonition.hint .admonition-title::after,
-.dark-palette .document .admonition.tip .admonition-title::after {
+.dark-palette #search-results .admonition.hint p.admonition-title::before, .dark-palette #search-results .admonition.tip p.admonition-title::before,
+.dark-palette .content .admonition.hint p.admonition-title::before,
+.dark-palette .content .admonition.tip p.admonition-title::before,
+.dark-palette .document .admonition.hint p.admonition-title::before,
+.dark-palette .document .admonition.tip p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e823";
@@ -18285,25 +17359,24 @@ aside.menu li {
 .dark-palette .document .admonition.attention p,
 .dark-palette .document .admonition.caution p,
 .dark-palette .document .admonition.warning p {
-  color: #ff7b00;
+  background-color: rgba(255, 123, 0, 0.25);
 }
-.dark-palette #search-results .admonition.attention .admonition-title, .dark-palette #search-results .admonition.caution .admonition-title, .dark-palette #search-results .admonition.warning .admonition-title,
-.dark-palette .content .admonition.attention .admonition-title,
-.dark-palette .content .admonition.caution .admonition-title,
-.dark-palette .content .admonition.warning .admonition-title,
-.dark-palette .document .admonition.attention .admonition-title,
-.dark-palette .document .admonition.caution .admonition-title,
-.dark-palette .document .admonition.warning .admonition-title {
-  background-color: #ff7b00;
-  color: #202d3c;
+.dark-palette #search-results .admonition.attention p.admonition-title, .dark-palette #search-results .admonition.caution p.admonition-title, .dark-palette #search-results .admonition.warning p.admonition-title,
+.dark-palette .content .admonition.attention p.admonition-title,
+.dark-palette .content .admonition.caution p.admonition-title,
+.dark-palette .content .admonition.warning p.admonition-title,
+.dark-palette .document .admonition.attention p.admonition-title,
+.dark-palette .document .admonition.caution p.admonition-title,
+.dark-palette .document .admonition.warning p.admonition-title {
+  color: #ffb066;
 }
-.dark-palette #search-results .admonition.attention .admonition-title::after, .dark-palette #search-results .admonition.caution .admonition-title::after, .dark-palette #search-results .admonition.warning .admonition-title::after,
-.dark-palette .content .admonition.attention .admonition-title::after,
-.dark-palette .content .admonition.caution .admonition-title::after,
-.dark-palette .content .admonition.warning .admonition-title::after,
-.dark-palette .document .admonition.attention .admonition-title::after,
-.dark-palette .document .admonition.caution .admonition-title::after,
-.dark-palette .document .admonition.warning .admonition-title::after {
+.dark-palette #search-results .admonition.attention p.admonition-title::before, .dark-palette #search-results .admonition.caution p.admonition-title::before, .dark-palette #search-results .admonition.warning p.admonition-title::before,
+.dark-palette .content .admonition.attention p.admonition-title::before,
+.dark-palette .content .admonition.caution p.admonition-title::before,
+.dark-palette .content .admonition.warning p.admonition-title::before,
+.dark-palette .document .admonition.attention p.admonition-title::before,
+.dark-palette .document .admonition.caution p.admonition-title::before,
+.dark-palette .document .admonition.warning p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e829";
@@ -18313,21 +17386,20 @@ aside.menu li {
 .dark-palette .content .admonition.error p,
 .dark-palette .document .admonition.danger p,
 .dark-palette .document .admonition.error p {
-  color: #e31c51;
+  background-color: rgba(227, 28, 81, 0.25);
 }
 .dark-palette #search-results .admonition.danger p.admonition-title, .dark-palette #search-results .admonition.error p.admonition-title,
 .dark-palette .content .admonition.danger p.admonition-title,
 .dark-palette .content .admonition.error p.admonition-title,
 .dark-palette .document .admonition.danger p.admonition-title,
 .dark-palette .document .admonition.error p.admonition-title {
-  background-color: #e31c51;
-  color: #202d3c;
+  color: #ee7797;
 }
-.dark-palette #search-results .admonition.danger p.admonition-title::after, .dark-palette #search-results .admonition.error p.admonition-title::after,
-.dark-palette .content .admonition.danger p.admonition-title::after,
-.dark-palette .content .admonition.error p.admonition-title::after,
-.dark-palette .document .admonition.danger p.admonition-title::after,
-.dark-palette .document .admonition.error p.admonition-title::after {
+.dark-palette #search-results .admonition.danger p.admonition-title::before, .dark-palette #search-results .admonition.error p.admonition-title::before,
+.dark-palette .content .admonition.danger p.admonition-title::before,
+.dark-palette .content .admonition.error p.admonition-title::before,
+.dark-palette .document .admonition.danger p.admonition-title::before,
+.dark-palette .document .admonition.error p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\f188";
@@ -18336,45 +17408,60 @@ aside.menu li {
 .light-palette #search-results .admonition,
 .light-palette .content .admonition,
 .light-palette .document .admonition {
+  margin: 0.5rem;
   background-color: #faf0f0;
+}
+.light-palette #search-results .admonition p,
+.light-palette .content .admonition p,
+.light-palette .document .admonition p {
+  padding: 0 0.75rem 0.25rem 0.75rem;
+  background-color: rgba(229, 220, 220, 0.25);
+  color: #121417;
 }
 .light-palette #search-results .admonition p.admonition-title,
 .light-palette .content .admonition p.admonition-title,
 .light-palette .document .admonition p.admonition-title {
-  background-color: #3e4551;
-  color: #e5dcdc;
+  padding-top: 0.5rem;
 }
-.light-palette #search-results .admonition p.admonition-title:not(:last-child),
-.light-palette .content .admonition p.admonition-title:not(:last-child),
-.light-palette .document .admonition p.admonition-title:not(:last-child) {
+.light-palette #search-results .admonition p.admonition-title::before,
+.light-palette .content .admonition p.admonition-title::before,
+.light-palette .document .admonition p.admonition-title::before {
+  margin-right: 0.5rem;
+}
+.light-palette #search-results .admonition p:not(:last-child),
+.light-palette .content .admonition p:not(:last-child),
+.light-palette .document .admonition p:not(:last-child) {
   margin: 0;
 }
-.light-palette #search-results .admonition p:not(.admonition-title),
-.light-palette .content .admonition p:not(.admonition-title),
-.light-palette .document .admonition p:not(.admonition-title) {
-  background-color: #e5dcdc;
-  color: #3e4551;
+.light-palette #search-results .admonition p:first-child,
+.light-palette .content .admonition p:first-child,
+.light-palette .document .admonition p:first-child {
+  border-radius: 4px 4px 0 0;
+}
+.light-palette #search-results .admonition p:last-child,
+.light-palette .content .admonition p:last-child,
+.light-palette .document .admonition p:last-child {
+  border-radius: 0 0 4px 4px;
 }
 .light-palette #search-results .admonition.note p, .light-palette #search-results .admonition.important p,
 .light-palette .content .admonition.note p,
 .light-palette .content .admonition.important p,
 .light-palette .document .admonition.note p,
 .light-palette .document .admonition.important p {
-  color: #00ad6b;
+  background-color: rgba(0, 173, 107, 0.25);
 }
-.light-palette #search-results .admonition.note .admonition-title, .light-palette #search-results .admonition.important .admonition-title,
-.light-palette .content .admonition.note .admonition-title,
-.light-palette .content .admonition.important .admonition-title,
-.light-palette .document .admonition.note .admonition-title,
-.light-palette .document .admonition.important .admonition-title {
-  background-color: #00ad6b;
-  color: #faf0f0;
+.light-palette #search-results .admonition.note p.admonition-title, .light-palette #search-results .admonition.important p.admonition-title,
+.light-palette .content .admonition.note p.admonition-title,
+.light-palette .content .admonition.important p.admonition-title,
+.light-palette .document .admonition.note p.admonition-title,
+.light-palette .document .admonition.important p.admonition-title {
+  color: #00472c;
 }
-.light-palette #search-results .admonition.note .admonition-title::after, .light-palette #search-results .admonition.important .admonition-title::after,
-.light-palette .content .admonition.note .admonition-title::after,
-.light-palette .content .admonition.important .admonition-title::after,
-.light-palette .document .admonition.note .admonition-title::after,
-.light-palette .document .admonition.important .admonition-title::after {
+.light-palette #search-results .admonition.note p.admonition-title::before, .light-palette #search-results .admonition.important p.admonition-title::before,
+.light-palette .content .admonition.note p.admonition-title::before,
+.light-palette .content .admonition.important p.admonition-title::before,
+.light-palette .document .admonition.note p.admonition-title::before,
+.light-palette .document .admonition.important p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e859";
@@ -18384,21 +17471,20 @@ aside.menu li {
 .light-palette .content .admonition.tip p,
 .light-palette .document .admonition.hint p,
 .light-palette .document .admonition.tip p {
-  color: #449cc5;
+  background-color: rgba(68, 156, 197, 0.25);
 }
-.light-palette #search-results .admonition.hint .admonition-title, .light-palette #search-results .admonition.tip .admonition-title,
-.light-palette .content .admonition.hint .admonition-title,
-.light-palette .content .admonition.tip .admonition-title,
-.light-palette .document .admonition.hint .admonition-title,
-.light-palette .document .admonition.tip .admonition-title {
-  background-color: #449cc5;
-  color: #faf0f0;
+.light-palette #search-results .admonition.hint p.admonition-title, .light-palette #search-results .admonition.tip p.admonition-title,
+.light-palette .content .admonition.hint p.admonition-title,
+.light-palette .content .admonition.tip p.admonition-title,
+.light-palette .document .admonition.hint p.admonition-title,
+.light-palette .document .admonition.tip p.admonition-title {
+  color: #26617d;
 }
-.light-palette #search-results .admonition.hint .admonition-title::after, .light-palette #search-results .admonition.tip .admonition-title::after,
-.light-palette .content .admonition.hint .admonition-title::after,
-.light-palette .content .admonition.tip .admonition-title::after,
-.light-palette .document .admonition.hint .admonition-title::after,
-.light-palette .document .admonition.tip .admonition-title::after {
+.light-palette #search-results .admonition.hint p.admonition-title::before, .light-palette #search-results .admonition.tip p.admonition-title::before,
+.light-palette .content .admonition.hint p.admonition-title::before,
+.light-palette .content .admonition.tip p.admonition-title::before,
+.light-palette .document .admonition.hint p.admonition-title::before,
+.light-palette .document .admonition.tip p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e823";
@@ -18410,25 +17496,24 @@ aside.menu li {
 .light-palette .document .admonition.attention p,
 .light-palette .document .admonition.caution p,
 .light-palette .document .admonition.warning p {
-  color: #ff7b00;
+  background-color: rgba(255, 123, 0, 0.25);
 }
-.light-palette #search-results .admonition.attention .admonition-title, .light-palette #search-results .admonition.caution .admonition-title, .light-palette #search-results .admonition.warning .admonition-title,
-.light-palette .content .admonition.attention .admonition-title,
-.light-palette .content .admonition.caution .admonition-title,
-.light-palette .content .admonition.warning .admonition-title,
-.light-palette .document .admonition.attention .admonition-title,
-.light-palette .document .admonition.caution .admonition-title,
-.light-palette .document .admonition.warning .admonition-title {
-  background-color: #ff7b00;
-  color: #202d3c;
+.light-palette #search-results .admonition.attention p.admonition-title, .light-palette #search-results .admonition.caution p.admonition-title, .light-palette #search-results .admonition.warning p.admonition-title,
+.light-palette .content .admonition.attention p.admonition-title,
+.light-palette .content .admonition.caution p.admonition-title,
+.light-palette .content .admonition.warning p.admonition-title,
+.light-palette .document .admonition.attention p.admonition-title,
+.light-palette .document .admonition.caution p.admonition-title,
+.light-palette .document .admonition.warning p.admonition-title {
+  color: #994a00;
 }
-.light-palette #search-results .admonition.attention .admonition-title::after, .light-palette #search-results .admonition.caution .admonition-title::after, .light-palette #search-results .admonition.warning .admonition-title::after,
-.light-palette .content .admonition.attention .admonition-title::after,
-.light-palette .content .admonition.caution .admonition-title::after,
-.light-palette .content .admonition.warning .admonition-title::after,
-.light-palette .document .admonition.attention .admonition-title::after,
-.light-palette .document .admonition.caution .admonition-title::after,
-.light-palette .document .admonition.warning .admonition-title::after {
+.light-palette #search-results .admonition.attention p.admonition-title::before, .light-palette #search-results .admonition.caution p.admonition-title::before, .light-palette #search-results .admonition.warning p.admonition-title::before,
+.light-palette .content .admonition.attention p.admonition-title::before,
+.light-palette .content .admonition.caution p.admonition-title::before,
+.light-palette .content .admonition.warning p.admonition-title::before,
+.light-palette .document .admonition.attention p.admonition-title::before,
+.light-palette .document .admonition.caution p.admonition-title::before,
+.light-palette .document .admonition.warning p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\e829";
@@ -18438,21 +17523,20 @@ aside.menu li {
 .light-palette .content .admonition.error p,
 .light-palette .document .admonition.danger p,
 .light-palette .document .admonition.error p {
-  color: #e45649;
+  background-color: rgba(228, 86, 73, 0.25);
 }
 .light-palette #search-results .admonition.danger p.admonition-title, .light-palette #search-results .admonition.error p.admonition-title,
 .light-palette .content .admonition.danger p.admonition-title,
 .light-palette .content .admonition.error p.admonition-title,
 .light-palette .document .admonition.danger p.admonition-title,
 .light-palette .document .admonition.error p.admonition-title {
-  background-color: #e45649;
-  color: #202d3c;
+  color: #ad261a;
 }
-.light-palette #search-results .admonition.danger p.admonition-title::after, .light-palette #search-results .admonition.error p.admonition-title::after,
-.light-palette .content .admonition.danger p.admonition-title::after,
-.light-palette .content .admonition.error p.admonition-title::after,
-.light-palette .document .admonition.danger p.admonition-title::after,
-.light-palette .document .admonition.error p.admonition-title::after {
+.light-palette #search-results .admonition.danger p.admonition-title::before, .light-palette #search-results .admonition.error p.admonition-title::before,
+.light-palette .content .admonition.danger p.admonition-title::before,
+.light-palette .content .admonition.error p.admonition-title::before,
+.light-palette .document .admonition.danger p.admonition-title::before,
+.light-palette .document .admonition.error p.admonition-title::before {
   font-family: "fontello";
   font-weight: 100;
   content: "\f188";
