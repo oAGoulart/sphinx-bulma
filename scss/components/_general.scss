@@ -87,3 +87,32 @@ button.button.is-outlined:not(.dummy):focus:not(:hover) {
 dl {
   overflow: auto;
 }
+
+section,
+div,
+main,
+.title,
+.icon-text,
+.icon,
+.progress,
+.table,
+.card,
+.dropdown,
+.navbar,
+.panel,
+.button,
+.tag,
+.tag:not(body),
+.notification,
+.message,
+.document,
+.content {
+  &.is-primary {
+    background-color: var(--primary);
+  }
+
+  &.is-primary,
+  &.has-text-primary {
+    color: var(--primary-invert);
+  }
+}

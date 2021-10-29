@@ -10,7 +10,7 @@ $_current: null;
 @mixin set() {
   @each $palette, $map in c.$palettes {
     $_current: $map !global;
-    .#{$palette} & {
+    @at-root .#{$palette} & {
       @content;
     }
   }

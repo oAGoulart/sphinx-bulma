@@ -45,6 +45,12 @@
   {%- for cssfile in extra_css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css"/>
   {% endfor -%}
+  <style>
+    :root {
+      --primary: {{ '#' ~ theme_primary }};
+      --primary-invert: {{ '#' ~ theme_primary_invert }};
+    }
+  </style>
 
   {#- OPENSEARCH #}
   {%- if use_opensearch %}
