@@ -1,6 +1,6 @@
 {
   "name": "sphinx-bulma",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "A Sphinx theme using Bulma",
   "author": {
     "name": "Augusto Goulart",
@@ -22,7 +22,7 @@
   "scripts": {
     "docs-build": "sphinx-build docs docs/_build",
     "css": "npm-run-all css-compile* --sequential css-minify*",
-    "css-compile": "sass scss/theme.scss src/sphinx-bulma/static/css/theme.css",
+    "css-compile": "sass --load-path node_modules/bulma --load-path scss/fontello/css scss/theme.scss src/sphinx-bulma/static/css/theme.css",
     "css-minify": "cleancss -o src/sphinx-bulma/static/css/theme.min.css --input-source-map src/sphinx-bulma/static/css/theme.css.map src/sphinx-bulma/static/css/theme.css",
     "fontello-install": "fontello-cli install --config scss/fontello/config.json --css scss/fontello/css --font scss/fontello/font",
     "fontello-web": "fontello-cli open --config scss/fontello/config.json",

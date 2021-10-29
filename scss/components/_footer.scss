@@ -1,0 +1,22 @@
+/*
+ * Footer component
+ */
+
+@use 'bulma';
+@use 'palette';
+
+footer.footer {
+  @include palette.set() {
+    background-color: palette.get('bis-color');
+
+    span.tag {
+      font-family: bulma.$family-primary;
+      font-size: 0.75rem;
+
+      &.is-dark {
+        background-color: palette.get('text-color');
+        color: palette.get('bg-color');
+      }
+    }
+  }
+}

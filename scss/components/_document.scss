@@ -1,0 +1,349 @@
+/*
+ * Document component
+ */
+
+@use 'bulma';
+@use 'palette';
+@use 'icon';
+@use 'util';
+
+#search-results,
+.content,
+.document {
+  h1 {
+    @extend .title;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-bottom: 0.25em;
+    @include palette.set() {
+      border-bottom: palette.get('tab-color') solid 1px;
+      color: palette.get('title-color');
+    }
+    
+    &:hover {
+      a.headerlink::after {
+        visibility: visible;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  a.headerlink {
+    position: absolute;
+    visibility: hidden;
+
+    &::after {
+      @include util.flip();
+      @include icon.set('\e907');
+      position: inherit;
+      left: 0;
+      padding-right: 0.4em;
+      font-size: 0.8em;
+      top: 0.25rem;
+    }
+  }
+
+  section {
+    display: block;
+    overflow: hidden;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  .admonition {
+    @extend .message;
+    @include palette.set() {
+      background-color: palette.get('bg-color');
+
+      p.admonition-title {
+        @extend .message-header;
+        background-color: palette.get('text-color');
+        color: palette.get('tab-color');
+
+        &:not(:last-child) {
+          margin: 0;
+        }
+      }
+
+      p:not(.admonition-title) {
+        @extend .message-body;
+        background-color: palette.get('tab-color');
+        color: palette.get('text-color');
+      }
+
+      &.note,
+      &.important {
+        p {
+          color: palette.get('green');
+        }
+
+        .admonition-title {
+          background-color: palette.get('green');
+          color: bulma.$white-ter;
+
+          &::after {
+            @include icon.set('\e859');
+          }
+        }
+      }
+
+      &.hint,
+      &.tip {
+        p {
+          color: palette.get('cyan');
+        }
+
+        .admonition-title {
+          background-color: palette.get('cyan');
+          color: bulma.$white-ter;
+
+          &::after {
+            @include icon.set('\e823');
+          }
+        }
+      }
+
+      &.attention,
+      &.caution,
+      &.warning {
+        p {
+          color: palette.get('orange');
+        }
+
+        .admonition-title {
+          background-color: palette.get('orange');
+          color: bulma.$black-ter;
+
+          &::after {
+            @include icon.set('\e829');
+          }
+        }
+      }
+
+      &.danger,
+      &.error {
+        p {
+          color: palette.get('red');
+        }
+
+        p.admonition-title {
+          background-color: palette.get('red');
+          color: bulma.$black-ter;
+
+          &::after {
+            @include icon.set('\f188');
+          }
+        }
+      }
+    }
+  }
+
+  .citation-reference,
+  .footnote-reference {
+    font-size: 10px;
+    position: relative;
+    top: -0.5rem;
+  }
+
+  span.guilabel {
+    @extend .tag, .is-normal;
+    @include palette.set() {
+      background-color: palette.get('label-bg');
+      color: palette.get('label-color');
+      border: palette.get('label-border');
+      height: 1.5rem;
+    }
+  }
+
+  .line-block {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  aside.sidebar {
+    @extend .card;
+    max-width: 40%;
+    float: right;
+    margin: 0 1rem 2.5rem 2.5rem;
+    padding: 1.5rem;
+    @include palette.set() {
+      background-color: palette.get('bg-color');
+    }
+
+    p.sidebar-title {
+      @extend .has-text-weight-bold;
+    }
+  }
+
+  .label {
+    @extend .tag;
+    @include palette.set() {
+      background-color: palette.get('footnote-bg');
+      color: palette.get('footnote-color');
+      border: palette.get('footnote-border');
+    }
+  }
+
+  .glossary {
+    dt {
+      @extend .tag;
+      @include palette.set() {
+        background-color: palette.get('glossary-bg');
+        color: palette.get('glossary-color');
+        border: palette.get('glossary-border');
+      }
+    }
+  }
+
+  .rubric {
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+  }
+
+  .topic {
+    @include palette.set() {
+      color: palette.get('text-color');
+    }
+
+    &-title {
+      @extend .title;
+      @include palette.set() {
+        color: palette.get('title-color');
+      }
+    }
+  }
+
+  code.download,
+  tt.download {
+    background: inherit;
+    padding: inherit;
+    font-weight: 400;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: inherit;
+    white-space: inherit;
+
+    &::before {
+      @include icon.set('\e824');
+      padding-right: 0.5rem;
+    }
+  }
+
+  ol {
+    &.loweralpha {
+      list-style-type: lower-alpha;
+    }
+
+    &.lowerroman {
+      list-style-type: lower-roman;
+    }
+
+    &.upperalpha {
+      list-style-type: upper-alpha;
+    }
+
+    &.upperroman {
+      list-style-type: upper-roman;
+    }
+  }
+
+  ul li p:not(:last-child) {
+    margin: 0;
+  }
+
+  ul.simple {
+    list-style: circle outside;
+  }
+
+  dt {
+    @extend .tag;
+    @include palette.set() {
+      background-color: palette.get('footnote-bg');
+      color: palette.get('footnote-color');
+      border: palette.get('footnote-border');
+    }
+  }
+
+  figure {
+    @extend .image;
+  }
+
+  .align-right {
+    @extend .is-pulled-right;
+  }
+
+  .align-left {
+    @extend .is-pulled-left;
+  }
+
+  table {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+
+    td {
+      border: none;
+    }
+
+    tr.row-odd {
+      @include palette.set() {
+        background-color: palette.get('bg-color');
+      }
+    }
+  }
+
+  dd,
+  .topic dd,
+  aside.sidebar dd {
+    margin-left: 2em;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .viewcode-link span.pre {
+    visibility: hidden;
+    font-size: 0;
+    margin-left: 0.5rem;
+
+    &::after {
+      @include icon.set('\f1c9');
+      visibility: visible;
+      position: relative;
+      font-weight: 100;
+      font-size: medium;
+    }
+  }
+
+  div.viewcode-block {
+    a.viewcode-back {
+      visibility: hidden;
+      font-size: 0;
+      margin-right: 0.5rem;
+  
+      &::before {
+        @include icon.set('\f0f6  \f177');
+        visibility: visible;
+        position: relative;
+        font-weight: 100;
+        font-size: medium;
+      }
+    }
+  }
+
+  blockquote {
+    @include palette.set() {
+      background-color: palette.get('bis-color');
+      border-left: 5px solid palette.get('tab-color');
+    }
+  }
+}

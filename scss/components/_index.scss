@@ -1,0 +1,15 @@
+/*
+ * Components index file
+ */
+
+// configure constants before using them
+@forward 'constants';
+
+// load styles
+@use 'general';
+@use 'navbar';
+@use 'mobile';
+@use 'sidemenu';
+@use 'document';
+@use 'footer';
+@use 'highlight';
