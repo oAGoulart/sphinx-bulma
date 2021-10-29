@@ -6,7 +6,7 @@
 
 > Currently updating major changes and updates from [AccentDesign/karma_sphinx_theme](https://github.com/AccentDesign/karma_sphinx_theme)
 > 
-> Check [todo] list for planned features to be included on release version **v0.1.0**
+> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.11_)
 
 ### A simple responsive theme for sphinx using **[Bulma]** featuring:
   1.  Has built-in dark/light color themes using native _CSS_ and _JavaScript_
@@ -17,8 +17,8 @@
   6.  Theme user-defined documentation repository reference
 
 ### Yet to be done a.k.a todo
-  - [ ] Support user-defined colors (at least primary)
-  - [ ] Enable custom _Sass_ rules on docs build
+  - [ ] Support user-defined colors(at least primary)<br>
+  <input type="checkbox" indeterminate><span><del>Enable custom Sass rules on docs build</del> (can be done but requires user to build theme again)</span>
   - [ ] Examples of use with [breathe] for **C++** docs
 
 ## Installing
@@ -26,12 +26,12 @@
 Using pip to install from this repository:
 
 ```sh
-pip install git+https://github.com/oAGoulart/sphinx-bulma.git@v0.0.10
+pip install sphinx-bulma
 ```
 
 ## Configuration
 
-The theme's project-wide options are defined in the `sphinx_bulma/theme.conf`
+The theme's project-wide options are defined in the `src/sphinx-bulma/theme.conf`
 file, and can be defined in your project's `conf.py` via
 `html_theme_options`. For example:
 
@@ -55,5 +55,5 @@ html_theme_options = {
 
 [Bulma]: https://bulma.io/
 [Fontello]: https://fontello.com/
-[todo]: /#L19
+[todo]: /#yet-to-be-done-aka-todo
 [breathe]: https://github.com/michaeljones/breathe
