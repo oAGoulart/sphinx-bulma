@@ -83,7 +83,7 @@ Document Subsection
    :align: right
    :figwidth: 200px
 
-    This is a caption for a figure.
+   This is a caption for a figure.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur in eros et blandit. Nunc maximus,
 nisl at auctor vestibulum, justo ex sollicitudin ligula, id faucibus urna orci tristique nisl.

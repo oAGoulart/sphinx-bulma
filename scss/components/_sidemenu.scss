@@ -1,0 +1,54 @@
+/*
+ * Side menu styles
+ */
+
+@use 'palette';
+@use 'icon';
+
+.toctree-l1 {
+  > a {
+    font-weight: 700;
+
+    &::after {
+      font-weight: 100;
+    }
+  }
+}
+
+aside.menu {
+  margin-bottom: 5rem;
+
+  .caption {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-right: 0;
+
+    li a::after {
+      margin-left: 0.5rem;
+      font-size: 0.75rem;
+      @include palette.set() {
+        color: palette.get('link-color');
+      }
+    }
+
+    .toctree-l1 a::after {
+      @include icon.set('\f097');
+    }
+
+    .toctree-l2 a::after {
+      @include icon.set('\f104');
+    }
+  }
+
+  ul ul {
+    margin-right: 1.6rem;
+  }
+    
+  li {
+    font-size: small;
+    line-height: 1.6;
+  }
+}

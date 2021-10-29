@@ -1,0 +1,89 @@
+/*
+ * General theme styles
+ */
+
+@use 'palette';
+@use 'icon';
+
+body {
+  @include palette.set() {
+    background-color: palette.get('body-color');
+    color: palette.get('text-color');
+  }
+}
+
+main .container .columns .column {
+  padding: 1rem;
+}
+
+main {
+  padding-bottom: 5rem;
+  @include palette.set() {
+    background-color: palette.get('body-color');
+  }
+}
+
+a {
+  @include palette.set() {
+    color: palette.get('link-color');
+  }
+
+  &:hover {
+    @include palette.set() {
+      color: palette.get('link-hover');
+    }
+  }
+}
+
+p {
+  @include palette.set() {
+    color: palette.get('text-color');
+  }
+}
+
+span.icon > i {
+  @include icon.set();
+}
+
+strong {
+  @include palette.set() {
+    color: palette.get('text-color');
+  }
+}
+
+input.input,
+.select select,
+.textarea {
+  @include palette.set() {
+    background-color: transparent;
+    color: palette.get('text-color');
+    border-color: palette.get('tab-color');
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+  
+  &::-ms-input-placeholder {
+    color: inherit;
+  }
+  
+  &:-ms-input-placeholder {
+    color: inherit;
+  }
+
+  &::-webkit-input-placeholder {
+    color: inherit;
+  }
+}
+
+button.button.is-outlined:not(.dummy):focus:not(:hover) {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+}
+
+dl {
+  overflow: auto;
+}
