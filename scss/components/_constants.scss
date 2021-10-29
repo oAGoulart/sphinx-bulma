@@ -81,7 +81,8 @@ $palettes: (
     'glossary-bg': transparent,
     'glossary-color': bulma.$link,
     'glossary-border': 1px solid bulma.$link,
-    'switch-icon': '\e900'
+    'switch-icon': '\e900',
+    'lighness': 20%
   ),
   'light-palette': (
     'code-color': bulma.$grey-darker,
@@ -115,6 +116,7 @@ $palettes: (
     'glossary-bg': bulma.$link,
     'glossary-color': bulma.$white,
     'glossary-border': none,
-    'switch-icon': '\e902'
+    'switch-icon': '\e902',
+    'lighness': -20%
   )
 ) !default;
