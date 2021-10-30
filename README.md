@@ -6,7 +6,7 @@
 
 > Currently updating major changes and updates from [AccentDesign/karma_sphinx_theme](https://github.com/AccentDesign/karma_sphinx_theme)
 > 
-> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.12_)
+> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.14_)
 
 ### A simple responsive theme for sphinx using **[Bulma]** featuring:
   1.  Has built-in dark/light color themes using native _CSS_ and _JavaScript_
