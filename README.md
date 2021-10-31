@@ -4,10 +4,6 @@
 [![CodeQL](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml)
 [![GitHub Pages deploy](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml)
 
-> Currently updating major changes and updates from [AccentDesign/karma_sphinx_theme](https://github.com/AccentDesign/karma_sphinx_theme)
-> 
-> Check [todo] list for planned features to be included on release version **v0.1.0** (cur: _v0.0.14_)
-
 ### A simple responsive theme for sphinx using **[Bulma]** featuring:
   1.  Has built-in dark/light color themes using native _CSS_ and _JavaScript_
   2.  Sphinx built-in text search engine
@@ -19,7 +15,7 @@
 ### Yet to be done a.k.a todo
   - [x] Support user-defined colors (primary color can be changed from `conf.py`)
   - [x] <del>Enable custom Sass rules on docs build</del> (can be done but requires user to build theme again)
-  - [ ] Examples of use with [breathe] for **C++** docs
+  - [x] Examples of use with [breathe] for **C++** docs [ [source] | [site] ]
 
 ## Installing
 
@@ -60,3 +56,5 @@ html_theme_options = {
 [todo]: /#yet-to-be-done-aka-todo
 [breathe]: https://github.com/michaeljones/breathe
 [venv]: https://docs.python.org/3/library/venv.html
+[source]: https://github.com/oAGoulart/yasl
+[site]: https://oagoulart.github.io/yasl/
