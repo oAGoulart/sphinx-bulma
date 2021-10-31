@@ -54,7 +54,48 @@ html_theme_options = {
 
 ## Using with Python packages
 
-_WIP_
+This example uses [pipenv] to setup everything easily, start by creating a Sphinx config file, here's an example:
+
+path: `docs/config.py`
+```py
+import sys
+import os
+from datetime import datetime
+
+sys.path.append(os.path.abspath('..'))
+sys.path.append(os.path.abspath('.'))
+
+extensions = [
+  'sphinx.ext.autodoc',
+  'sphinx.ext.mathjax',
+  'sphinx.ext.viewcode',
+]
+templates_path = ['_templates']
+source_suffix = '.rst'
+master_doc = 'index'
+
+project = u'myproject'
+year = datetime.now().year
+copyright = u'%d Augusto Goulart' % year
+
+exclude_patterns = ['_build']
+
+html_theme = 'sphinx-bulma' # don't forget our theme
+
+# this is the pipenv path to the site-packages
+html_theme_path = [os.path.join(os.getenv('PIPENV_SITE_PACKAGES', '..').split('\r')[0], 'Lib', 'site-packages')]
+```
+
+After that, just run this in your project root dir
+
+path: `myproject`
+```sh
+pipenv --site-packages --python 3.10
+pipenv install sphinx sphinx-bulma
+pipenv shell
+export PIPENV_SITE_PACKAGES=$(pipenv --venv)
+sphinx-build docs docs/_build
+```
 
 ## Using to document **C++** with **[breathe]**
 
@@ -287,6 +328,12 @@ jobs:
         build_dir: _build/
 ```
 
+---
+
+### Contributions
+
+Feel free to leave your contribution here, I would really appreciate it!
+Also, if you have any doubts or troubles using this package just contact me or leave an issue.
 
 
 [Bulma]: https://bulma.io/
