@@ -1,5 +1,6 @@
 ![Sphinx Bulma Theme](banner.png)
 #
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/oAGoulart/sphinx-bulma?display_name=tag&sort=semver)
 [![Build Sass](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/sass.yml/badge.svg)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/sass.yml)
 [![CodeQL](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/codeql-analysis.yml)
 [![GitHub Pages deploy](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/oAGoulart/sphinx-bulma/actions/workflows/gh-pages.yml)
@@ -46,8 +47,8 @@ html_theme_options = {
   'git_desc': 'Check the sources', # link description
   'default_palette': 'dark',       # default color palette (dark or light)
   'sidebar': True,                 # if true sidebar will be rendered
-  'primary': 885bfb,               # primary color hex value (do not add preceding #)
-  'primary_invert': fff            # primary inverted color hex value (do not add preceding #)
+  'primary': '885bfb',             # primary color hex value (do not add preceding #)
+  'primary_invert': 'fff'          # primary inverted color hex value (do not add preceding #)
 }
 ```
 
