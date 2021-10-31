@@ -5,24 +5,6 @@
 @use 'palette';
 @use 'icon';
 
-body {
-  @include palette.set() {
-    background-color: palette.get('body-color');
-    color: palette.get('text-color');
-  }
-}
-
-main .container .columns .column {
-  padding: 1rem;
-}
-
-main {
-  padding-bottom: 5rem;
-  @include palette.set() {
-    background-color: palette.get('body-color');
-  }
-}
-
 a {
   @include palette.set() {
     color: palette.get('link-color');
@@ -32,6 +14,61 @@ a {
     @include palette.set() {
       color: palette.get('link-hover');
     }
+  }
+}
+
+body {
+  @include palette.set() {
+    background-color: palette.get('body-color');
+    color: palette.get('text-color');
+  }
+}
+
+button.button.is-outlined:not(.dummy):focus:not(:hover) {
+  background-color: inherit;
+  border-color: inherit;
+  color: inherit;
+}
+
+dl {
+  overflow: auto;
+}
+
+input.input,
+.select select,
+.textarea {
+  @include palette.set() {
+    background-color: transparent;
+    border-color: palette.get('tab-color');
+    color: palette.get('text-color');
+  }
+  
+  &:-ms-input-placeholder {
+    color: inherit;
+  }
+  
+  &::-ms-input-placeholder {
+    color: inherit;
+  }
+
+  &::-webkit-input-placeholder {
+    color: inherit;
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+main {
+  padding-bottom: 5rem;
+  @include palette.set() {
+    background-color: palette.get('body-color');
+  }
+
+  .container .columns .column {
+    padding: 1rem;
   }
 }
 
@@ -51,62 +88,25 @@ strong {
   }
 }
 
-input.input,
-.select select,
-.textarea {
-  @include palette.set() {
-    background-color: transparent;
-    color: palette.get('text-color');
-    border-color: palette.get('tab-color');
-  }
-
-  &::placeholder {
-    color: inherit;
-    opacity: 1;
-  }
-  
-  &::-ms-input-placeholder {
-    color: inherit;
-  }
-  
-  &:-ms-input-placeholder {
-    color: inherit;
-  }
-
-  &::-webkit-input-placeholder {
-    color: inherit;
-  }
-}
-
-button.button.is-outlined:not(.dummy):focus:not(:hover) {
-  background-color: inherit;
-  border-color: inherit;
-  color: inherit;
-}
-
-dl {
-  overflow: auto;
-}
-
-section,
 div,
 main,
-.title,
-.icon-text,
+section,
+.button,
+.card,
+.content,
+.document,
+.dropdown,
 .icon,
+.icon-text,
+.message,
+.navbar,
+.notification,
+.panel,
 .progress,
 .table,
-.card,
-.dropdown,
-.navbar,
-.panel,
-.button,
 .tag,
 .tag:not(body),
-.notification,
-.message,
-.document,
-.content {
+.title {
   &.is-primary {
     background-color: var(--primary);
   }

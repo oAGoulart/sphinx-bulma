@@ -8,8 +8,8 @@ $_breakpoint: 1024px;
 
 .container:not(.navbar-menu) {
   @include bulma.until($_breakpoint) {
-    margin: 3rem;
     background-color: inherit;
+    margin: 3rem;
   }
 }
 
@@ -25,18 +25,18 @@ $_breakpoint: 1024px;
 
 .navbar-menu.container {
   @include bulma.until($_breakpoint) {
-    padding: 1.5rem;
     background-color: inherit;
     display: flex;
-
-    .navbar-start {
-      justify-content: flex-start;
-      margin-right: auto;
-    }
+    padding: 1.5rem;
 
     .navbar-end {
       justify-content: flex-end;
       margin-left: auto;
+    }
+
+    .navbar-start {
+      justify-content: flex-start;
+      margin-right: auto;
     }
   }
 }

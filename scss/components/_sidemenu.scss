@@ -5,21 +5,12 @@
 @use 'palette';
 @use 'icon';
 
-.toctree-l1 {
-  > a {
-    font-weight: 700;
-
-    &::after {
-      font-weight: 100;
-    }
-  }
-}
-
 aside.menu {
   margin-bottom: 5rem;
-
-  .caption {
-    font-weight: bold;
+    
+  li {
+    font-size: small;
+    line-height: 1.6;
   }
 
   ul {
@@ -27,8 +18,8 @@ aside.menu {
     padding-right: 0;
 
     li a::after {
-      margin-left: 0.5rem;
       font-size: 0.75rem;
+      margin-left: 0.5rem;
       @include palette.set() {
         color: palette.get('link-color');
       }
@@ -46,9 +37,18 @@ aside.menu {
   ul ul {
     margin-right: 1.6rem;
   }
-    
-  li {
-    font-size: small;
-    line-height: 1.6;
+
+  .caption {
+    font-weight: bold;
+  }
+}
+
+.toctree-l1 {
+  > a {
+    font-weight: 700;
+
+    &::after {
+      font-weight: 100;
+    }
   }
 }
