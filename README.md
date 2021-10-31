@@ -56,7 +56,7 @@ html_theme_options = {
 
 This example uses [pipenv] to setup everything easily, start by creating a Sphinx config file, here's an example:
 
-path: `docs/config.py`
+path: `myproject/docs/config.py`
 ```py
 import sys
 import os
