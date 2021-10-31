@@ -17674,9 +17674,12 @@ aside.menu li {
 .document dd,
 .document .topic dd,
 .document aside.sidebar dd {
-  margin-left: 2em;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
   font-size: 14px;
   line-height: 26px;
+  padding-left: 1rem;
+  border-left: 1px solid var(--primary);
 }
 #search-results .viewcode-link span.pre,
 .content .viewcode-link span.pre,
@@ -17835,6 +17838,7 @@ aside.menu li {
   background-color: transparent;
   color: #449cc5;
   border: 1px solid #449cc5;
+  margin-top: 0.5rem;
 }
 .dark-palette #search-results .glossary dt,
 .dark-palette .content .glossary dt,
@@ -17842,6 +17846,7 @@ aside.menu li {
   background-color: transparent;
   color: #4078f2;
   border: 1px solid #4078f2;
+  margin-top: 0.5rem;
 }
 
 .light-palette #search-results blockquote,
@@ -17879,6 +17884,7 @@ aside.menu li {
   background-color: #eff7fa;
   color: #449cc5;
   border: none;
+  margin-top: 0.5rem;
 }
 .light-palette #search-results .glossary dt,
 .light-palette .content .glossary dt,
@@ -17886,6 +17892,7 @@ aside.menu li {
   background-color: #4078f2;
   color: #fafafa;
   border: none;
+  margin-top: 0.5rem;
 }
 
 #search-results .versionadded,
@@ -17990,6 +17997,12 @@ aside.menu li {
 .light-palette .document .versionchanged .versionmodified.deprecated,
 .light-palette .document .deprecated:not(.versionmodified) .versionmodified.deprecated {
   color: #e45649;
+}
+
+#search-results .field-list dd ul,
+.content .field-list dd ul,
+.document .field-list dd ul {
+  margin-top: 0;
 }
 
 /*

@@ -3,6 +3,7 @@
  */
 
 @use 'sass:color';
+
 @use 'bulma';
 @use 'palette';
 @use 'icon';
@@ -256,9 +257,12 @@
   dd,
   .topic dd,
   aside.sidebar dd {
-    margin-left: 2em;
+    margin-left: 1rem;
+    margin-top: 0.25rem;
     font-size: 14px;
     line-height: 26px;
+    padding-left: 1rem;
+    border-left: 1px solid var(--primary);
   }
 
   .viewcode-link span.pre {
@@ -333,6 +337,7 @@
       background-color: palette.get('footnote-bg');
       color: palette.get('footnote-color');
       border: palette.get('footnote-border');
+      margin-top: 0.5rem;
     }
   
     .glossary {
@@ -341,6 +346,7 @@
         background-color: palette.get('glossary-bg');
         color: palette.get('glossary-color');
         border: palette.get('glossary-border');
+        margin-top: 0.5rem;
       }
     }
   }
@@ -366,5 +372,9 @@
         color: palette.get('red');
       }
     }
+  }
+
+  .field-list dd ul {
+    margin-top: 0;
   }
 }

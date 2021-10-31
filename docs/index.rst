@@ -4,7 +4,7 @@ Sphinx Bulma Theme
 ==================
 
 A simple responsive theme for sphinx using **Bulma** featuring:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1.  Has built-in dark/light color themes using native CSS and JavaScript
 2.  Sphinx built-in text search engine
 3.  Extended Sass rulesets from bulma
