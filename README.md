@@ -17,16 +17,16 @@
 <details>
   <summary><em>Screenshots (big images)</em></summary>
   
-  ### YASL light palette
+  ### YASL (_C++_) light palette
   ![Yasl Light](screenshots/yasl_light.png)
   
-  ### YASL dark palette
+  ### YASL (_C++_) dark palette
   ![Yasl Dark](screenshots/yasl_dark.png)
   
-  ### Markout light palette
+  ### Markout (_Python_) light palette
   ![Markout Light](screenshots/markout_light.png)
   
-  ### Markout dark palette
+  ### Markout (_Python_) dark palette
   ![Markout Dark](screenshots/markout_dark.png)
   
   ### Sphinx Bulma example light palette
