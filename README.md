@@ -14,6 +14,35 @@
   6.  User-defined source repository/files reference
   7.  User-defined primary theme color (custom theme config)
 
+<details>
+  <summary><em>Screenshots (big images)</em></summary>
+  
+  ### YASL light palette
+  ![Yasl Light](screenshots/yasl_light.png)
+  
+  ### YASL dark palette
+  ![Yasl Dark](screenshots/yasl_dark.png)
+  
+  ### Markout light palette
+  ![Markout Light](screenshots/markout_light.png)
+  
+  ### Markout dark palette
+  ![Markout Dark](screenshots/markout_dark.png)
+  
+  ### Sphinx Bulma example light palette
+  ![Sphinx Bulma Example Light](screenshots/structure_light.png)
+  
+  ### Sphinx Bulma example dark palette
+  ![Sphinx Bulma Example Dark](screenshots/structure_dark.png)
+  
+  ### Sphinx Bulma test module light palette
+  ![Sphinx Bulma Test Light](screenshots/module_light.png)
+  
+  ### Sphinx Bulma test module dark palette
+  ![Sphinx Bulma Test Dark](screenshots/module_dark.png)
+  
+</details>
+
 ## Installing
 
 Using pip to install this package (recommended using it within a [venv]):
