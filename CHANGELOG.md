@@ -2,9 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## [Unreleased]
 
-## 0.1.0 - TBD
+## [0.1.0] - 2021/10/31
 
 ### Updated
 
@@ -34,3 +34,6 @@ All notable changes to this project will be documented in this file.
 - New theme options `display_git`, `git_host`, `git_user`, `git_repo`, `git_blob`, `git_version`, `git_icon`, `git_desc`, `default_palette`, `sidebar`, `primary`, and `primary_invert`
 - Appended new copyright notice (under same license)
 - Use examples
+
+[Unreleased]: https://github.com/oAGoulart/sphinx-bulma/compare/v0.1.0...master
+[0.1.0]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.0
