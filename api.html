@@ -22,7 +22,7 @@
     <script src="_static/jquery.js"></script> 
     <script src="_static/underscore.js"></script> 
     <script src="_static/doctools.js"></script> 
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
     
 </head>
 <body>
@@ -78,7 +78,7 @@
 <p>Test Module for karma_sphinx_theme.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="test_py_module.test.Foo">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Foo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Foo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Docstring for class Foo.</p>
 <p>This text tests for the formatting of docstrings generated from output
 <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>. Which contain reST, but sphinx nests it in the
@@ -177,14 +177,14 @@ hats you own: <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="test_py_module.test.Foo.bar">
-<span class="sig-name descname"><span class="pre">bar</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#test_py_module.test.Foo.bar" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">bar</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#test_py_module.test.Foo.bar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Doc comment for class attribute Foo.bar.
 It can have multiple lines.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="test_py_module.test.Foo.baz">
-<span class="sig-name descname"><span class="pre">baz</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#test_py_module.test.Foo.baz" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">baz</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#test_py_module.test.Foo.baz" title="Permalink to this definition">¶</a></dt>
 <dd><p>Docstring for class attribute Foo.baz.</p>
 </dd></dl>
 
@@ -204,7 +204,7 @@ It can have multiple lines.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="test_py_module.test.Foo.flox">
-<span class="sig-name descname"><span class="pre">flox</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1.5</span></em><a class="headerlink" href="#test_py_module.test.Foo.flox" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">flox</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1.5</span></em><a class="headerlink" href="#test_py_module.test.Foo.flox" title="Permalink to this definition">¶</a></dt>
 <dd><p>Doc comment for Foo.flox. One line only.</p>
 </dd></dl>
 
@@ -229,7 +229,7 @@ However, some projects will manually do it, like so:</p>
 <p>This example comes from <a class="reference external" href="http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvide">django-payments module docs</a>.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="test_py_module.test.payments.dotpay.DotpayProvider">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">payments.dotpay.</span></span><span class="sig-name descname"><span class="pre">DotpayProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">seller_id</span></em>, <em class="sig-param"><span class="pre">pin</span></em><span class="optional">[</span>, <em class="sig-param"><span class="pre">channel=0</span></em><span class="optional">[</span>, <em class="sig-param"><span class="pre">lock=False</span></em><span class="optional">]</span>, <em class="sig-param"><span class="pre">lang='pl'</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#test_py_module.test.payments.dotpay.DotpayProvider" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">payments.dotpay.</span></span><span class="sig-name descname"><span class="pre">DotpayProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seller_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pin</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">channel=0</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">lock=False</span></span></em><span class="optional">]</span>, <em class="sig-param"><span class="n"><span class="pre">lang='pl'</span></span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#test_py_module.test.payments.dotpay.DotpayProvider" title="Permalink to this definition">¶</a></dt>
 <dd><p>This backend implements payments using a popular Polish gateway, <a class="reference external" href="http://www.dotpay.pl">Dotpay.pl</a>.</p>
 <p>Due to API limitations there is no support for transferring purchased items.</p>
 <dl class="field-list simple">
@@ -350,7 +350,7 @@ However, some projects will manually do it, like so:</p>
                 </span>
                 <span>Sphinx</span>
               </span>
-              <span class="tag is-primary is-normal">4.2.0</span>
+              <span class="tag is-primary is-normal">4.3.0</span>
             </a>
           </span>
           <span class="control">
