@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.1] - 2021/11/11
+
+### Updated
+
+- Bump sass from 1.43.3 to 1.43.4
+- Bump nodemon from 2.0.14 to 2.0.15
+- Bump sphinx from 4.2.0 to 4.3.0
+
 ## [0.1.0] - 2021/10/31
 
 ### Updated
@@ -35,5 +43,6 @@ All notable changes to this project will be documented in this file.
 - Appended new copyright notice (under same license)
 - Use examples
 
-[Unreleased]: https://github.com/oAGoulart/sphinx-bulma/compare/v0.1.0...master
+[Unreleased]: https://github.com/oAGoulart/sphinx-bulma/compare/v0.1.1...master
+[0.1.1]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.1
 [0.1.0]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.0
