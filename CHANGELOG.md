@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+
+## [0.1.2] - 2021/12/02
+
+### Changed
+
+- Edit required Python version
+
 ## [0.1.1] - 2021/11/11
 
 ### Updated
