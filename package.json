@@ -29,7 +29,7 @@
     "watch-css": "nodemon --ignore dist/ -e scss -x \"npm run css\""
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
+    "autoprefixer": "^10.4.3",
     "bulma": "^0.9.3",
     "clean-css-cli": "^5.5.2",
     "copyfiles": "^2.4.1",
