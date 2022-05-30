@@ -2,7 +2,7 @@
 <html class="dark-palette">
 <head>
   <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>test_py_module &mdash; Sphinx Bulma Theme  documentation</title>
@@ -21,6 +21,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script> 
     <script src="_static/jquery.js"></script> 
     <script src="_static/underscore.js"></script> 
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script> 
     <script src="_static/doctools.js"></script> 
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
     
@@ -74,7 +75,7 @@
         <div class="document content">
           
   <section id="module-test_py_module.test">
-<span id="test-py-module"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">test_py_module</span></code><a class="headerlink" href="#module-test_py_module.test" title="Permalink to this headline">¶</a></h1>
+<span id="test-py-module"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">test_py_module</span></code><a class="headerlink" href="#module-test_py_module.test" title="Permalink to this heading">¶</a></h1>
 <p>Test Module for karma_sphinx_theme.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="test_py_module.test.Foo">
@@ -105,7 +106,7 @@ Here is a link to <a class="reference internal" href="#test_py_module.test.Foo._
 <span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start the Foo.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>qux</strong> (<em>string</em>) – The first argument to initialize class.</p></li>
 <li><p><strong>spam</strong> (<em>bool</em>) – Spam me yes or no…</p></li>
@@ -125,13 +126,13 @@ Here is a link to <a class="reference internal" href="#test_py_module.test.Foo._
 <span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo.add"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the added values.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>val1</strong> (<em>int</em>) – First number to add.</p></li>
 <li><p><strong>val2</strong> (<em>int</em>) – Second number to add.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>int</p>
 </dd>
 </dl>
@@ -142,7 +143,7 @@ Here is a link to <a class="reference internal" href="#test_py_module.test.Foo._
 <span class="sig-name descname"><span class="pre">another_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo.another_function"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo.another_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Here is another function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>int</em>) – The number of green hats you own.</p></li>
 <li><p><strong>b</strong> (<em>int</em>) – The number of non-green hats you own.</p></li>
@@ -152,15 +153,15 @@ The values should be floats, specifying the mean price
 of your favorite dish in that cooking style.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>A 2-tuple.  The first element is the mean price of all dishes
 across cuisines.  The second element is the total number of
 hats you own: <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>tuple</p>
 </dd>
-<dt class="field-even">Raises</dt>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
 <dd class="field-even"><p><strong>ValueError</strong> – When <code class="docutils literal notranslate"><span class="pre">a</span></code> is not an integer.</p>
 </dd>
 </dl>
@@ -193,10 +194,10 @@ It can have multiple lines.</p>
 <span class="sig-name descname"><span class="pre">capitalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">myvalue</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/test_py_module/test.html#Foo.capitalize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_py_module.test.Foo.capitalize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a string as uppercase.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>myvalue</strong> (<em>string</em>) – String to change</p>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p>string</p>
 </dd>
 </dl>
@@ -223,7 +224,7 @@ It can have multiple lines.</p>
 </dd></dl>
 
 <section id="optional-parameter-args">
-<h2>Optional parameter args<a class="headerlink" href="#optional-parameter-args" title="Permalink to this headline">¶</a></h2>
+<h2>Optional parameter args<a class="headerlink" href="#optional-parameter-args" title="Permalink to this heading">¶</a></h2>
 <p>At this point optional parameters <a class="reference external" href="https://groups.google.com/forum/#!topic/sphinx-users/_qfsVT5Vxpw">cannot be generated from code</a>.
 However, some projects will manually do it, like so:</p>
 <p>This example comes from <a class="reference external" href="http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvide">django-payments module docs</a>.</p>
@@ -233,7 +234,7 @@ However, some projects will manually do it, like so:</p>
 <dd><p>This backend implements payments using a popular Polish gateway, <a class="reference external" href="http://www.dotpay.pl">Dotpay.pl</a>.</p>
 <p>Due to API limitations there is no support for transferring purchased items.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>seller_id</strong> – Seller ID assigned by Dotpay</p></li>
 <li><p><strong>pin</strong> – PIN assigned by Dotpay</p></li>
@@ -247,7 +248,7 @@ However, some projects will manually do it, like so:</p>
 
 </section>
 <section id="data">
-<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">¶</a></h2>
 <dl class="py data">
 <dt class="sig sig-object py" id="test_py_module.test.Data_item_1">
 <span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Data_item_1</span></span><a class="headerlink" href="#test_py_module.test.Data_item_1" title="Permalink to this definition">¶</a></dt>
@@ -350,7 +351,7 @@ However, some projects will manually do it, like so:</p>
                 </span>
                 <span>Sphinx</span>
               </span>
-              <span class="tag is-primary is-normal">4.5.0</span>
+              <span class="tag is-primary is-normal">5.0.0</span>
             </a>
           </span>
           <span class="control">
