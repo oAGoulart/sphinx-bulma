@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.3] - 2022/05/29
+
+### Changed
+
+- Bump dependencies versions
 
 ## [0.1.2] - 2021/12/02
 
@@ -50,6 +55,8 @@ All notable changes to this project will be documented in this file.
 - Appended new copyright notice (under same license)
 - Use examples
 
-[Unreleased]: https://github.com/oAGoulart/sphinx-bulma/compare/v0.1.1...master
+[Unreleased]: https://github.com/oAGoulart/sphinx-bulma/compare/v0.1.3...master
+[0.1.3]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.3
+[0.1.2]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.2
 [0.1.1]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.1
 [0.1.0]: https://github.com/oAGoulart/sphinx-bulma/releases/tag/v0.1.0
