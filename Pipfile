@@ -5,7 +5,7 @@ name = "pypi"
 
 [dev-packages]
 sphinx = "5.0.1"
-setuptools = "62.3.2"
+setuptools = "62.3.4"
 wheel = "*"
 
 [requires]
