@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [dev-packages]
-sphinx = "5.0.2"
-setuptools = "62.4.0"
+sphinx = "5.0.1"
+setuptools = "62.6.0"
 wheel = "*"
 
 [requires]
