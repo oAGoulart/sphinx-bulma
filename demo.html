@@ -21,9 +21,6 @@
       <link rel="next" title="Lists" href="lists.html"/>
       <link rel="prev" title="Admonitions" href="admonitions.html"/>
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script> 
-    <script src="_static/jquery.js"></script> 
-    <script src="_static/underscore.js"></script> 
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script> 
     <script src="_static/doctools.js"></script> 
     <script src="_static/sphinx_highlight.js"></script> 
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
@@ -193,26 +190,26 @@ own it, and what it is too.</p>
 curl -O <a class="reference external" href="http://someurl/release">http://someurl/release</a>-.tar-gz</pre>
 <div class="literal-block-wrapper docutils container" id="id23">
 <div class="code-block-caption"><span class="caption-text">Code Blocks can have captions.</span><a class="headerlink" href="#id23" title="Permalink to this code">¶</a></div>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">   </span><span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">     </span><span class="p">{</span><span class="w"></span>
-<span class="w">       </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">         </span><span class="p">{</span><span class="w"></span>
-<span class="w">           </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">             </span><span class="s2">&quot;echo &#39;did you know&#39;&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="w">             </span><span class="s2">&quot;echo &#39;you can inline&#39;&quot;</span><span class="w"></span>
-<span class="w">           </span><span class="p">]</span><span class="w"></span>
-<span class="w">         </span><span class="p">},</span><span class="w"></span>
-<span class="w">         </span><span class="p">{</span><span class="w"></span>
-<span class="w">           </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;single commands&#39;&quot;</span><span class="w"></span>
-<span class="w">         </span><span class="p">},</span><span class="w"></span>
-<span class="w">         </span><span class="s2">&quot;echo &#39;for panes&#39;&quot;</span><span class="w"></span>
-<span class="w">       </span><span class="p">],</span><span class="w"></span>
-<span class="w">       </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span><span class="w"></span>
-<span class="w">     </span><span class="p">}</span><span class="w"></span>
-<span class="w">   </span><span class="p">],</span><span class="w"></span>
-<span class="w">   </span><span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span><span class="w"></span>
-<span class="w"> </span><span class="p">}</span><span class="w"></span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;windows&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">     </span><span class="p">{</span>
+<span class="w">       </span><span class="nt">&quot;panes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">         </span><span class="p">{</span>
+<span class="w">           </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">             </span><span class="s2">&quot;echo &#39;did you know&#39;&quot;</span><span class="p">,</span>
+<span class="w">             </span><span class="s2">&quot;echo &#39;you can inline&#39;&quot;</span>
+<span class="w">           </span><span class="p">]</span>
+<span class="w">         </span><span class="p">},</span>
+<span class="w">         </span><span class="p">{</span>
+<span class="w">           </span><span class="nt">&quot;shell_command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;echo &#39;single commands&#39;&quot;</span>
+<span class="w">         </span><span class="p">},</span>
+<span class="w">         </span><span class="s2">&quot;echo &#39;for panes&#39;&quot;</span>
+<span class="w">       </span><span class="p">],</span>
+<span class="w">       </span><span class="nt">&quot;window_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;long form&quot;</span>
+<span class="w">     </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span>
+<span class="w">   </span><span class="nt">&quot;session_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;shorthands&quot;</span>
+<span class="w"> </span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
@@ -258,7 +255,7 @@ of the ruler or leader of men, who through his power awakens and develops their 
 <span class="linenos"> 2</span><span class="sd">&quot;&quot;&quot;Test Module for karma_sphinx_theme.&quot;&quot;&quot;</span>
 <span class="linenos"> 3</span>
 <span class="linenos"> 4</span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
-<span class="linenos"> 5</span>  <span class="sd">&quot;&quot;&quot;Docstring for class Foo.</span>
+<span class="linenos"> 5</span><span class="w">  </span><span class="sd">&quot;&quot;&quot;Docstring for class Foo.</span>
 <span class="linenos"> 6</span>
 <span class="linenos"> 7</span><span class="sd">  This text tests for the formatting of docstrings generated from output</span>
 <span class="linenos"> 8</span><span class="sd">  ``sphinx.ext.autodoc``. Which contain reST, but sphinx nests it in the</span>
@@ -293,7 +290,7 @@ of the ruler or leader of men, who through his power awakens and develops their 
 <span class="linenos">37</span>  <span class="n">flox</span> <span class="o">=</span> <span class="mf">1.5</span>   <span class="c1">#: Doc comment for Foo.flox. One line only.</span>
 <span class="linenos">38</span>
 <span class="linenos">39</span>  <span class="n">baz</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="linenos">40</span>  <span class="sd">&quot;&quot;&quot;Docstring for class attribute Foo.baz.&quot;&quot;&quot;</span>
+<span class="linenos">40</span><span class="w">  </span><span class="sd">&quot;&quot;&quot;Docstring for class attribute Foo.baz.&quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -566,7 +563,7 @@ with the “compound” directive.</p>
       <div class="column is-three-quarters"></div>
       <div class="column is-one-quarter is-size-7">
         <p>
-            &#169; Copyright 2022 Augusto Goulart
+            &#169; Copyright 2023 Augusto Goulart
         </p>
         <div class="field is-grouped is-pulled-right">
           <span class="control">
@@ -577,7 +574,7 @@ with the “compound” directive.</p>
                 </span>
                 <span>Sphinx</span>
               </span>
-              <span class="tag is-primary is-normal">5.3.0</span>
+              <span class="tag is-primary is-normal">6.1.3</span>
             </a>
           </span>
           <span class="control">
